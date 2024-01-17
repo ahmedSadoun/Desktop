@@ -1,0 +1,33 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "CreditCardsTypesList",
+    "fullName" : "CreditCardsTypesList",
+    "type" : "ENTITY",
+    "entityName" : "NBE.ENT.RETAIL.CARDS.CC.CREDIT_CARD_TYPES",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "NBE.ENT.RETAIL.CARDS.CC.CREDIT_CARD_TYPES",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "137C5D51-8F67-4894-AA29-3B88809745CB",
+    "children" : null
+  } ],
+  "eventHandler" : "EventHandlers:RetailCreditCardsTypes",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.RETAIL.CARDS.CC.CREDIT_CARD_TYPES",
+  "promptForDisambiguation" : true,
+  "trackingId" : "E83ACF93-1EC2-422B-8CA5-40082C4BB3D7",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

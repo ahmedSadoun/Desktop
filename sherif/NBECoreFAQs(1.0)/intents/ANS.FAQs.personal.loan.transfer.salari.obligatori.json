@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Is salary transfer to the bank mandatory to obtain personal finance?",
+    "trackingId" : "DF1873E3-0668-410D-BDDF-18765ED8759A",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Is transferring the salary obligatory to get a personal loan?",
+    "trackingId" : "8FDD5505-5FAF-4DE6-AE87-F749E0281D0A",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.personal.loan.transfer.salari.obligatori",
+  "trackingId" : "EF1521FF-1148-4094-B953-BE9C9DAE1780"
+}

@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Are there any membership fees to enroll in the program?",
+    "trackingId" : "F8DF0D44-147B-4DCF-B28F-D3764836C9EB",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Are there any membership fees to register for the program?",
+    "trackingId" : "2CDB8F98-22F1-40E0-80B3-96A6BA5256B8",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyPoints.membership.fee.enrol.program",
+  "trackingId" : "4FC85C31-B3ED-48DC-A229-39AFD6FD100D"
+}

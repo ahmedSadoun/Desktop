@@ -1,0 +1,35 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Savings Account",
+    "extensionType" : null,
+    "synonyms" : [ "حساب التوفير", "savings account", "حساب توفير" ],
+    "trackingId" : "C6981779-918F-436C-B1A3-2A1F7D1B547F"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al Mostakabal Savings Account",
+    "extensionType" : null,
+    "synonyms" : [ "حساب توفير المستقبل" ],
+    "trackingId" : "0E20190B-3E3C-4951-B6E3-52A1839918AE"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Small Savings Account (with prizes)",
+    "extensionType" : null,
+    "synonyms" : [ "حساب توفير المدخر الصغير ذو الجوائز", "حساب المدخر الصغير", "حساب توفير بجوائز", "samll savings account", "savings account with prizes" ],
+    "trackingId" : "C0490F8F-7CCE-4815-930F-809D2154C0F8"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Pension Savings Account",
+    "extensionType" : null,
+    "synonyms" : [ "حساب توفير المعاش", "معاش", "pension", "savings account for pensioners" ],
+    "trackingId" : "38605B83-4311-4692-A24A-4A10C530B36B"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.ACCOUNTS.SA.LOCAL_CURR",
+  "promptForDisambiguation" : true,
+  "trackingId" : "58048DD1-DB43-4388-A58E-A80444A1941C",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

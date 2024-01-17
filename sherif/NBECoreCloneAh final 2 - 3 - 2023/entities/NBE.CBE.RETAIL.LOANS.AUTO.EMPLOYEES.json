@@ -1,0 +1,33 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "CurrentAutoLoansEmployeesList",
+    "fullName" : "CurrentAutoLoansEmployeesList",
+    "type" : "ENTITY",
+    "entityName" : "NBE.ENT.RETAIL.LOANS.AUTO.EMPLOYEES",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "NBE.ENT.RETAIL.LOANS.AUTO.EMPLOYEES",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "BE0D6418-F224-47A0-A2ED-E708AFE8997D",
+    "children" : null
+  } ],
+  "eventHandler" : "EventHandlers:RetailLoansAutoEmployees",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.RETAIL.LOANS.AUTO.EMPLOYEES",
+  "promptForDisambiguation" : true,
+  "trackingId" : "590E0D8D-758E-4706-BD88-8CB3D8BCF1DD",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

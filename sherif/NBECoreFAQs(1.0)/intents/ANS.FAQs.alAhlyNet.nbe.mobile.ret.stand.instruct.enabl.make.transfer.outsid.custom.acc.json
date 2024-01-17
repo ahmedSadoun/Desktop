@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - Do standing instructions enable making transfer outside the customer's accounts?",
+    "trackingId" : "9CC7ED17-86E7-476A-8EF3-6CEBCAD584B6",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - Does the standing instruction service allow transfers outside the client's accounts?",
+    "trackingId" : "EA53C85C-119A-4DFB-8346-C4B26A04F2B0",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.stand.instruct.enabl.make.transfer.outsid.custom.acc",
+  "trackingId" : "F7667F17-32A4-45BE-9891-B0A1111D1704"
+}

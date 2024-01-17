@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How are points redeemed for Cash Rewards?",
+    "trackingId" : "13250278-945B-4BA3-9125-8DB92940BC0B",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How can I redeem my AL-AHLY Points to have Cash Rewards?",
+    "trackingId" : "361F6DF9-6E3C-4A8B-BFE2-26EF3D37FE95",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyPoints.redeem.cash.reward",
+  "trackingId" : "666B4D1D-44DE-4C41-B437-604947A55871"
+}

@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - Can I delete/modify the categories added through the bank?",
+    "trackingId" : "52782C59-6540-4978-9CC4-EC260EF94B07",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - Can I remove/modify added categories through the Bank?",
+    "trackingId" : "CB6A5EB6-72A0-489D-AE84-8432DE082075",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.remov.modifi.ad.categori.bank",
+  "trackingId" : "F16D7014-A2C3-4E30-B4D5-DF0333718622"
+}

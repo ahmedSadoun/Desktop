@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What are the latest e-payment services offered by the Bank?",
+    "trackingId" : "91FBA704-F4D3-4490-AF24-4672DA2E99E2",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What are the latest electronic collection services provided by the National Bank of Egypt?",
+    "trackingId" : "627D62EB-ABE0-4084-AB9B-F2E929792752",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyE-Shopping.latest.payment.offer.bank",
+  "trackingId" : "097F5204-EEC6-4687-A1DB-24DFAA8612B7"
+}

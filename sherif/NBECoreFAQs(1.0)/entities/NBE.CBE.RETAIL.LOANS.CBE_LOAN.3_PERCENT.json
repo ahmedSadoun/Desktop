@@ -1,0 +1,33 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "CurrentCBE3PercentList",
+    "fullName" : "CurrentCBE3PercentList",
+    "type" : "ENTITY",
+    "entityName" : "NBE.ENT.RETAIL.LOANS.CBE_LOAN.3_PERCENT",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "NBE.ENT.RETAIL.LOANS.CBE_LOAN.3_PERCENT",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "9D9A4B9C-13EC-46E2-99B3-CB82CFFC2591",
+    "children" : null
+  } ],
+  "eventHandler" : "EventHandlers:RetailLoansCBE3Percentage",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.RETAIL.LOANS.CBE_LOAN.3_PERCENT",
+  "promptForDisambiguation" : true,
+  "trackingId" : "EACEAE00-23BE-4C7F-B5DA-E2AC66BDE4BE",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

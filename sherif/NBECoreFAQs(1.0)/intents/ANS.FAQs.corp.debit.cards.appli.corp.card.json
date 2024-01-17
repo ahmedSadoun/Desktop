@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - How can I apply for a corporate debit card?",
+    "trackingId" : "A99EA03F-780E-48BF-9A4F-7CCB77F75C53",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - How can I get a corporate direct debit card?",
+    "trackingId" : "EBFD79E2-97B8-4588-87FD-B9A3EF864000",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.corp.debit.cards.appli.corp.card",
+  "trackingId" : "92E44701-8E72-411C-BEE7-34F89AA2AA72"
+}

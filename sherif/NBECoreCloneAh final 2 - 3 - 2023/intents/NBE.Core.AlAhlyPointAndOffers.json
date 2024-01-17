@@ -1,0 +1,122 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "ahly offers",
+    "trackingId" : "2295EE1E-31C6-488A-9245-E8EDB58EBCBE",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "ahly points",
+    "trackingId" : "68C3147A-1903-43A2-80CC-E721F5214DDC",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "ahly points and offers",
+    "trackingId" : "298FBDB9-DCFB-4B8E-A0EE-C9509A5A98A4",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "al ahly offers",
+    "trackingId" : "B33FB3DF-607E-4BC0-937E-372204622020",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "al ahly points",
+    "trackingId" : "FA5FB010-28DB-4CBF-9243-B7EE5926FAAC",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "al ahly points and offers",
+    "trackingId" : "C2507E66-8396-4F4E-9880-DD6F13F78CBD",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : "en",
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "points and offers",
+    "trackingId" : "1DA8DC80-CA55-4F7A-9061-DDBF398B98D3",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ {
+    "entity" : "NBE.ENT.RETAIL.AHLY_POINTS_REDEMPTION",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "39E8D9D6-A201-4B39-A736-0425BDE98BAB"
+  }, {
+    "entity" : "NBE.ENT.RETAIL.MAIN_AHLY_POINTS",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "08F28C74-D76C-4D7B-B158-3C3FDE8B9AB5"
+  }, {
+    "entity" : "NBE.ENT.RETAIL.AHLY_POINTS",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "39A4B6E4-35F8-475D-96C5-524DBA16E6F4"
+  } ],
+  "name" : "NBE.Core.AlAhlyPointAndOffers",
+  "trackingId" : "5C3EE21B-FD41-4FAB-BBA1-3111FE1AAB38",
+  "type" : "NLPIntent"
+}

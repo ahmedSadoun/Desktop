@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - Can I log in for the first time through the mobile banking application?",
+    "trackingId" : "3DBAF71B-115F-454A-8538-63CFE377DB43",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - Can I login for the first time via NBE Mobile application?",
+    "trackingId" : "99FC04B9-FA29-46FC-BEA3-211D68A0FBA5",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.login.first.time.app",
+  "trackingId" : "A9115D43-6292-4DC1-8ADF-781994FB8D79"
+}

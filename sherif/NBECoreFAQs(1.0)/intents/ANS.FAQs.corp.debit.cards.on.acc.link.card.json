@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Can more than one account be linked to the card",
+    "trackingId" : "1F8C651F-B235-4002-9CE3-F6F17A502F62",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Can more than one account be linked to the card?",
+    "trackingId" : "D00B675B-4EC1-4BF4-96D5-DAFCE20CAA87",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.corp.debit.cards.on.acc.link.card",
+  "trackingId" : "4E7AE69F-02D2-4186-9A35-B37E130BEC8A"
+}

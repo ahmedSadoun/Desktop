@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - To whom is the corporate direct debit card issued?",
+    "trackingId" : "002274DB-DBBC-4CB1-9D18-A53CA94ADB5E",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Who is eligible for corporate debit cards?",
+    "trackingId" : "E378B640-BC51-4272-AFFE-D709047130EA",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.corp.debit.cards.elig.corp",
+  "trackingId" : "32A6F768-4874-46A1-B589-47EE7A2F8EC7"
+}

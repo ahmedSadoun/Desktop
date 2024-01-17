@@ -1,0 +1,33 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "CurrentAutoLoanVIPList",
+    "fullName" : "CurrentAutoLoanVIPList",
+    "type" : "ENTITY",
+    "entityName" : "NBE.ENT.RETAIL.LOANS.AUTO.VIP",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "NBE.ENT.RETAIL.LOANS.AUTO.VIP",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "B6253F53-CE1C-4190-8B7B-DE708DAB5702",
+    "children" : null
+  } ],
+  "eventHandler" : "EventHandlers:RetailLoansAutoVIP",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.RETAIL.LOANS.AUTO.VIP",
+  "promptForDisambiguation" : true,
+  "trackingId" : "10E60729-834D-4FC6-B3D9-687DCCB376C3",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

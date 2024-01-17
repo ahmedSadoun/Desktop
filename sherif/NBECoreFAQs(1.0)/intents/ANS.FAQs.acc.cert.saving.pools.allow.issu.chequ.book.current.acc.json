@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Is it allowed to issue a cheque book for the current account?",
+    "trackingId" : "8FF3B8C9-C0F8-495B-9791-D4F97A31C77F",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Is it possible to issue a check book for the current account?",
+    "trackingId" : "4EFD9B19-D5AD-43DC-8799-360C948E80C1",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.acc.cert.saving.pools.allow.issu.chequ.book.current.acc",
+  "trackingId" : "DDAF4B61-CDE4-4CFB-A32C-5640FF18E93C"
+}

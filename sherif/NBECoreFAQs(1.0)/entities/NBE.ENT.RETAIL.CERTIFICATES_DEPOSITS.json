@@ -1,0 +1,23 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Deposits",
+    "extensionType" : null,
+    "synonyms" : [ "deposit", "retail deposits" ],
+    "trackingId" : "4107A918-068E-4E1D-A7BE-2FA4F09AC51A"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Certificates",
+    "extensionType" : null,
+    "synonyms" : [ "certificate", "retail certificate", "cert" ],
+    "trackingId" : "35924539-4889-46A1-8281-9E1B517BB3E2"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.CERTIFICATES_DEPOSITS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "82A55A72-2B0D-4A7C-B97B-617BB25FCA4B",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

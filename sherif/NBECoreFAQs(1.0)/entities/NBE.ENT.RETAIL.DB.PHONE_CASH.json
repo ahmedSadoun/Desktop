@@ -1,0 +1,47 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "How to Subscribe",
+    "extensionType" : null,
+    "synonyms" : [ "subscribe" ],
+    "trackingId" : "E1AA43A2-158B-4B28-B035-CD6A16CCC4C8"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Activation/re-setting password",
+    "extensionType" : null,
+    "synonyms" : [ "Activation / re-setting password", "Activation/re setting password", "Activation/resetting password", "Activation / resetting password", "Activation / re setting password", "password activation", "re-setting password", "resetting password", "re setting password", "activation password" ],
+    "trackingId" : "FC9AE771-B30A-4F55-B485-30763C59301A"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Wallet loading",
+    "extensionType" : null,
+    "synonyms" : [ "loading wallet" ],
+    "trackingId" : "93CBDF36-AF57-48E6-8FFB-90341EAD780D"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Scan and pay using \"QR code\"",
+    "extensionType" : null,
+    "synonyms" : [ "Scan and pay using QR code", "scan using qr code", "scan qr code", "pay using qr code", "pay qr code" ],
+    "trackingId" : "17BC6E42-4BA0-4607-8ED2-2F77CC9DA788"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Purchase using an online card \"a virtual card\"",
+    "extensionType" : null,
+    "synonyms" : [ "Purchase using an online card a virtual card", "purchase using online card", "purchase using an online card", "purchase using virtual card", "purchase using a virtual card" ],
+    "trackingId" : "361F59D5-B1DD-49EA-B940-66BD0E3E9F0C"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "New services",
+    "extensionType" : null,
+    "synonyms" : [ "new service" ],
+    "trackingId" : "D64701F8-6D5E-4B7D-BEF7-70560B690D6A"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.DB.PHONE_CASH",
+  "promptForDisambiguation" : true,
+  "trackingId" : "BF7A2720-2D55-41DE-BACA-86F77ACD4256",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

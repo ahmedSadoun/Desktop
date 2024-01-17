@@ -1,0 +1,47 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Credit Card Types",
+    "extensionType" : null,
+    "synonyms" : [ "credit card types", "credit types", "انواع بطاقات الائتمان", "credit cards types", "credit cards type", "انواع كروت الائتمان", "credit card type" ],
+    "trackingId" : "B658FD32-3EAA-489B-ADA5-8255291EC9BE"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Installment & discount programs",
+    "extensionType" : null,
+    "synonyms" : [ "installment & discount programs", "installment and discount programs", "installment programs", "discount programs", "installment & discount", "installment and discount", "برامج التقسيط و الخصومات", "خصومات", "عروض", "تقسيط" ],
+    "trackingId" : "BD045AE0-B6BB-40A8-A7D3-FC4D8BA81AC2"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Monthly offers",
+    "extensionType" : null,
+    "synonyms" : [ "monthly offers", "عروض شهرية" ],
+    "trackingId" : "A424CC7F-8262-49ED-BCE6-C53C8FA78965"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "How to activate your NBE credit card",
+    "extensionType" : null,
+    "synonyms" : [ "how to activate your nbe credit card", "activate nbe credit card", "how to activate your nbe credit", "activate your nbe credit card", "activate credit card", "طرق تفعيل البطاقة الائتمانية", "تفعيل البطاقة", "تنشيط البطاقة", "كيفية تفعيل البطاقة" ],
+    "trackingId" : "93355569-4CAB-41B5-8A55-E76FD3085D6B"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "How to make credit card payments",
+    "extensionType" : null,
+    "synonyms" : [ "how to make credit card payments", "make credit card payments", "credit card payments", "طرق سداد المديونية", "كيفية تسديد البطاقة", "كيفية التسديد", "كيفية دفع المديونية" ],
+    "trackingId" : "46B8C3CA-748C-42B2-91EC-1D18E0189BE7"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "E-statement service for cards",
+    "extensionType" : null,
+    "synonyms" : [ "e-statement service for cards", "estatement service for cards", "e statement service for cards", "e-statement", "e statement", "estatement", "خدمة الكشف الإلكتروني للبطاقات", "كشف الحساب الالكتروني", "الكشف الالكتروني" ],
+    "trackingId" : "FB07E20C-C14C-43C1-BEF4-4DBAA16699B8"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.CARDS.CREDIT_CARD",
+  "promptForDisambiguation" : true,
+  "trackingId" : "403BADFB-4D3B-4C9F-AC35-3B0FDA6B71D0",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

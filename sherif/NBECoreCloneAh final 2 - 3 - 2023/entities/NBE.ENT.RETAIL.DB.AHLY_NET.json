@@ -1,0 +1,41 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "User Guide/ FAQs",
+    "extensionType" : null,
+    "synonyms" : [ "User Guide / FAQs", "user guide", "faqs" ],
+    "trackingId" : "B2AE457F-E7A5-4F9D-BB03-C67A4D767F13"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Hard/ Soft Token",
+    "extensionType" : null,
+    "synonyms" : [ "Hard / Soft Token", "hard token", "soft token" ],
+    "trackingId" : "617D8C69-891B-41FF-9155-B443AF09FAE2"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Download of NBE Mobile application",
+    "extensionType" : null,
+    "synonyms" : [ "download nbe mobile application", "download nbe app", "nbe mobile application", "nbe app", "nbe mobile app", "download mobile application", "download mobile app" ],
+    "trackingId" : "BFF34311-F376-40B1-B2FB-119F8E6CC7D3"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Loss of User ID/ Login Password",
+    "extensionType" : null,
+    "synonyms" : [ "Loss of User ID / Login Password", "loss of user id", "loss user id", "loss login password", "login password" ],
+    "trackingId" : "DF551501-1BCA-440E-A9BD-F7B7FEA1C8BD"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Subscription/ Activation",
+    "extensionType" : null,
+    "synonyms" : [ "Subscription / Activation", "subscription", "activation" ],
+    "trackingId" : "8D0E1D80-55AD-4D77-AFA6-3676BCBA4419"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.DB.AHLY_NET",
+  "promptForDisambiguation" : true,
+  "trackingId" : "6C9BE66A-21AE-4A68-AAF0-3B2C6C85DAF3",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

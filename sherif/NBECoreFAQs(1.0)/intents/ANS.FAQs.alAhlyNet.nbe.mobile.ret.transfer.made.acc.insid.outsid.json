@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - Can transfers be made to other accounts inside or outside NBE?",
+    "trackingId" : "FD8CB6B0-549F-45F3-9191-B0124DD5CD71",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - Is it possible to make transfers to other accounts inside or outside the National Bank?",
+    "trackingId" : "E48AA08A-5E0A-4A19-AE03-C5AFA8976EA8",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.transfer.made.acc.insid.outsid",
+  "trackingId" : "36AB418B-4859-4B49-906A-B1FC817B2A7A"
+}

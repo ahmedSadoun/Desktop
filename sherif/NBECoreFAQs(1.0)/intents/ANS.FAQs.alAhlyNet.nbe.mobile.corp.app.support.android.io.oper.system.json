@@ -1,0 +1,48 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Does Al Ahly Mobile application support Android and IOS systems?",
+    "trackingId" : "82689AB9-6D94-44FA-8AF4-5F6BADD8D25E",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Does the Al-Ahly Mobile application support Android and IOS systems?",
+    "trackingId" : "A94F1359-F336-4A74-A007-59039BCAD822",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Is Al Ahly Mobile application supported by Android and IOS mobile operating systems?",
+    "trackingId" : "FA994713-9A34-4BF4-B942-110A14ABB535",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.app.support.android.io.oper.system",
+  "trackingId" : "166B80F4-221F-451F-A189-DB8AE84B0543"
+}

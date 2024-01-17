@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can I purchase a certificate for only one week?",
+    "trackingId" : "AA83E8A0-0DD4-40A2-9361-D9E88E33E6C7",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can I work for a week?",
+    "trackingId" : "80107DCF-C629-4FC9-915F-1ED8CDD67AAC",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.acc.cert.saving.pools.purchas.cert.on.week",
+  "trackingId" : "1BFDB38E-1C85-4A01-9C19-CC34BB4C4321"
+}

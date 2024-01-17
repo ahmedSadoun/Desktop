@@ -1,0 +1,443 @@
+name: "MainOtherServicesFlow"
+trackingId: "1E3E735B-4788-48E8-8D33-081C6795C3BE"
+type: "task"
+version: "2.0"
+interface: {}
+configuration:
+  requiresAuthorization: false
+variables:
+- name: "corpOtherServicesEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.CORP.OTHER_SERVICES"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "corpOSCalcEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.CORP.OTHER_SERVICES.CALCULATORS"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "corpOSMutualFundsEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.CORP.OTHER_SERVICES.MUTUAL_FUNDS"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "outputMsg"
+  type: "string"
+  description: ""
+  metadata:
+    isFreeMarker: true
+  system: false
+defaultTransitions:
+  actions:
+    system.startTaskFlow: "switchFromStartSkillFlow"
+states:
+  invokeSurveyFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "SurveyFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  invokeRetailFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "RetailFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  switchFromStartSkillFlow:
+    component: "System.Switch"
+    properties:
+      variable: "skill.fromStartSkillFlow"
+    transitions:
+      actions:
+        "no": "invokeStartFlow"
+        "yes": "switchBotType"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  switchBotType:
+    component: "System.Switch"
+    properties:
+      variable: "user.botType"
+    transitions:
+      actions:
+        Retail: "invokeRetailOtherServicesFlow"
+        Corporate: "resolveOtherServicesEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  switchBotTypeForBack:
+    component: "System.Switch"
+    properties:
+      variable: "user.botType"
+    transitions:
+      actions:
+        Retail: "invokeRetailFlow"
+        Corporate: "invokeCorporateFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  calculatorOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${rb(outputMsg.value)}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetCorpOSChoiceVariable"
+        survey: "invokeSurveyFlow"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  switchOtherServicesChoice:
+    component: "System.Switch"
+    properties:
+      variable: "corpOtherServicesEntityChoices"
+    transitions:
+      actions:
+        Calculators: "resolveCalculatorsEntity"
+        Mutual Funds: "resolveMutualFundsEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  mutualFundsOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${rb(outputMsg.value)}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetCorpOSChoiceVariable"
+        survey: "invokeSurveyFlow"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  invokeStartFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "StartFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  invokeMainMenuFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "MainMenuFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  resolveCalculatorsEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('CORP.OTHER_SERVICES.CALCULATORS.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "corpOSCalcEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetCorpOSChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "setCalcOutputMsgVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  setMutualFundsOutputMsgVariable:
+    component: "System.SetVariable"
+    properties:
+      variable: "outputMsg"
+      value: "${'CORP.OTHER_SERVICES.MUTUAL_FUNDS.' + corpOSMutualFundsEntityChoices.value.value + '.MSG'}"
+    transitions:
+      next: "mutualFundsOutputMsg"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false
+  invokeExitFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "ExitFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  invokeCorporateFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "CorporateFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  resetCorpOSChoiceVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "corpOtherServicesEntityChoices"
+    transitions:
+      next: "resolveOtherServicesEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  invokeRetailOtherServicesFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "RetailOtherServicesFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  resolveOtherServicesEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('CORP.OTHER_SERVICES.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "corpOtherServicesEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "switchBotTypeForBack"
+        menu: "invokeMainMenuFlow"
+      next: "switchOtherServicesChoice"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  setCalcOutputMsgVariable:
+    component: "System.SetVariable"
+    properties:
+      variable: "outputMsg"
+      value: "${'CORP.OTHER_SERVICES.CALCULATORS.' + corpOSCalcEntityChoices.value.value + '.MSG'}"
+    transitions:
+      next: "calculatorOutputMsg"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false
+  resolveMutualFundsEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('CORP.OTHER_SERVICES.MUTUAL_FUNDS.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "corpOSMutualFundsEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetCorpOSChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "setMutualFundsOutputMsgVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false

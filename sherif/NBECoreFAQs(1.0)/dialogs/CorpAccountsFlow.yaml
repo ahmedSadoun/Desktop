@@ -1,0 +1,185 @@
+name: "CorpAccountsFlow"
+trackingId: "F9008A38-29D9-4507-9927-36D572430CF9"
+type: "task"
+version: "2.0"
+interface: {}
+configuration:
+  requiresAuthorization: false
+variables:
+- name: "corpAccountsEntityChoice"
+  type: "entity"
+  entityName: "NBE.CBE.CORP.ACCOUNTS"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "outputMsg"
+  type: "string"
+  description: ""
+  metadata:
+    isFreeMarker: true
+  system: false
+defaultTransitions:
+  actions:
+    system.startTaskFlow: "resolveCorpAccountsEntity"
+states:
+  invokeStartFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "StartFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  invokeSurveyFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "SurveyFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  resolveCorpAccountsEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('CORP.ACCOUNTS.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "corpAccountsEntityChoice"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "invokeMainMenuFlow"
+        menu: "invokeMainMenuFlow"
+      next: "setCorpAccountsOutputMsgVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  invokeMainMenuFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "MainMenuFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  invokeExitFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "ExitFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  setCorpAccountsOutputMsgVariable:
+    component: "System.SetVariable"
+    properties:
+      variable: "outputMsg"
+      value: "${'CORP.ACCOUNTS.' + corpAccountsEntityChoice.value.value + '.MSG'}"
+    transitions:
+      next: "corpAccountsOutputMsg"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false
+  corpAccountsOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${rb(outputMsg.value)}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetAccountChoicesVariable"
+        survey: "invokeSurveyFlow"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resetAccountChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "corpAccountsEntityChoice,outputMsg"
+    transitions:
+      next: "resolveCorpAccountsEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false

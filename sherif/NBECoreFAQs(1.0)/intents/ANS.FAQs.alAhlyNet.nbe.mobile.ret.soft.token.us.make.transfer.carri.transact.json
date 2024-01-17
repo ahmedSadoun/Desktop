@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - How can I activate the security codes application to carry out transfers and financial transactions?",
+    "trackingId" : "A420BBB5-8A81-4F30-8AB3-CDC2FDC7DF99",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - How can the soft token be used in making transfers and carrying out transactions?",
+    "trackingId" : "54CEFF9B-0DA3-4A17-A3D3-4A35DE928B9C",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.soft.token.us.make.transfer.carri.transact",
+  "trackingId" : "BABB8E4A-82CF-4F3A-83B6-BC636B0572D8"
+}

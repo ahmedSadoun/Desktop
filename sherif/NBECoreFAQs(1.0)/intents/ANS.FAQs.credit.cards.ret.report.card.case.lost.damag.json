@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - How do I report my credit card in case the card is lost/damaged?",
+    "trackingId" : "B6D6F8B3-3A22-4B0F-AEC6-2534099AD7EA",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - In the event of loss or damage to the credit card, what are the procedures that the customer must follow?",
+    "trackingId" : "367A166F-6334-40C7-A97F-574508E00152",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.credit.cards.ret.report.card.case.lost.damag",
+  "trackingId" : "6B8DB923-D127-4667-9493-F2D65DED44F7"
+}

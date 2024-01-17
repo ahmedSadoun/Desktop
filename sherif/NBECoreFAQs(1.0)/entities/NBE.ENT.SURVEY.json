@@ -1,0 +1,41 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Weak",
+    "extensionType" : null,
+    "synonyms" : [ "weak", "ضعيف" ],
+    "trackingId" : "9CA9F2E4-5394-40D5-B34F-609147AFA986"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Acceptable",
+    "extensionType" : null,
+    "synonyms" : [ "acceptable", "مقبول" ],
+    "trackingId" : "33C638EE-6825-4176-B838-5DDF1B4149BA"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Good",
+    "extensionType" : null,
+    "synonyms" : [ "good", "جيد" ],
+    "trackingId" : "715BE82E-7A25-4C1D-86F6-FD90024C4509"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Very good",
+    "extensionType" : null,
+    "synonyms" : [ "very good", "جيد جدًا", "جيد جدا" ],
+    "trackingId" : "589DCC23-5B0D-4BFD-81B9-08BC5A24FCDD"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Excellent",
+    "extensionType" : null,
+    "synonyms" : [ "excellent", "ممتاز" ],
+    "trackingId" : "7529135A-0EF3-4396-8D39-ABF63B2B9175"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.SURVEY",
+  "promptForDisambiguation" : true,
+  "trackingId" : "4ECB94B9-4445-46B3-B706-DF34E1E8ADD2",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

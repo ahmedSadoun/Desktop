@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How can AlAhli points be exchanged for electronic vouchers?",
+    "trackingId" : "696A2F7F-41DA-426D-81E4-B11F0AB5E22E",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How can I redeem my AL-AHLY Points to e-vouchers?",
+    "trackingId" : "1B59CEAC-9273-4172-839F-BA131370E9EA",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyPoints.redeem.e.voucher",
+  "trackingId" : "81BCB23C-FEE6-471E-985D-56332F7CCA5F"
+}

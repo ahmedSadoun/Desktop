@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Can the hard token service be used via Al Ahly Net/NBE Mobile?",
+    "trackingId" : "6E67FF8F-DBE0-4541-9612-A3BC7AA26DB7",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Is it possible to use the services of the security code device through Al-Ahly Net / Al-Ahly Mobile?",
+    "trackingId" : "1D390365-2B4E-4DEC-92A7-7BCA23250FA2",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.hard.token.us",
+  "trackingId" : "EBCCA923-184F-4050-BB6C-1C2AFDC764A4"
+}

@@ -1,0 +1,31 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "CarouselPrompt",
+    "fullName" : "CarouselPrompt",
+    "type" : "STRING",
+    "maxPrompts" : 1,
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "prompts" : [ {
+      "sequenceNr" : 1,
+      "text" : "${rb('cbe.AnswerCarouselNER.CarouselPrompt.Prompt1')}",
+      "type" : "DEFAULT"
+    } ],
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "C18C3E74-AC6E-4D0D-A921-6F572A9DA39A",
+    "children" : null
+  } ],
+  "eventHandler" : "EventHandlers:AnswerCarouselNER_EEH",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.AnswerCarouselNER",
+  "promptForDisambiguation" : true,
+  "trackingId" : "54BC3CEE-423E-4277-91C1-8025A532539F",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

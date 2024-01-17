@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can I increase my existing loan or obtain more than one financing?",
+    "trackingId" : "E1F28CD7-4E22-4D36-AA04-FF49610386AF",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can I increase the amount of an outstanding loan or obtain more than one loan?",
+    "trackingId" : "E81F25F6-3C2E-4384-8522-651620688F22",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.personal.loan.increas.amount.outstand.obtain.on",
+  "trackingId" : "B3FD9C31-F1A6-48A5-B8ED-99F3E21C5128"
+}

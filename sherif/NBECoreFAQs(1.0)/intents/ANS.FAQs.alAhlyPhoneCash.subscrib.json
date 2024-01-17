@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How can I subscribe to AL Ahly PhoneCash?",
+    "trackingId" : "20700C96-3F8E-4E34-A0D7-BCEC5B673384",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How can I subscribe to Al Ahly Phone Cash wallet?",
+    "trackingId" : "DC49DCF8-30CB-40A1-97D6-F07A7C01B6B4",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyPhoneCash.subscrib",
+  "trackingId" : "9A8F3E0D-11DB-4114-9BCC-497A5AFAC7DD"
+}

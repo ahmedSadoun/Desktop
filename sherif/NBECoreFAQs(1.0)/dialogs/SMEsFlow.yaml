@@ -1,0 +1,221 @@
+name: "SMEsFlow"
+trackingId: "8CE237C2-BF3F-4B0A-92A7-85BE5310067C"
+type: "task"
+version: "2.0"
+interface: {}
+configuration:
+  requiresAuthorization: false
+variables:
+- name: "smesOutputMsg"
+  type: "string"
+  description: ""
+  metadata:
+    isFreeMarker: true
+  system: false
+- name: "smesEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.CORP.SMES"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+defaultTransitions:
+  actions:
+    system.startTaskFlow: "switchFromStartSkill"
+states:
+  invokeStartFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "StartFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  invokeSurveyFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "SurveyFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  switchSMEsChoice:
+    component: "System.Switch"
+    properties:
+      variable: "smesEntityChoices"
+    transitions:
+      actions:
+        Digital Banking: "invokeDigitalBankingFlow"
+      next: "smeOutputMsg"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  resolveSMEsEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('CORP.SMES.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "smesEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "invokeCorporateFlow"
+        menu: "invokeMainMenuFlow"
+      next: "switchSMEsChoice"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  invokeMainMenuFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "MainMenuFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  smeOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "To be provided by NBE"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetSMEsChoiceVariable"
+        survey: "invokeSurveyFlow"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  invokeExitFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "ExitFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  invokeCorporateFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "CorporateFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  resetSMEsChoiceVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "smesEntityChoices,smesOutputMsg"
+    transitions:
+      next: "resolveSMEsEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  switchFromStartSkill:
+    component: "System.Switch"
+    properties:
+      variable: "skill.fromStartSkillFlow"
+    transitions:
+      actions:
+        "no": "invokeStartFlow"
+        "yes": "resolveSMEsEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  invokeDigitalBankingFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters:
+      - name: "fromSME"
+        value: "yes"
+      flow: "DigitalBankingFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false

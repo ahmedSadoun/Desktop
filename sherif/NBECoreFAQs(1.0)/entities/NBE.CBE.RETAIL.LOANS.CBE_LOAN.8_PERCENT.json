@@ -1,0 +1,33 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "CurrentCBE8PercentList",
+    "fullName" : "CurrentCBE8PercentList",
+    "type" : "ENTITY",
+    "entityName" : "NBE.ENT.RETAIL.LOANS.CBE_LOAN.8_PERCENT",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "NBE.ENT.RETAIL.LOANS.CBE_LOAN.8_PERCENT",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "0A769AEB-BC76-474A-8641-566FE3F6922B",
+    "children" : null
+  } ],
+  "eventHandler" : "EventHandlers:RetailLoansCBE8Percentage",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.RETAIL.LOANS.CBE_LOAN.8_PERCENT",
+  "promptForDisambiguation" : true,
+  "trackingId" : "4D679BCF-5954-43D0-96AD-FE77919177A4",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

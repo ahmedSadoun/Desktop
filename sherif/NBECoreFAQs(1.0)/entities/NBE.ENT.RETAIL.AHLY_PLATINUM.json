@@ -1,0 +1,41 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Savings Certificates & Deposits",
+    "extensionType" : null,
+    "synonyms" : [ "Savings Certificates and Deposits", "شهادات ادخار و ودائع", "savings certificates and deposits" ],
+    "trackingId" : "541A364E-4D4C-4089-B67D-2FA58372149B"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Accounts & Loans",
+    "extensionType" : null,
+    "synonyms" : [ "Accounts and Loans", "الحسابات و القروض", "حسابات و قروض", "accounts and loans" ],
+    "trackingId" : "FFF50850-F71C-4EC3-B8FD-230A1F6F9433"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al Ahly Platinum Segments",
+    "extensionType" : null,
+    "synonyms" : [ "segments", "شرائح الاهلي بلاتينم" ],
+    "trackingId" : "DAD3212A-FBAB-421E-92D2-ABA4C4C43952"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Non-Financial Services",
+    "extensionType" : null,
+    "synonyms" : [ "Non Financial", "الخدمات الغير مالية", "غير مالية", "non financial" ],
+    "trackingId" : "5723E28F-05F8-439B-8B72-8EE0E724D91A"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al Ahly Platinum at a Glance",
+    "extensionType" : null,
+    "synonyms" : [ "glance", "عن الاهلي بلاتينم", "نبذة عن الاهلي بلاتينم", "brief", "about alhy platinum" ],
+    "trackingId" : "F5D3087C-629A-4C6E-8050-E3E0B6B7FFAC"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.AHLY_PLATINUM",
+  "promptForDisambiguation" : true,
+  "trackingId" : "B2AA0037-6AD7-4886-9154-431E59346D4F",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

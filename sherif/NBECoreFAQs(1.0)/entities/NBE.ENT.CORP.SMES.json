@@ -1,0 +1,41 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Small Enterprise Sectors",
+    "extensionType" : null,
+    "synonyms" : [ "small enterprise sector", "small sector", "small sectors", "small enterprise", "small enterprises", "قطاعات المشروعات الصغيرة", "مشروعات صغيرة", "المشروعات الصغيرة" ],
+    "trackingId" : "D42F9C5D-4AE1-44BE-93BC-CBC832B18040"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al Ahly for Non-Financial Services",
+    "extensionType" : null,
+    "synonyms" : [ "Al Ahly for Non Financial Services", "ahly for non financial services", "ahly for non-financial services", "ahly non-financial servies", "al ahly non financial services", "al ahly non-financial services", "ahly non financial services", "الأهلي للخدمات غير المالية", "غير مالية", "non-financial", "non financial" ],
+    "trackingId" : "33F6CB14-C885-42F2-A705-F9A46E195320"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Banking Services SMEs",
+    "extensionType" : null,
+    "synonyms" : [ "banking smes", "banking sme", "banking services sme", "الخدمات المصرفية المشروعات الصغيرة والمتوسطة", "مشروعات صغيرة ومتوسطة", "SME", "SME services" ],
+    "trackingId" : "EAE5E700-FFDB-46C2-AC82-DE62A9DA770E"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Medium Enterprise Units",
+    "extensionType" : null,
+    "synonyms" : [ "medium units", "medium enterprise", "medium enterprises", "وحدات المشروعات المتوسطة", "مشروعات متوسطة", "المشروعات المتوسطة" ],
+    "trackingId" : "0852F9DE-4161-4BF0-A134-EC748C69848D"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Digital Banking",
+    "extensionType" : null,
+    "synonyms" : [ "digital", "الخدمات الالكترونية" ],
+    "trackingId" : "12F43116-3DC7-4CDD-A80E-B81DEB4D598F"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.CORP.SMES",
+  "promptForDisambiguation" : true,
+  "trackingId" : "4BA79CB5-C4FC-4FD0-BAB5-46F7DC7D71A7",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

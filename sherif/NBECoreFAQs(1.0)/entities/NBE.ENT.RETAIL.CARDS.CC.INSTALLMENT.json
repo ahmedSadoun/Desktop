@@ -1,0 +1,35 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "LOP-Retail",
+    "extensionType" : null,
+    "synonyms" : [ "lop-retail", "lop retail", "تقسيط المشتريات عبر الهاتف", "تقسيط مشتريات" ],
+    "trackingId" : "823CDC2D-00F0-4BB0-B744-C824CB72A478"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "LOP-Cash",
+    "extensionType" : null,
+    "synonyms" : [ "lop-cash", "lop cash", "تقسيط السحب النقدي عبر الهاتف", "السحب النقدي" ],
+    "trackingId" : "BFF10007-DE51-4C49-B078-5495BE798A9A"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al Ahly Discounts",
+    "extensionType" : null,
+    "synonyms" : [ "al ahly discounts", "ahly discounts", "al ahly discount", "ahly discount", "discounts", "الاهلي خصومات", "خصم", "خصومات", "discount" ],
+    "trackingId" : "1D263FA3-C699-446D-AE35-CBA275E0CEFE"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al Ahly Installment",
+    "extensionType" : null,
+    "synonyms" : [ "al ahly installment", "ahly installment", "الاهلي تقسيط", "تقسيط", "installments" ],
+    "trackingId" : "0E32A156-0F70-4C4E-9F28-D429F5447FB1"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.CARDS.CC.INSTALLMENT",
+  "promptForDisambiguation" : true,
+  "trackingId" : "FC2F154F-2AC5-402A-B2D6-E08D82FF205C",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

@@ -1,0 +1,117 @@
+name: "BotTypeFlow"
+trackingId: "25892D32-F45C-4C3A-97D1-862FB13CDEA9"
+type: "task"
+version: "2.0"
+description: "Flow where the user will choose the user.botType"
+interface: {}
+configuration:
+  requiresAuthorization: false
+variables:
+- name: "botType"
+  type: "entity"
+  entityName: "NBE.ENT.BOT_TYPE"
+  description: "This Variable to be used in resolve entity component to show choices to user"
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "selectedType"
+  type: "string"
+  description: "This will hold the choice of the user"
+  metadata:
+    isFreeMarker: true
+  system: false
+defaultTransitions:
+  actions:
+    system.startTaskFlow: "resolveBotTypeEntity"
+states:
+  invokeStartFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "StartFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  invokeRetailFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "RetailFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  invokeCorporateFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "CorporateFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  setUserScopeBotTypeVariable:
+    description: "To hold the choice in the session for the user"
+    component: "System.SetVariable"
+    properties:
+      variable: "user.botType"
+      value: "${botType.value.value}"
+    transitions:
+      next: "switchBotType"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false
+  switchBotType:
+    component: "System.Switch"
+    properties:
+      variable: "botType"
+    transitions:
+      actions:
+        Retail: "invokeRetailFlow"
+        Corporate: "invokeCorporateFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  resolveBotTypeEntity:
+    description: "Retail / Corporate (NBE.ENT.BOT_TYPE)Entity"
+    component: "System.CommonResponse"
+    properties:
+      maxPrompts: 3
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('WelcomeBotTypeMsg')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb(action.label)}"
+            type: "postback"
+      variable: "botType"
+      processUserMessage: true
+    transitions:
+      actions:
+        system.textReceived: "invokeStartFlow"
+      next: "setUserScopeBotTypeVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false

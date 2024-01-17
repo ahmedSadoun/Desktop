@@ -1,0 +1,59 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "NBE PhoneCash- Self registration",
+    "extensionType" : null,
+    "synonyms" : [ "NBE PhoneCash", "NBE Phone Cash - Self registration", "NBE PhoneCash - Self registration", "NBE Phone Cash", "PhoneCash", "Phone Cash", "PhoneCash- Self registration", "Phone Cash- Self registration", "PhoneCash - Self registration", "Phone Cash - Self registration" ],
+    "trackingId" : "81B90C17-F0AB-47ED-B4A5-671315B4A3CC"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al Ahly Net/NBE Mobile- Self Registration",
+    "extensionType" : null,
+    "synonyms" : [ "Al Ahly Net NBE Mobile- Self Registration", "Al Ahly Net/NBE Mobile - Self Registration", "Al Ahly Net NBE Mobile - Self Registration", "Al Ahly Net-Self Registration", "Al Ahly Net - Self Registration", "NBE Mobile- Self Registration", "NBE Mobile - Self Registration" ],
+    "trackingId" : "9E5A0CDD-B252-4FA3-A9B5-48FC370A44AA"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al Ahly Net/ NBE Mobile- Activation",
+    "extensionType" : null,
+    "synonyms" : [ "Al Ahly Net/NBE Mobile- Activation", "Al Ahly Net NBE Mobile- Activation", "Al Ahly Net/ NBE Mobile - Activation", "Al Ahly Net- Activation", "Al Ahly Net - Activation", "NBE Mobile- Activation", "NBE Mobile - Activation" ],
+    "trackingId" : "56F0B578-E083-436D-AFAF-6ED099333A81"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "E-mail updating service",
+    "extensionType" : null,
+    "synonyms" : [ "e mail updating", "e mail updating service", "email updating service", "email service", "E-mail updating", "e-mail updating", "e-mail service" ],
+    "trackingId" : "E9BA87EB-8D56-4009-AE42-FB1B45D10F62"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "IBAN Inquiries",
+    "extensionType" : null,
+    "synonyms" : [ "IBAN", "iban inq", "iban inquiries" ],
+    "trackingId" : "7D589988-0904-409B-8941-4B1B82E6B3DF"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Inquiry about new installment amount after deferment",
+    "extensionType" : null,
+    "synonyms" : [ "new installment amount", "amount after deferment", "inquirty about new installment", "installment amount", "after deferment" ],
+    "trackingId" : "8072FFDA-9AB3-48AC-8A34-E3079B3ADE03"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Subscribe to Electronic Statements of credit cards",
+    "extensionType" : null,
+    "synonyms" : [ "subscribe to electronic statments", "subscribe credit cards", "credit cards", "electroninc statements of credit cards" ],
+    "trackingId" : "77B28B64-0F09-4E4B-8947-A1FFF1BBF2FC"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Inquiry about the Incoming Electronic Foreign Remittances",
+    "extensionType" : null,
+    "synonyms" : [ "incoming electronic", "incoming electronic foreign remittances", "foreign remittances", "inquiry about foreign remittances" ],
+    "trackingId" : "528653EF-AD95-41DE-BF79-3A92E1C06FFB"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.SELF_SERVICES",
+  "promptForDisambiguation" : true,
+  "trackingId" : "F07E9A03-38A3-4F37-B7A3-0B27331ADDDF",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

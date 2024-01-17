@@ -1,0 +1,23 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "POS service",
+    "extensionType" : null,
+    "synonyms" : [ "pos", "خدمة ماكينة POS" ],
+    "trackingId" : "0BBD42B7-FAF5-46A7-A391-B93049D0E86B"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Installment service",
+    "extensionType" : null,
+    "synonyms" : [ "installment", "خدمة التقسيط", "تقسيط" ],
+    "trackingId" : "F617EA39-6420-4AB5-9537-4D1FB44FA767"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.CORP.DB.QR.AVAILABLE_SERVICES",
+  "promptForDisambiguation" : true,
+  "trackingId" : "F256CC63-F68B-4B2B-B74C-12D9A5603B3B",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

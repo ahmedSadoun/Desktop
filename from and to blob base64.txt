@@ -1,0 +1,53 @@
+CREATE OR REPLACE
+  FUNCTION BLOB_TO_BASE64(
+                          P_BLOB BLOB
+                         )
+    RETURN CLOB
+    IS
+        V_CLOB CLOB;
+        V_CHUNK_SIZE PLS_INTEGER := 24000;
+    BEGIN
+        FOR V_I IN 0..TRUNC((DBMS_LOB.GETLENGTH(P_BLOB) - 1 ) / V_CHUNK_SIZE) LOOP
+          V_CLOB := V_CLOB || UTL_RAW.CAST_TO_VARCHAR2(
+                                                       UTL_ENCODE.BASE64_ENCODE(
+                                                                                DBMS_LOB.SUBSTR(
+                                                                                                P_BLOB,
+                                                                                                V_CHUNK_SIZE,
+                                                                                                V_I * V_CHUNK_SIZE + 1
+                                                                                               )
+                                                                               )
+                                                      );
+        END LOOP;
+        RETURN V_CLOB;
+END;
+/
+CREATE OR REPLACE
+  FUNCTION BASE64_TO_BLOB(
+                          P_BASE64_CLOB CLOB
+                         )
+    RETURN BLOB
+    IS
+        V_BLOB BLOB;
+        V_CHUNK_SIZE PLS_INTEGER := 24000;
+        V_CHUNK VARCHAR2(24000);
+    BEGIN
+        DBMS_LOB.CREATETEMPORARY(V_BLOB,FALSE,DBMS_LOB.CALL);
+        FOR V_I IN 0..TRUNC((DBMS_LOB.GETLENGTH(P_BASE64_CLOB) - 1 ) / V_CHUNK_SIZE) LOOP
+          DBMS_LOB.APPEND(
+                          V_BLOB,
+                          TO_BLOB(
+                                  UTL_ENCODE.BASE64_DECODE(
+                                                           UTL_RAW.CAST_TO_RAW(
+                                                                               DBMS_LOB.SUBSTR(
+                                                                                               P_BASE64_CLOB,
+                                                                                               V_CHUNK_SIZE,
+                                                                                               V_I * V_CHUNK_SIZE + 1
+                                                                                              )
+                                                                              )
+                                                          )
+                                 )
+                         );
+        END LOOP;
+        RETURN V_BLOB;
+END;
+/

@@ -1,0 +1,83 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Visa Classic",
+    "extensionType" : null,
+    "synonyms" : [ "visa classic", "فيزا كلاسيك" ],
+    "trackingId" : "C0B7F49A-E3BA-4E0C-8414-41B887478290"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Visa Gold",
+    "extensionType" : null,
+    "synonyms" : [ "visa gold", "فيزا جولد" ],
+    "trackingId" : "DFE89026-45B7-464C-93E7-80212EF5D6E0"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "MasterCard Standard",
+    "extensionType" : null,
+    "synonyms" : [ "mastercard standard", "ماستركارد ستاندرد" ],
+    "trackingId" : "5B3BCBC0-EA99-4C0F-B1FB-476D323D17C3"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "MasterCard Egyptair",
+    "extensionType" : null,
+    "synonyms" : [ "mastercard egyptair", "ماستركارد مصر للطيران" ],
+    "trackingId" : "1A962F3B-160B-43FC-A758-DF40ECFBCE01"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "MasterCard Titanium",
+    "extensionType" : null,
+    "synonyms" : [ "mastercard titanium", "ماستركارد تيتانيوم" ],
+    "trackingId" : "D5AA90A1-2851-4CF5-8D01-7D8C04079278"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Visa Platinum",
+    "extensionType" : null,
+    "synonyms" : [ "visa platinum", "فيزا بلاتينم" ],
+    "trackingId" : "E07C9958-98DA-4CB8-A14C-46F4A67D0E4E"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Visa Signature",
+    "extensionType" : null,
+    "synonyms" : [ "visa signature", "فيزا سيغنتشر", "فيزا سيجنتشر" ],
+    "trackingId" : "19849100-464E-4C7D-86CE-35F1F0DCB087"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "MasterCard Manchester United",
+    "extensionType" : null,
+    "synonyms" : [ "mastercard manchester united", "ماستركارد مانشيستر يونايتد" ],
+    "trackingId" : "B9AD0701-2168-48D8-8D20-8C5E50FB288C"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "MasterCard Platinum",
+    "extensionType" : null,
+    "synonyms" : [ "mastercard platinum", "ماستركارد بلاتينيم" ],
+    "trackingId" : "87FCFB53-A864-474B-8149-346F37056602"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "MasterCard World",
+    "extensionType" : null,
+    "synonyms" : [ "mastercard world", "ماستركارد وورلد" ],
+    "trackingId" : "CD230EF8-99D6-4E28-BC7D-3C7451DAFFEE"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Visa Infinite",
+    "extensionType" : null,
+    "synonyms" : [ "visa infinite", "فيزا انفينيت" ],
+    "trackingId" : "A0E4DCC8-4384-4381-9CA6-F3C5AD7EBBD1"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "MasterCard World Elite",
+    "extensionType" : null,
+    "synonyms" : [ "mastercard world elite", "ماستركارد وورلد ايليت" ],
+    "trackingId" : "A88FEA20-DAD9-4A91-9386-BC240179977E"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.CARDS.CC.CREDIT_CARD_TYPES",
+  "promptForDisambiguation" : true,
+  "trackingId" : "C162A193-2595-464A-816B-37B9EA979339",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

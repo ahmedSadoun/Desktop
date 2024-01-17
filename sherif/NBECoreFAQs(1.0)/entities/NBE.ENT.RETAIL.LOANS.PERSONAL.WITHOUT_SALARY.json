@@ -1,0 +1,35 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Government & Public Sector Employees",
+    "extensionType" : null,
+    "synonyms" : [ "gov", "public sector" ],
+    "trackingId" : "A1A08CBD-89C0-45D2-BDA7-CFA4E1601111"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Private and Multinational Sector",
+    "extensionType" : null,
+    "synonyms" : [ "private sector", "multinational sector" ],
+    "trackingId" : "E15EA36A-267F-4155-A3D3-652ED9C525D4"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Petroleum Sector",
+    "extensionType" : null,
+    "synonyms" : [ "petro sector" ],
+    "trackingId" : "90F40C9A-0F81-463D-BCCA-9A2E5A658B07"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Bankers",
+    "extensionType" : null,
+    "synonyms" : [ "banker" ],
+    "trackingId" : "86F24029-3F11-4015-BCE7-2B980F7394A5"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.LOANS.PERSONAL.WITHOUT_SALARY",
+  "promptForDisambiguation" : true,
+  "trackingId" : "A462DD14-C444-49B0-8D71-CD1826F0AEA3",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

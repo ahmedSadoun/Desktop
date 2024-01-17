@@ -1,0 +1,152 @@
+name: "CorpCardsFlow"
+trackingId: "7D59FB78-F786-4890-9652-0B195C556A83"
+type: "task"
+version: "2.0"
+interface: {}
+configuration:
+  requiresAuthorization: false
+variables:
+- name: "corpCardsCBEChoices"
+  type: "entity"
+  entityName: "NBE.CBE.CORP.CARDS"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "offset"
+  type: "int"
+  defaultValue: 1
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "cardsMenuChoice"
+  type: "string"
+  description: ""
+  metadata:
+    isFreeMarker: true
+  system: false
+- name: "toBeResolved"
+  type: "string"
+  description: ""
+  metadata:
+    isFreeMarker: true
+  system: false
+defaultTransitions:
+  actions:
+    system.startTaskFlow: "resolveCorpCardsBag"
+states:
+  invokeStartFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "StartFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  invokeSurveyFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "SurveyFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  resetCBEVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "cardsMenuChoice"
+    transitions:
+      next: "resolveCorpCardsBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  invokeMainMenuFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "MainMenuFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  resolveCorpCardsBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "corpCardsCBEChoices"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        previousPage: "resolveCorpCardsBag"
+        nextPage: "resolveCorpCardsBag"
+        resolveAgain: "resolveCorpCardsBag"
+        back: "invokeMainMenuFlow"
+        menu: "invokeMainMenuFlow"
+      next: "displayCBEOutput"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false
+  invokeExitFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "ExitFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  displayCBEOutput:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetCBEVariable"
+        survey: "invokeSurveyFlow"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false

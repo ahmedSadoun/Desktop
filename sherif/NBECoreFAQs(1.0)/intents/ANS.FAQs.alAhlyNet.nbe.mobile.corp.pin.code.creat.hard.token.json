@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - How can a PIN code be created for the hard token for Al Ahly Net/NBE Mobile?",
+    "trackingId" : "7CE79E8A-D6F1-425E-BC40-A668C2959291",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - How to set a password for the security code device on Al-Ahly Net / Al-Ahly Mobile service?",
+    "trackingId" : "9FB174D9-6D3E-47D0-8296-4FB564622818",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.pin.code.creat.hard.token",
+  "trackingId" : "EA54368D-16FC-48E2-BF75-E5959267AA18"
+}

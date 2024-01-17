@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - What are the credit cards available at the National Bank of Egypt?",
+    "trackingId" : "5A438430-9E89-4C3E-B6AE-CB430BBC5E3A",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - What are the credit cards offered by NBE?",
+    "trackingId" : "CE7EE3B1-B4FB-4434-9B6C-363EDDEFD283",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.credit.cards.ret.offer",
+  "trackingId" : "15BD5F0F-D0A1-44DF-991E-5193FA1E5A3E"
+}

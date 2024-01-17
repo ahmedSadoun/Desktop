@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What are the durations of certificates in local currency available at the National Bank of Egypt??",
+    "trackingId" : "7251676F-646D-4DAC-A590-C4925CED1DA8",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What are the terms of the available local currency certificates issued by NBE?",
+    "trackingId" : "251204D2-8457-46CD-96DD-E0A165CDC2F0",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.acc.cert.saving.pools.term.avail.local.currenc.cert.issu",
+  "trackingId" : "88AA66CE-2607-4E09-AE64-92D1B2C560BB"
+}

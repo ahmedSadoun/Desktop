@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What if the mobile SIM card is stolen/lost?",
+    "trackingId" : "FDB5FA79-1FBE-49D4-A627-6D937884ECEE",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What if the mobile SIM linked to the wallet is stolen/lost?",
+    "trackingId" : "E07E9566-52A6-41CE-B267-D227ED7D9223",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyPhoneCash.mobil.sim.link.wallet.stolen.lost",
+  "trackingId" : "900011AF-50CA-4D6D-B8EC-C08B4D831EFC"
+}

@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Advantages of Al Ahly Payroll Card Program",
+    "trackingId" : "C1EB03D5-36D8-4494-953F-2AA68E94BB43",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Advantages of Al-Ahly for salaries on the cards",
+    "trackingId" : "EB6F7F49-90D1-4AF2-933D-7DEB77FAB15B",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.al.ahly.payroll.card.program.advantag",
+  "trackingId" : "CB902848-C165-40BF-AC50-F0BA485A8C65"
+}

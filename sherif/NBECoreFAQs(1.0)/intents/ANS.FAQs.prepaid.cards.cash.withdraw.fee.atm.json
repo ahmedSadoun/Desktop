@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How much is the cash withdrawal fee from NBE's ATMs?",
+    "trackingId" : "57DEA6D3-3CA6-46FB-B9E4-A06DFC7EBA15",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What is the fee for withdrawing cash from our bank machines?",
+    "trackingId" : "395E2332-04EA-49A7-A377-4CCB646C1B19",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.prepaid.cards.cash.withdraw.fee.atm",
+  "trackingId" : "CC594D14-9459-4780-9F3B-E79CE14777D6"
+}

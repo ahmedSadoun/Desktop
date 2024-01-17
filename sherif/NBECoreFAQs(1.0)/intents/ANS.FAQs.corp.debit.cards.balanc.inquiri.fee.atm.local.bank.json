@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - How much is the balance inquiry fee from ATMs of other local banks?",
+    "trackingId" : "FCBCFE62-D05F-41C0-B5BE-98F3A78F08A9",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - What is the fee for balance inquiry from local bank machines?",
+    "trackingId" : "732B0B8B-0A06-454D-985D-004D4FD5FB54",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.corp.debit.cards.balanc.inquiri.fee.atm.local.bank",
+  "trackingId" : "C51EB384-E35D-4DA8-AB3A-A30B1D099F03"
+}

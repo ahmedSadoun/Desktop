@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What is the card maximum daily withdrawal limit?",
+    "trackingId" : "C412173B-C55F-441F-AB2D-EB6D9E42AF62",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What is the daily maximum withdrawal from the card?",
+    "trackingId" : "DBFAF2DD-B4E8-4E1B-8C22-F65431E8F48B",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.prepaid.cards.card.max.daili.withdraw.limit",
+  "trackingId" : "5B33C55D-5BD3-46A5-A24B-0EE44A6518D4"
+}

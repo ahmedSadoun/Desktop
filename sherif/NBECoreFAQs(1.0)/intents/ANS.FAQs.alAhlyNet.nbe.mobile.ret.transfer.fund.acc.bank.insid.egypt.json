@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - Can I transfer funds to accounts at other banks inside Egypt?",
+    "trackingId" : "443387A5-F939-4D03-AAC6-7FF3D29C4FBD",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - Is it possible to transfer to accounts in other banks inside Egypt?",
+    "trackingId" : "08C77433-8CA3-40D7-913A-B7F035E0AFC9",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.transfer.fund.acc.bank.insid.egypt",
+  "trackingId" : "A09488EB-20C0-495B-8E66-D3D63792DF4F"
+}

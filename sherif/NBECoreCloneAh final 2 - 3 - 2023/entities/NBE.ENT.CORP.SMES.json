@@ -1,0 +1,41 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Small Enterprise Sectors",
+    "extensionType" : null,
+    "synonyms" : [ "small enterprise sector", "small sector", "small sectors", "small enterprise", "small enterprises", "قطاعات المشروعات الصغيرة", "مشروعات صغيرة", "المشروعات الصغيرة" ],
+    "trackingId" : "D6DF0546-78F4-49CB-90FF-22854B6619D1"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al Ahly for Non-Financial Services",
+    "extensionType" : null,
+    "synonyms" : [ "Al Ahly for Non Financial Services", "ahly for non financial services", "ahly for non-financial services", "ahly non-financial servies", "al ahly non financial services", "al ahly non-financial services", "ahly non financial services", "الأهلي للخدمات غير المالية", "غير مالية", "non-financial", "non financial" ],
+    "trackingId" : "FF961891-BDD3-4DCB-A9DD-AD1CEDB8F992"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Banking Services SMEs",
+    "extensionType" : null,
+    "synonyms" : [ "banking smes", "banking sme", "banking services sme", "الخدمات المصرفية المشروعات الصغيرة والمتوسطة", "مشروعات صغيرة ومتوسطة", "SME", "SME services" ],
+    "trackingId" : "A58801A7-2C0C-42B1-94BB-5FD2D94110AF"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Medium Enterprise Units",
+    "extensionType" : null,
+    "synonyms" : [ "medium units", "medium enterprise", "medium enterprises", "وحدات المشروعات المتوسطة", "مشروعات متوسطة", "المشروعات المتوسطة" ],
+    "trackingId" : "B0963A42-CDD5-4182-9898-A336FC9B3175"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Digital Banking",
+    "extensionType" : null,
+    "synonyms" : [ "digital", "الخدمات الالكترونية" ],
+    "trackingId" : "C3FBE8CA-66C0-4CB7-81C3-B70B11CFD4C3"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.CORP.SMES",
+  "promptForDisambiguation" : true,
+  "trackingId" : "218757DA-B18C-478B-A218-B5D0FBC10861",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

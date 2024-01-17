@@ -1,0 +1,57 @@
+
+declare
+user_pk number;
+ auth_value number;
+ curs_data  SYS_REFCURSOR;
+
+BEGIN
+   
+    INSERT INTO new_users (
+        first_name,
+        last_name,
+        full_name,
+        age,
+        date_of_birth,
+        user_email,
+        user_img,
+        filename,
+        mimetype,
+        password
+    ) VALUES (
+        :first_name,
+        :last_name,
+        :full_name,
+        :age,
+        to_date(:date_of_birth,'YYYY-MM-DD'),
+        :email,
+        clob_to_blob(:user_img),
+        :file_name,
+       :imgMimeType,
+        app_user_security.get_hash(:user_password)
+
+    )return person_id into user_pk;
+    
+     
+    OPEN curs_data FOR SELECT
+REGEXP_SUBSTR(:userAuthority, '[^,]+', 1, level) AS parts
+FROM dual
+CONNECT BY REGEXP_SUBSTR(:userAuthority, '[^,]+', 1, level) IS NOT NULL;
+
+LOOP
+    FETCH curs_data INTO auth_value;
+    EXIT WHEN ( curs_data%notfound );
+    insert into users_roles (new_user_pk_fk, role_pk_fk) values (user_pk ,auth_value );
+END LOOP;
+
+CLOSE curs_data;
+    :user_id := user_pk;
+    
+    :statusmsg := 'Saved Successfully';
+    :status := '200';
+--    dbms_output.put_line('messagejpayload ' || to_char(pid));
+EXCEPTION
+    WHEN OTHERS THEN
+        :statusmsg := 'An error happend while saving ' || sqlerrm;
+        :status := '400';
+        htp.print(sqlerrm);
+END;

@@ -1,0 +1,420 @@
+-- do this for every single messages.
+ OPEN curs_conv_users FOR SELECT
+                                 user_pk,
+                                 user_name
+                             FROM
+                                 conv_users
+                             WHERE
+                                 conv_pk_fk = conv_id;
+    LOOP
+        FETCH curs_conv_users INTO
+            user_pk,
+            user_name;
+        EXIT WHEN ( curs_conv_users%notfound );
+        IF ( '"'
+             || sender
+             || '"' = user_name ) THEN
+            FOR indx IN 0..l_messages.get_size - 1 LOOP
+            message := l_messages.get(indx).stringify();
+                INSERT INTO messages (
+                    user_pk_fk,
+                    message
+                ) VALUES (
+                    user_pk,
+                    message
+                ) RETURNING message_pk INTO message_id;
+                 dbms_output.put_line('the message id is '||message_id);
+                messages_pk_fks(indx) := message_id;
+            END LOOP;
+        ELSE
+            recepiant_id := user_pk;
+              dbms_output.put_line('the recepiant id is '||message_id);
+        END IF;
+    END LOOP;
+    -- loop through the messages ids array. and add the recepiant with the message id.
+    FOR msgindx IN 0..messages_pk_fks.count - 1 LOOP
+        dbms_output.put_line('the message id is ' || to_char(messages_pk_fks(msgindx)));
+        INSERT INTO recepiant (
+            user_pk_fk,
+            message_pk_fk
+        ) VALUES (
+            recepiant_id,
+            messages_pk_fks(msgindx)
+        );
+
+    END LOOP;
+
+
+___________________________________________________________________________________________________
+-- bukl save messages 
+--"F_message":{"sender_user_name":"user","messages":["صباح الخير"] , "conv_id":"3"}
+DECLARE
+    object_json      json_object_t;
+    conv_id          NUMBER(10);
+    curs_conv_users  SYS_REFCURSOR;
+    curs_messages    SYS_REFCURSOR;
+    user_pk          conv_users.user_pk%TYPE;
+    user_name        conv_users.user_name%TYPE;
+    pMessage          VARCHAR2(500);
+    TYPE intarray IS
+        TABLE OF NUMBER INDEX BY PLS_INTEGER;
+    messages_pk_fks  intarray;
+    l_messages       json_array_t;
+    message_id       NUMBER(10);
+    recepiant_id     NUMBER(10);
+    sender           VARCHAR2(400);
+BEGIN
+--    object_json := json_object_t.parse(:body_text); -- get the request and parse it
+--    sender := object_json.get_string('sender_user_name');
+--    dbms_output.put_line(sender);
+--    conv_id := to_number(object_json.get_string('conv_id'));
+--    dbms_output.put_line(conv_id);
+--    l_messages := object_json.get_array('messages');
+    SELECT
+        conv_id
+    INTO conv_id
+    FROM
+        JSON_TABLE ( :body_text FORMAT JSON, '$' -- $ holds the body_text parsed json
+            COLUMNS (
+                conv_id NUMBER ( 10 ) PATH '$.conv_id'
+            )
+        );
+
+    OPEN curs_messages FOR SELECT
+                              sender_user_name,
+                              messages
+                          FROM
+                              JSON_TABLE ( :body_text FORMAT JSON, '$.messages[*]' -- $ holds the body_text parsed json
+                                  COLUMNS (
+                                      sender_user_name VARCHAR2 ( 10 ) PATH '$.sender_user_name',
+                                      messages VARCHAR2 ( 3000 ) PATH '$.messages'
+                                  )
+                              );
+ loop 
+ FETCH curs_messages INTO sender, pMessage ;
+    EXIT WHEN ( curs_messages%notfound );
+    -- do this for every single messages.
+ OPEN curs_conv_users FOR SELECT
+                                 user_pk,
+                                 user_name
+                             FROM
+                                 conv_users
+                             WHERE
+                                 conv_pk_fk = conv_id;
+    LOOP
+        FETCH curs_conv_users INTO
+            user_pk,
+            user_name;
+        EXIT WHEN ( curs_conv_users%notfound );
+        IF ( '"'
+             || sender
+             || '"' = user_name ) THEN
+                INSERT INTO messages (
+                    user_pk_fk,
+                    message
+                ) VALUES (
+                    user_pk,
+                    pMessage
+                ) RETURNING message_pk INTO message_id;
+                 dbms_output.put_line('the message id is '||message_id);
+                
+        ELSE
+            recepiant_id := user_pk;
+              dbms_output.put_line('the recepiant id is '||message_id);
+        END IF;
+    END LOOP;
+    -- loop through the messages ids array. and add the recepiant with the message id.
+   
+        INSERT INTO recepiant (
+            user_pk_fk,
+            message_pk_fk
+        ) VALUES (
+            recepiant_id,
+           message_id
+        );
+
+ end loop;
+    dbms_output.put_line('the conversation id is :' || conv_id);
+EXCEPTION
+    WHEN OTHERS THEN
+        htp.print(sqlerrm);
+END;
+______________________________________________________________________________________
+// settings to save the the chat bulk
+("use strict");
+/**
+ * Set client auth mode - true to enable client auth, false to disable it.
+ *
+ * Disabling authentication is preferred for initial integration of the SDK with the web app.
+ *
+ * When client authentication has been disabled, only connections made from unblocked lists (allowed domains) are
+ * allowed at the server. This use case is recommended when the client application cannot generate a signed JWT (because
+ * of a static website or no authentication mechanism for the web/mobile app) but requires ODA integration. It can also
+ * be used when the chat widget is already secured and visible to only authenticated users in the client platforms (web
+ * application with the protected page).
+ *
+ * For other cases, it is recommended that client auth enabled mode is used when using the SDK for production as it adds
+ * another layer of security when connecting to a DA/skill.
+ *
+ * When client authentication has been enabled, client authentication is enforced by signed JWT tokens in addition to
+ * the unblocked lists. When the SDK needs to establish a connection with the ODA server, it first requests a JWT token
+ * from the client and then sends it along with the connection request. The ODA server validates the token signature and
+ * obtains the claim set from the JWT payload to verify the token to establish the connection.
+ *
+ * The Web channel in ODA must also be enabled to accept client auth enabled connections.
+ */
+/**
+ * Initializes the SDK and sets a global field with passed name for it the can
+ * be referred later
+ *
+ * @param {string} name Name by which the chat widget should be referred
+ */
+
+function initSdk(name, localLang) {
+  // Retry initialization later if the web page hasn't finished loading or the WebSDK is not available yet
+  if (!document || !document.body || !WebSDK) {
+    setTimeout(function () {
+      console.log(localLang);
+      initSdk(name, localLang);
+    }, 2000);
+    return;
+  }
+  if (!name) {
+    name = "Bots"; // Set default reference name to 'Bots'
+  }
+
+  let Bots;
+
+  const chatWidgetSettings = {
+    URI: "oda-ea7ee6ca09024e5fa0656e7ca7c8dee3-da2.data.digitalassistant.oci.oraclecloud.com", // ODA URI, pass the hostname. Do not include the protocol (https://).
+
+    channelId: "c74b4fbc-22e7-4456-9d2e-af2a7f81dcfe", // Channel ID, available in channel settings in ODA UI
+
+    enableBotAudioResponse: true, // Enables audio utterance of skill responses
+    enableClearMessage: true, // Enables display of button to clear conversation
+    enableSpeech: true, // Enables voice recognition
+    showConnectionStatus: true, // Displays current connection status on the header
+    locale: localLang,
+    i18n: {
+      ar: {
+        chatTitle: "أطلب أكل", // Replaces Chat
+        connected: "متصل", // Replaces Connected
+        inputPlaceholder: "Type here...", // Replaces Type a message
+        send: "Send (Enter)", // Replaces Send tool tip
+      },
+      en: {
+        chatTitle: "order food", // Replaces Chat
+        connected: "connected", // Replaces Connected
+        inputPlaceholder: "Type here...", // Replaces Type a message
+        send: "Send (Enter)", // Replaces Send tool tip
+      },
+    },
+    fontFamily: "Oracle Sans, Helvetica Neue, Helvetica, Arial, sans-serif",
+    timestampMode: "relative", // Sets the timestamp mode, relative to current time or default (absolute)
+    theme: WebSDK.THEME.CLASSIC, // Redwood dark theme. The default is THEME.DEFAULT, while older theme is available as THEME.CLASSIC
+    icons: {
+      avatarBot: "images/bot-green.png",
+      avatarUser: "images/user-icon.png",
+      logo: "images/bot-white.png",
+      launch: "images/bot-button.png",
+    },
+  };
+  Bots = new WebSDK(chatWidgetSettings);
+  // Connect to skill when the widget is expanded for the first time
+  let isFirstConnection = true;
+
+  Bots.on(WebSDK.EVENT.WIDGET_OPENED, function () {
+    if (isFirstConnection) {
+      Bots.connect();
+      isFirstConnection = false;
+    }
+  });
+
+  // Bots.on("message:received", function (message) {
+  //   console.log("the user received a message", message);
+  // });
+
+  let Message = class {
+    constructor(sender_user_name, messages) {
+      this.sender_user_name = sender_user_name;
+      this.messages = messages; // list of Message class
+    }
+  };
+  let Conv_Message = class {
+    constructor(conv_id, messages) {
+      this.conv_id = conv_id;
+      this.messages = messages; // list of Message class
+    }
+  };
+
+  let IntiatConv = class {
+    constructor(conDate, users, F_message) {
+      this.conDate = conDate;
+      this.users = users;
+      this.F_message = F_message;
+    }
+    getName() {
+      return this.name;
+    }
+    getAge() {
+      return this.users;
+    }
+    getF_message() {
+      return this.F_message;
+    }
+  };
+
+  let messageList = [];
+  let conv_id = 3;
+  Bots.on("message:sent", function (message) {
+    let { messagePayload } = message;
+    let { text } = messagePayload;
+    let { actions } = messagePayload;
+    // console.log("the message payload is fro :" + JSON.stringify(message));
+
+    if (messageList.length === 0) {
+      // intialize a conversation.
+      if (actions) {
+        text = text + concatActionsFunctionNames(actions);
+        console.log(text);
+      }
+      //set the conversation id to null when to intialize the conversation.
+      let newMessage = new Message("user", text);
+      let currentDate = new Date();
+      let initConv = new IntiatConv(
+        currentDate.toISOString().split("T")[0],
+        ["CHATBOT", "user"],
+        newMessage
+      );
+
+      // i need a function that gets the user just sent the message.
+      Intailize_Conversation(initConv);
+      // console.log("conversation intialized", JSON.stringify(initConv));
+      if (text) {
+        messageList.push(newMessage);
+      } // add to the message list.
+    } else {
+      // just post the message
+      if (actions) {
+        text = text + concatActionsFunctionNames(actions);
+      }
+      let newMessage = new Message("user", text);
+      if (text) {
+        messageList.push(newMessage);
+      } // add to the message list.
+      console.log("message is " + newMessage);
+    }
+  });
+
+  Bots.on("message:received", function (message) {
+    let { messagePayload } = message;
+    let { text } = messagePayload;
+    let { actions } = messagePayload;
+    // console.log("the actions are : " + JSON.stringify(actions[0].label));
+
+    // console.log("the message payload is :" + JSON.stringify(message));
+    if (messageList.length === 0) {
+      // intialize a conversation.
+      if (actions) {
+        // if we have some actions concatenate its names and add it to the main text.\
+        text = text + concatActionsFunctionNames(actions);
+        console.log("the available functions are:" + text);
+      }
+      let newMessage = new Message("CHATBOT", text);
+      let currentDate = new Date();
+      let initConv = new IntiatConv(
+        currentDate.toISOString().split("T")[0],
+        ["CHATBOT", "user"],
+        newMessage
+      );
+
+      // i need a function that gets the user just sent the message.
+      Intailize_Conversation(initConv);
+      // console.log("conversation intialized", JSON.stringify(initConv));
+      if (text) {
+        messageList.push(newMessage);
+      }
+    } else {
+      // just post the message
+      if (actions) {
+        text = text + concatActionsFunctionNames(actions);
+        console.log("the available functions are:" + text);
+      }
+      let newMessage = new Message("CHATBOT", text);
+      if (text) {
+        messageList.push(newMessage);
+      }
+      console.log(JSON.stringify(newMessage));
+      // console.log("message is " + newMessage);
+    }
+  });
+  Bots.on("chatend", function () {
+    let conv_message = new Conv_Message(conv_id, messageList);
+    // stringify this conv_message and post it as a json table .
+    console.log(json.stringify(conv_message));
+  });
+  Bots.on("widget:closed", function () {
+    let conv_message = new Conv_Message(conv_id, messageList);
+    // stringify this conv_message and post it as a json table .
+    console.log(JSON.stringify(conv_message));
+  });
+  // Create global object to refer Bots
+  window[name] = Bots;
+}
+
+async function Intailize_Conversation(initConv) {
+  const url =
+    "https://windinfosys.com/ords/mariam_task/saveChatMegs/IntializeChat";
+  let response = postData(url, initConv);
+  console.log(response);
+  // response
+  //   .then((data) => {
+  //     console.log("the conversation id is :" + data.conversation_id);
+  //   })
+  //   .catch((err) => {
+  //     console.log(err);
+  //   });
+}
+
+async function Post_message(message) {
+  const url =
+    "https://windinfosys.com/ords/mariam_task/saveChatMegs/IntializeChat";
+  let response = postData(url, message);
+  console.log(response);
+  // response
+  //   .then((data) => {
+  //     console.log("the conversation id is :" + data.conversation_id);
+  //   })
+  //   .catch((err) => {
+  //     console.log(err);
+  //   });
+}
+async function postData(url = "", data = {}) {
+  // Default options are marked with *
+  const response = await fetch(url, {
+    method: "POST", // *GET, POST, PUT, DELETE, etc.
+    cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
+    mode: "cors",
+    credentials: "same-origin", // include, *same-origin, omit
+    headers: {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "POST",
+      // 'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    redirect: "follow", // manual, *follow, error
+    referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
+    body: JSON.stringify(data), // body data type must match "Content-Type" header
+  });
+  console.log(response);
+  return response.json(); // parses JSON response into native JavaScript objects
+}
+function concatActionsFunctionNames(actionNames) {
+  let msg = "";
+  actionNames.forEach((element) => {
+    // let { postback } = element;
+    // let { label } = postback;
+    msg = "\n" + msg + element.label + "\n";
+  });
+  return msg;
+}

@@ -1,0 +1,47 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al-Ahly Net/ NBE Mobile",
+    "extensionType" : null,
+    "synonyms" : [ "Al-Ahly Net / NBE Mobile", "Al Ahly Net/ NBE Mobile", "Al Ahly Net / NBE Mobile", "nbe mobile", "al ahly net", "al-ahly net" ],
+    "trackingId" : "12C007D4-E1AF-444E-BD79-BB2395EB955F"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "IVR Al Ahly Phone",
+    "extensionType" : null,
+    "synonyms" : [ "IVR", "ivr", "ivr phone", "ivr al ahly" ],
+    "trackingId" : "3494B622-929F-4831-8025-D320400B5ADF"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al-Ahly Phone Cash",
+    "extensionType" : null,
+    "synonyms" : [ "Al Ahly Phone Cash", "al ahly cash", "phone cash" ],
+    "trackingId" : "E1507A8C-B398-4E8E-9467-3B47DAB955A5"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al-Ahly E-Branches",
+    "extensionType" : null,
+    "synonyms" : [ "Al-Ahly E Branches", "Al Ahly E Branches", "Al Ahly E-Branches", "ahly e-branches", "ahly ebranches", "ahly e branches", "e-branches", "ebranches", "e branches" ],
+    "trackingId" : "E70724DE-E9E2-4CE7-84F0-76E5AFE93889"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al-Ahly E-Shopping",
+    "extensionType" : null,
+    "synonyms" : [ "Al-Ahly E Shopping", "Al Ahly E-Shopping", "Al Ahly E Shopping", "ahly e-shopping", "ahly e shopping", "ahly eshopping", "e-shopping", "e shopping", "eshopping" ],
+    "trackingId" : "2A4CB4CE-502E-472B-8581-4157473E5113"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Bus Branch",
+    "extensionType" : null,
+    "synonyms" : [ "bus", "bus branch" ],
+    "trackingId" : "08B88ADA-E13B-4B36-B63F-94C1D3AD58B1"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.DIGITAL_BANKING",
+  "promptForDisambiguation" : true,
+  "trackingId" : "FCB5832E-2E26-4A03-A030-E1BA00ADF24E",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

@@ -1,0 +1,24 @@
+{
+  "botPrompts" : [ ],
+  "description" : "Main tree choices",
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Retail",
+    "extensionType" : null,
+    "synonyms" : [ "retail", "retails", "أفراد", "افراد", "الأفراد", "الافراد", "individual", "personal", "شخصي" ],
+    "trackingId" : "4BA357C8-9ECE-4A7B-9E60-1BBC065BCB2E"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Corporate",
+    "extensionType" : null,
+    "synonyms" : [ "corporate", "corp", "corps", "شركات", "الشركات", "commercial", "business", "company", "أعمال", "مؤسسات", "مؤسسة", "شركة" ],
+    "trackingId" : "D5ADA6AF-6C57-44F2-9554-010C32BD7BE0"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.BOT_TYPE",
+  "promptForDisambiguation" : true,
+  "trackingId" : "EA35CF7D-E226-4810-A412-2AC94A5BFC2D",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

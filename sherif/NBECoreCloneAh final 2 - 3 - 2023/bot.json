@@ -1,0 +1,15 @@
+{
+  "type" : "USER",
+  "autoCompleteTrainingStatus" : "NO_DATA",
+  "category" : "null",
+  "dialogVersion" : "2.0",
+  "displayName" : "NBE.Core.Clone.Ah",
+  "intentTrainer" : "Tamao",
+  "multilingualMode" : "TRANSLATION",
+  "name" : "NBECoreCloneAh",
+  "platformVersion" : "22.12",
+  "primaryLanguageTag" : "en",
+  "requiresAutoCompleteTraining" : false,
+  "trackingId" : "88CC1161-6CE9-410D-98FB-08A6ADFF5FC9",
+  "version" : "1.0"
+}

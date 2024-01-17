@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How can I review the details of the transactions made via the wallet?",
+    "trackingId" : "3DCBC123-914B-49E1-A7EB-FD60DDB5CFAB",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How can I view the details of transactions made using the wallet?",
+    "trackingId" : "9E0B2F85-11A2-4445-A7AD-F5426BEA5D76",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyPhoneCash.review.detail.transact.made.wallet",
+  "trackingId" : "D78E2541-9426-4A63-849E-8D4D14BCD9D2"
+}

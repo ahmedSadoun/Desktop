@@ -1,0 +1,23 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "3% for middle-income brackets",
+    "extensionType" : null,
+    "synonyms" : [ "3% for middle income brackets", "middle-income brackets", "middle income brackets", "middle brackets" ],
+    "trackingId" : "C35C8B5C-5B32-41E6-BAF3-CF4273F974CF"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "3% for low-income brackets",
+    "extensionType" : null,
+    "synonyms" : [ "3% for low income brackets", "low-income brackets", "low income brackets" ],
+    "trackingId" : "1F5E956F-48BF-4E5E-8123-BE41790EAE82"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.LOANS.CBE_LOAN.3_PERCENT",
+  "promptForDisambiguation" : true,
+  "trackingId" : "EC1444D9-1E19-4FFC-B97F-8657C29D3E1E",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

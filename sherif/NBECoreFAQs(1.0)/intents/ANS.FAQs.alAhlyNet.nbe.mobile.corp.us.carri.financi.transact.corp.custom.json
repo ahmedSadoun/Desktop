@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Can Al Ahly Mobile be used in carrying out the financial transactions of a corporate customer?",
+    "trackingId" : "0AD99B75-7266-468F-A953-E56FC1678EAC",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Can I use Al Ahly Mobile application to conduct financial transactions for companies?",
+    "trackingId" : "A87171A4-1886-4E0F-B147-C026E4824D1F",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.us.carri.financi.transact.corp.custom",
+  "trackingId" : "20B28281-FF05-4EEF-B442-8910B843F6E6"
+}

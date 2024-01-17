@@ -1,0 +1,29 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Government & Public Sector Employees",
+    "extensionType" : null,
+    "synonyms" : [ "gov", "public sector" ],
+    "trackingId" : "EF5A91F0-2965-4BCF-9E89-EBCC251C9F82"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Private and Multinational Sector",
+    "extensionType" : null,
+    "synonyms" : [ "private sector" ],
+    "trackingId" : "4F938721-94F7-4317-8196-0E82D5474D17"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Petroleum Sector",
+    "extensionType" : null,
+    "synonyms" : [ "petro sector" ],
+    "trackingId" : "C08317DD-3F6E-4F7D-B225-EDB7D1F1856C"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.LOANS.PERSONAL.WITH_SALARY",
+  "promptForDisambiguation" : true,
+  "trackingId" : "25307DF1-01AD-44A8-B527-9EE9B2894B39",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - How can I know the outstanding balance on the credit card?",
+    "trackingId" : "46D0EDF1-7BF3-4DE5-94D2-6BDCD4436E12",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - What are the ways to find out the debt owed on the card?",
+    "trackingId" : "EEBC5C14-6F34-459C-A27A-6791D1E7E3C1",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.corp.credit.cards.know.outstand.balanc.card",
+  "trackingId" : "120E9246-F3CB-494D-AAC6-74443D7C1D5C"
+}

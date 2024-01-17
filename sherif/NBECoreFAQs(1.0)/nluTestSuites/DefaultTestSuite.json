@@ -1,0 +1,4145 @@
+{
+  "displayName" : "Default Test Suite",
+  "enabled" : true,
+  "includeInExport" : true,
+  "name" : "DefaultTestSuite",
+  "nluTestCases" : [ {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.al.ahly.payroll.card.program.advantag",
+    "testCaseType" : "INTENT",
+    "trackingId" : "103516C6-339F-4ACB-8E09-43031C081236",
+    "utterance" : "Advantages of Al Ahly Payroll Card Progra"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.al.ahly.payroll.card.program.advantag",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F583610B-C19F-405D-9501-5926E2DEB312",
+    "utterance" : "Advantages of Al Ahly Payroll Card Program"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.al.ahly.payroll.current.acc.program.advantag.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "5EF3AB86-EC86-4DB3-806E-A50F41AD7483",
+    "utterance" : "Advantages of Al Ahly Payroll Current Account Progra"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.al.ahly.payroll.current.acc.program.advantag.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "602DD0FB-FD57-493E-B01D-C1B2BD8E31F8",
+    "utterance" : "Advantages of Al Ahly Payroll Current Account Program"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.salary.advance.advantag",
+    "testCaseType" : "INTENT",
+    "trackingId" : "74C63AE9-D6B1-4A77-B62B-D2CB77F517E0",
+    "utterance" : "Advantages of Salary advanc"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.salary.advance.advantag",
+    "testCaseType" : "INTENT",
+    "trackingId" : "E6AA3674-9C67-4255-9317-513379C0C5BA",
+    "utterance" : "Advantages of Salary advance"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.membership.fee.enrol.program",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3892A565-C089-4A86-9E88-4EA96DDD7FF9",
+    "utterance" : "Are there any membership fees to enroll in the program"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.membership.fee.enrol.program",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1E560184-11AD-4844-BAC9-AD96F2AA6117",
+    "utterance" : "Are there any membership fees to enroll in the program?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.prize.draw.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "9AD11257-9C65-48F0-9771-9612D03593A3",
+    "utterance" : "Are there prize drawings for the accounts"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.prize.draw.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A5DF4307-A7E1-43A9-9841-A595D15F5A23",
+    "utterance" : "Are there prize drawings for the accounts?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyE-Shopping.benefit.obtain.merchant.when.subscrib",
+    "testCaseType" : "INTENT",
+    "trackingId" : "6E441EB3-05B1-450A-8A5F-E8F675598A66",
+    "utterance" : "Benefits obtained by the merchant when subscribing to Al Ahly e-Shoppin"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyE-Shopping.benefit.obtain.merchant.when.subscrib",
+    "testCaseType" : "INTENT",
+    "trackingId" : "845D64C7-C0B4-4FE2-AED7-8A8E44818413",
+    "utterance" : "Benefits obtained by the merchant when subscribing to Al Ahly e-Shopping"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.borrow.against.cert.deposit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "224C6346-435E-4EFA-BF60-9BE809D79BBA",
+    "utterance" : "Can I borrow against a certificate/deposit"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.borrow.against.cert.deposit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "BF333AA5-02DF-4AE1-BAFC-7C3C55956EFF",
+    "utterance" : "Can I borrow against a certificate/deposit?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.choos.receiv.paper.statement.e.email",
+    "testCaseType" : "INTENT",
+    "trackingId" : "145BCC4B-9872-4DCF-BADB-862B6C372FEA",
+    "utterance" : "Can I choose to receive both paper statements and e-statements via email"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.choos.receiv.paper.statement.e.email",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3E3A4613-7835-47B9-A122-93006A62A3DF",
+    "utterance" : "Can I choose to receive both paper statements and e-statements via email?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.increas.amount.outstand.obtain.on",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A6ABB217-9528-4B94-9629-EE6B6A126542",
+    "utterance" : "Can I increase the amount of an outstanding loan or obtain more than one loan"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.increas.amount.outstand.obtain.on",
+    "testCaseType" : "INTENT",
+    "trackingId" : "DAA252A9-B657-471D-A944-7F2C3254FAEA",
+    "utterance" : "Can I increase the amount of an outstanding loan or obtain more than one loan?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.open.joint.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "FAAA6EC5-C124-4186-B73A-03ED7E38A479",
+    "utterance" : "Can I open a joint account"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.open.joint.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A25F4F60-8154-49AD-8AD8-703951C67B5F",
+    "utterance" : "Can I open a joint account?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.open.pension.acc.work.compani",
+    "testCaseType" : "INTENT",
+    "trackingId" : "7326EF62-FE67-4098-AC95-69A157D84259",
+    "utterance" : "Can I open a pension saving account while I am still working at a company"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.open.pension.acc.work.compani",
+    "testCaseType" : "INTENT",
+    "trackingId" : "949FE846-AF77-4E9C-B346-4BE48E76607C",
+    "utterance" : "Can I open a pension saving account while I am still working at a company?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.open.acc.foreign.currenc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C70491F3-8EF5-4A81-92EA-86182816BC28",
+    "utterance" : "Can I open an account in foreign currencies"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.open.acc.foreign.currenc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "00A787C0-EE8A-4539-9E3F-5B0514EBF317",
+    "utterance" : "Can I open an account in foreign currencies?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.prepai",
+    "testCaseType" : "INTENT",
+    "trackingId" : "E6FB1FF3-1C54-4BD9-AEE3-A89EA7CD1A69",
+    "utterance" : "Can I prepay the loan"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.prepai",
+    "testCaseType" : "INTENT",
+    "trackingId" : "754EA5B0-E0E4-4396-BE31-86F0B177C8EA",
+    "utterance" : "Can I prepay the loan?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.purchas.cert.on.week",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F8618E79-4A14-43C9-8EDF-E84C13315D51",
+    "utterance" : "Can I purchase a certificate for only one week"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.purchas.cert.on.week",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8D0FAB9B-78EE-4C9A-B75D-F1EA5F4E592B",
+    "utterance" : "Can I purchase a certificate for only one week?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.transfer.amount.wallet.outsid.egypt",
+    "testCaseType" : "INTENT",
+    "trackingId" : "259AA10B-5A1F-46DD-91ED-888142F14B01",
+    "utterance" : "Can I transfer any amounts to a wallet outside Egypt"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.transfer.amount.wallet.outsid.egypt",
+    "testCaseType" : "INTENT",
+    "trackingId" : "82B981F3-1BC7-4608-B378-72F6014A984D",
+    "utterance" : "Can I transfer any amounts to a wallet outside Egypt?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.card.issu.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "79B53C6B-6391-4F6D-A181-418E1D991A26",
+    "utterance" : "Can a card be issued for an account"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.card.issu.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F508526B-8939-4B7B-8788-8C5572D8E5EA",
+    "utterance" : "Can a card be issued for an account?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.card.issu.foreign",
+    "testCaseType" : "INTENT",
+    "trackingId" : "57CD3075-BD59-4A71-8914-9CF26303B6D4",
+    "utterance" : "Can a prepaid card be issued for foreigners"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.card.issu.foreign",
+    "testCaseType" : "INTENT",
+    "trackingId" : "4B077614-B610-4374-8E55-5D7140D82800",
+    "utterance" : "Can a prepaid card be issued for foreigners?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.student.ag.year.open.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "904BD4E4-EEA1-4683-A422-7B732D6D3F6D",
+    "utterance" : "Can a student under the age of 21 years open an account"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.student.ag.year.open.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "6FFA7DCD-FDC3-49E9-AE66-B90EC1DD2736",
+    "utterance" : "Can a student under the age of 21 years open an account?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.supplementari.card.issu",
+    "testCaseType" : "INTENT",
+    "trackingId" : "9C3ED0D5-020E-4425-9E67-EBE56B3C59DC",
+    "utterance" : "Can a supplementary card be issued"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.supplementari.card.issu",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1FE63C3D-7B9E-45E0-965E-89BFB409972A",
+    "utterance" : "Can a supplementary card be issued?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.credit.card.payment.made",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F1E016A8-39C8-42C1-8133-145857838E61",
+    "utterance" : "Can credit card payments be made through debit cards"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.credit.card.payment.made",
+    "testCaseType" : "INTENT",
+    "trackingId" : "7C304259-96DE-4E90-BC31-F0618175D915",
+    "utterance" : "Can credit card payments be made through debit cards?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.custom.charg.commiss",
+    "testCaseType" : "INTENT",
+    "trackingId" : "61EF478F-4805-4C6C-8A55-D1789FDA66CE",
+    "utterance" : "Can customers be charged for the commission"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.custom.charg.commiss",
+    "testCaseType" : "INTENT",
+    "trackingId" : "93F3155A-CB9A-44C8-BC6F-565330EFC840",
+    "utterance" : "Can customers be charged for the commission?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.us.govern.payment",
+    "testCaseType" : "INTENT",
+    "trackingId" : "5BAC8A32-D6BE-47E4-A758-7637CDDA9BBE",
+    "utterance" : "Can debit cards be used for government payments"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.us.govern.payment",
+    "testCaseType" : "INTENT",
+    "trackingId" : "63339EF0-5855-440F-BFE8-E6B82D161286",
+    "utterance" : "Can debit cards be used for government payments?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.foreign.remitt.receiv.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "02793A63-D443-4583-8BB7-D9B64AD1717B",
+    "utterance" : "Can foreign remittances be received on the card"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.foreign.remitt.receiv.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "B1689612-315C-4E13-9E97-69422F2E4339",
+    "utterance" : "Can foreign remittances be received on the card?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.foreign.open.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "ABEE77AA-2D94-407C-B1CE-FCE32BAB5058",
+    "utterance" : "Can foreigners open accounts"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.foreign.open.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3E821197-A17C-459E-83B1-2EEA2438CBFF",
+    "utterance" : "Can foreigners open accounts?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.on.acc.link.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "183D6889-4EE7-45C6-830A-CE9AA28BF52B",
+    "utterance" : "Can more than one account be linked to the card"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.on.acc.link.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "15110593-2C35-4379-90E0-B76D31EB67F8",
+    "utterance" : "Can more than one account be linked to the card?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.card.us.purchas",
+    "testCaseType" : "INTENT",
+    "trackingId" : "0C234FED-7BB0-4548-92C0-6E03308390E4",
+    "utterance" : "Can the card be used for purchases"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.cert.redeem.anytim",
+    "testCaseType" : "INTENT",
+    "trackingId" : "CBCB3161-FE61-4212-82B0-D077F8EF80C8",
+    "utterance" : "Can the certificate be redeemed anytime"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.cert.redeem.anytim",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1F6D816C-3083-488F-97DA-9F5886432344",
+    "utterance" : "Can the certificate be redeemed anytime?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.card.link.phone.cash.wallet",
+    "testCaseType" : "INTENT",
+    "trackingId" : "BD32E188-9188-406E-AB38-F02B0D1722EB",
+    "utterance" : "Can the debit card be linked to the Phone Cash wallet"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.card.link.phone.cash.wallet",
+    "testCaseType" : "INTENT",
+    "trackingId" : "03D1D769-9418-4EEB-A549-1BA93AD80F54",
+    "utterance" : "Can the debit card be linked to the Phone Cash wallet?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.voucher.exchang.cash",
+    "testCaseType" : "INTENT",
+    "trackingId" : "2E138A83-B546-450F-AE40-D44D95A32F8F",
+    "utterance" : "Can the vouchers be exchanged for cash"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.voucher.exchang.cash",
+    "testCaseType" : "INTENT",
+    "trackingId" : "BA1256A9-DDF6-408C-9B75-AADB05978A34",
+    "utterance" : "Can the vouchers be exchanged for cash?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.transfer.made.acc.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A65CDB4F-36DF-4E39-8300-BAF4805D9BA2",
+    "utterance" : "Can transfers be made between accounts through the debit card"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.transfer.made.acc.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "E18D7E66-1764-4E38-BB6F-B39AA6ED7202",
+    "utterance" : "Can transfers be made between accounts through the debit card?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.al.ahly.payroll.card.program.chequ.book.issu",
+    "testCaseType" : "INTENT",
+    "trackingId" : "EC39BB3C-D03D-470C-9AEF-225F264BAD80",
+    "utterance" : "Card Program - Can a cheque book be issued"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.al.ahly.payroll.card.program.chequ.book.issu",
+    "testCaseType" : "INTENT",
+    "trackingId" : "62DE2AE3-2E9C-4C84-91C1-F02A9D73B9A8",
+    "utterance" : "Card Program - Can a cheque book be issued?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.al.ahly.payroll.card.program.free.charg",
+    "testCaseType" : "INTENT",
+    "trackingId" : "FBFE7EC2-BF71-4F70-BA0B-2E2618E32D76",
+    "utterance" : "Card Program - Other services which are free of charg"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.al.ahly.payroll.card.program.free.charg",
+    "testCaseType" : "INTENT",
+    "trackingId" : "429CC741-2C3A-4466-A8C9-6467792874EA",
+    "utterance" : "Card Program - Other services which are free of charge"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.bill.payment.top.enabl",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C45B0EA1-9AD9-45BA-A153-0F41A17A69DD",
+    "utterance" : "Corp - Are bill payment and mobile top-up services enabled"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.bill.payment.top.enabl",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8345B6E4-74E3-4F9B-AFD5-0352DBEE9604",
+    "utterance" : "Corp - Are bill payment and mobile top-up services enabled?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.us.carri.financi.transact.corp.custom",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A24CC0D4-F406-4FB7-BA6F-AB301B2CAB7E",
+    "utterance" : "Corp - Can Al Ahly Mobile be used in carrying out the financial transactions of a corporate customer"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.us.carri.financi.transact.corp.custom",
+    "testCaseType" : "INTENT",
+    "trackingId" : "5ACA7A53-8B80-4CC8-B8D3-6272D696C0ED",
+    "utterance" : "Corp - Can Al Ahly Mobile be used in carrying out the financial transactions of a corporate customer?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.open.cert.deposit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "03F114B9-BB2A-4ACE-8A4A-5E9284089084",
+    "utterance" : "Corp - Can I open a certificate or deposit through the service"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.open.cert.deposit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "64966E76-E4C3-4A21-9046-E47389230AD1",
+    "utterance" : "Corp - Can I open a certificate or deposit through the service?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.redeem.cert.deposit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F23690C2-B2CD-4450-8A5F-1D1C137E8B1A",
+    "utterance" : "Corp - Can I redeem a certificate or deposit through the service"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.redeem.cert.deposit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "B0537311-1F99-494F-9FFB-AD730DD7EAF4",
+    "utterance" : "Corp - Can I redeem a certificate or deposit through the service?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.send.monei.e.wallet.bank",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8A01E7EF-1AF3-438F-B98A-9196A4C67B63",
+    "utterance" : "Corp - Can I send money to an e-wallet with another bank"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.send.monei.e.wallet.bank",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A9822ABC-0F97-4299-A70B-85890D657EC1",
+    "utterance" : "Corp - Can I send money to an e-wallet with another bank?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.set.instal.payment.directli.merchant",
+    "testCaseType" : "INTENT",
+    "trackingId" : "2A8250E7-62AF-499D-9636-2B2862D30417",
+    "utterance" : "Corp - Can I set up installment payments directly with the merchant"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.set.instal.payment.directli.merchant",
+    "testCaseType" : "INTENT",
+    "trackingId" : "4C312EF8-DC01-4D78-93B5-E1B661A4604C",
+    "utterance" : "Corp - Can I set up installment payments directly with the merchant?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.set.instal.payment.purchas.non.merchant",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D2EF1736-4191-4BA4-81BA-5CD2F2F91C8F",
+    "utterance" : "Corp - Can I set up installment payments for purchases from a non-NBE merchant"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.set.instal.payment.purchas.non.merchant",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C1C6998F-8414-40B4-AD85-EC03462D00BB",
+    "utterance" : "Corp - Can I set up installment payments for purchases from a non-NBE merchant?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.corp.custom.us.soft.token",
+    "testCaseType" : "INTENT",
+    "trackingId" : "928746B9-48A2-42D7-A7DD-8C536406AD22",
+    "utterance" : "Corp - Can a corporate customer use a soft token"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.corp.custom.us.soft.token",
+    "testCaseType" : "INTENT",
+    "trackingId" : "7A8C6C54-7561-413F-97C5-34FF4DE497ED",
+    "utterance" : "Corp - Can a corporate customer use a soft token?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.loan.acc.statement.print",
+    "testCaseType" : "INTENT",
+    "trackingId" : "9F82BEAD-E455-4516-AC2B-0950B2B4F9AC",
+    "utterance" : "Corp - Can a loan account statement be printed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.loan.acc.statement.print",
+    "testCaseType" : "INTENT",
+    "trackingId" : "638692C8-780C-4651-9B84-551794D24582",
+    "utterance" : "Corp - Can a loan account statement be printed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.primari.acc.select.carri.financi.transact",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3999382B-7319-47C2-96F5-A6194A4D1B09",
+    "utterance" : "Corp - Can a primary account be selected for carrying out financial transaction"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.primari.acc.select.carri.financi.transact",
+    "testCaseType" : "INTENT",
+    "trackingId" : "314BA0D4-EADD-4ACA-AFDD-5670F03EA7ED",
+    "utterance" : "Corp - Can a primary account be selected for carrying out financial transaction?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.transfer.made.without.ad.paye",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D3BEBB8E-8857-4925-9342-7843F366F1F2",
+    "utterance" : "Corp - Can a transfer be made without adding a payee"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.transfer.made.without.ad.paye",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C370DA2E-21D5-4DEC-86E4-BDDA56442CB8",
+    "utterance" : "Corp - Can a transfer be made without adding a payee?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.transfer.note.print",
+    "testCaseType" : "INTENT",
+    "trackingId" : "BC5543F5-E0AA-4D74-B080-B8BAA4D94FDE",
+    "utterance" : "Corp - Can a transfer note be printed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.transfer.note.print",
+    "testCaseType" : "INTENT",
+    "trackingId" : "AF8B07A0-BBD5-4DC0-B1A4-0681FE9B00EB",
+    "utterance" : "Corp - Can a transfer note be printed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.type.deposit.cert.differ.currenc.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D5C26304-B256-45F6-A2B3-42AC5B107634",
+    "utterance" : "Corp - Can all types of deposits/certificates in different currencies be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.type.deposit.cert.differ.currenc.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C522F69A-69A5-4937-A6AD-7DB5C873DB10",
+    "utterance" : "Corp - Can all types of deposits/certificates in different currencies be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.debit.credit.transact.view.separ",
+    "testCaseType" : "INTENT",
+    "trackingId" : "6A789338-FD16-4554-ADF7-78C62CCC7A69",
+    "utterance" : "Corp - Can debit and credit transactions be viewed separately"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.debit.credit.transact.view.separ",
+    "testCaseType" : "INTENT",
+    "trackingId" : "38A5C65D-1101-4EDD-8D58-93408DA0CF12",
+    "utterance" : "Corp - Can debit and credit transactions be viewed separately?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.donat.made",
+    "testCaseType" : "INTENT",
+    "trackingId" : "66FCF32C-E154-470E-BEE6-4DAAF1DCC753",
+    "utterance" : "Corp - Can donations be made"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.donat.made",
+    "testCaseType" : "INTENT",
+    "trackingId" : "6D08E38E-3F46-4404-B27A-31940498B891",
+    "utterance" : "Corp - Can donations be made?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.facial.recognit.fingerprint.us.togeth.log",
+    "testCaseType" : "INTENT",
+    "trackingId" : "E93D57BD-341C-4AB2-BFD8-24529EB3060A",
+    "utterance" : "Corp - Can facial recognition & fingerprint be used together to log in to Al Ahly Mobile"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.facial.recognit.fingerprint.us.togeth.log",
+    "testCaseType" : "INTENT",
+    "trackingId" : "06AC87A9-B20A-4BFB-AEF9-ACEA1AC72C79",
+    "utterance" : "Corp - Can facial recognition & fingerprint be used together to log in to Al Ahly Mobile?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.financi.transact.carri.maker.checker",
+    "testCaseType" : "INTENT",
+    "trackingId" : "4FDAB39E-8245-4E8E-AD74-DC217CF62D65",
+    "utterance" : "Corp - Can financial transactions be carried out by both a maker and a checker"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.financi.transact.carri.maker.checker",
+    "testCaseType" : "INTENT",
+    "trackingId" : "110FB8F6-B829-40C7-892A-9733DC7C01DE",
+    "utterance" : "Corp - Can financial transactions be carried out by both a maker and a checker?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.financi.transact.print",
+    "testCaseType" : "INTENT",
+    "trackingId" : "49DD4312-7068-48E5-BD85-ADF9D42FF2AD",
+    "utterance" : "Corp - Can financial transactions be printed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.financi.transact.print",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F026696D-FE6B-4834-8A95-80773BC7DB2E",
+    "utterance" : "Corp - Can financial transactions be printed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.on.acc.link.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "B0FFCBE8-E1C7-49E9-ADB4-7CFA6771BA05",
+    "utterance" : "Corp - Can more than one account be linked to the card"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.on.acc.link.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "CAEFFFB7-9F9E-4535-8E4C-EC8563022A4F",
+    "utterance" : "Corp - Can more than one account be linked to the card?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.stand.instruct.modifi.stop",
+    "testCaseType" : "INTENT",
+    "trackingId" : "E6F5D97B-43E4-4B8F-A442-593ED3218D04",
+    "utterance" : "Corp - Can standing instructions be modified or stopped"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.stand.instruct.modifi.stop",
+    "testCaseType" : "INTENT",
+    "trackingId" : "91AEB5B4-07E1-4AF4-A9AA-711846DDB8DB",
+    "utterance" : "Corp - Can standing instructions be modified or stopped?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.login.password.chang",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F91A51E6-1139-4E38-B633-4E542F062F4E",
+    "utterance" : "Corp - Can the \"Login Password� be changed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.card.us.onlin.shop",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A2AF9052-7B29-4575-866D-B7DCA91C927C",
+    "utterance" : "Corp - Can the card be used for online shopping"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.card.us.onlin.shop",
+    "testCaseType" : "INTENT",
+    "trackingId" : "309D809D-D64F-4C7F-B7A1-5BB9DE6CEA23",
+    "utterance" : "Corp - Can the card be used for online shopping?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.card.us.purchas",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1966AC95-BF3D-49B1-8C3C-388A16857597",
+    "utterance" : "Corp - Can the card be used for purchases"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.card.us.purchas",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F431636C-122B-4505-BDB0-677107F49162",
+    "utterance" : "Corp - Can the card be used for purchases?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.detail.execut.stand.instruct.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "FC0CA4BD-A51D-42D1-BC0A-30AAC5645A9D",
+    "utterance" : "Corp - Can the details of executed standing instructions be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.detail.execut.stand.instruct.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "AB047AA8-EBC8-4A2A-A874-087919B8A05E",
+    "utterance" : "Corp - Can the details of executed standing instructions be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.detail.settl.chequ.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "0FF7ECB2-A42B-4B3B-B01C-C61330BBB32C",
+    "utterance" : "Corp - Can the details of settled cheques be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.detail.settl.chequ.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "EC12102B-9D17-4BF3-8985-4A5F746C73C6",
+    "utterance" : "Corp - Can the details of settled cheques be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.detail.differ.type.mutual.fund.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C706FCE5-DCAA-4492-87CD-3C4359A151F7",
+    "utterance" : "Corp - Can the details of the different types of mutual funds be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.detail.differ.type.mutual.fund.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "95E8B11C-1BD0-40E6-95D0-C2066CD82E47",
+    "utterance" : "Corp - Can the details of the different types of mutual funds be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.hard.token.us",
+    "testCaseType" : "INTENT",
+    "trackingId" : "EEA37058-D9A0-46D4-BDAF-546AAEC40FFA",
+    "utterance" : "Corp - Can the hard token service be used via Al Ahly Net/NBE Mobile"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.hard.token.us",
+    "testCaseType" : "INTENT",
+    "trackingId" : "EE96442A-3299-4A1F-BC81-9B1F182BF105",
+    "utterance" : "Corp - Can the hard token service be used via Al Ahly Net/NBE Mobile?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.statu.chequ.collect.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C78A53CE-76F8-4C7F-92AB-C6609B0BDF72",
+    "utterance" : "Corp - Can the status of cheques under collection be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.statu.chequ.collect.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A965ED03-F0D0-428B-905D-68EC4ABA9690",
+    "utterance" : "Corp - Can the status of cheques under collection be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.transact.carri.inquir",
+    "testCaseType" : "INTENT",
+    "trackingId" : "FDF140A3-026E-4B9E-9DDF-C483020F9E06",
+    "utterance" : "Corp - Can transactions carried out via Al Ahly Net/NBE Mobile be inquired about"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.transact.carri.inquir",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C5CD485F-83B2-4AA3-A927-53999837FBB6",
+    "utterance" : "Corp - Can transactions carried out via Al Ahly Net/NBE Mobile be inquired about?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.transfer.made.acc.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "CE8E1463-D1EF-4284-9BA4-45E9EF3BCCAA",
+    "utterance" : "Corp - Can transfers be made between accounts through the debit card"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.transfer.made.acc.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C6A91BFD-FE59-40E0-BAD0-2A461926F3F4",
+    "utterance" : "Corp - Can transfers be made between accounts through the debit card?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.card.issuanc.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D44FEB0C-3263-4FD7-AB64-8BFCC47F340A",
+    "utterance" : "Corp - Credit Cards - How much is the card issuance fee"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.card.issuanc.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "046AA99E-98F7-484B-B310-6E2F31AF0EB2",
+    "utterance" : "Corp - Credit Cards - How much is the card issuance fee?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.card.renew.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "39A6485F-A372-42FD-8F2A-267EBD949AEC",
+    "utterance" : "Corp - Credit Cards - How much is the card renewal fee"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.card.renew.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "219D90A7-364A-4572-82D1-653A87352E9F",
+    "utterance" : "Corp - Credit Cards - How much is the card renewal fee?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.card.issuanc.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "FF3C2E0D-09C6-43C5-B865-2F46C7289147",
+    "utterance" : "Corp - Debit Cards - How much is the card issuance fee?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.card.renew.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "FF003425-8DBD-4950-8C73-174F6F1E31BE",
+    "utterance" : "Corp - Debit Cards - How much is the card renewal fee"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.card.renew.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3A798C39-7352-4FD0-9E7B-B0C9D95DFC7D",
+    "utterance" : "Corp - Debit Cards - How much is the card renewal fee?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.stand.instruct.enabl.make.transfer.outsid.compani.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "91C44EFF-C955-4AAB-8DB1-EBF9E8A1AC87",
+    "utterance" : "Corp - Do standing instructions enable making transfers outside the company's accounts"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.stand.instruct.enabl.make.transfer.outsid.compani.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A9C3AD7B-E225-4675-BF4D-80F3536F244D",
+    "utterance" : "Corp - Do standing instructions enable making transfers outside the company's accounts?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.activ.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "982BF886-6A4C-4CE3-BBDB-C54404C1415B",
+    "utterance" : "Corp - How can I activate the card"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.activ.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "57D51EAE-0BD6-44B6-834E-392183A6A53D",
+    "utterance" : "Corp - How can I activate the card?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.adjust.login.set.enabl.facial.recognit.fingerprint",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1505F919-E846-4B69-93CD-167403F793BB",
+    "utterance" : "Corp - How can I adjust Al Ahly Mobile login settings to enable facial recognition/fingerprint"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.adjust.login.set.enabl.facial.recognit.fingerprint",
+    "testCaseType" : "INTENT",
+    "trackingId" : "B79D839F-C897-4F79-80DF-71D5E8A51898",
+    "utterance" : "Corp - How can I adjust Al Ahly Mobile login settings to enable facial recognition/fingerprint?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.appli.corp.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "466085A8-5B23-4FE3-AB4B-B3D287E0556E",
+    "utterance" : "Corp - How can I apply for a corporate credit card"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.appli.corp.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D40F70A0-65E8-4E97-803D-6C91A5DF03A2",
+    "utterance" : "Corp - How can I apply for a corporate credit card?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.appli.corp.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "CBFC56D6-BE74-426E-8E22-F5E205FFBB5A",
+    "utterance" : "Corp - How can I apply for a corporate debit card"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.appli.corp.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "EB275BB8-CC07-4765-A101-698417E2FA4E",
+    "utterance" : "Corp - How can I apply for a corporate debit card?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.password.us",
+    "testCaseType" : "INTENT",
+    "trackingId" : "4563EE45-A23F-48AC-AA01-44C471368161",
+    "utterance" : "Corp - How can I get a password to use Al Ahly Net & NBE Mobile"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.password.us",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D71D6AB0-3E4C-4AE8-931E-6C82BD75D565",
+    "utterance" : "Corp - How can I get a password to use Al Ahly Net & NBE Mobile?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.know.outstand.balanc.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "936CF4DE-BE45-4393-B4FD-E8C6E489C1F3",
+    "utterance" : "Corp - How can I know the outstanding balance on the credit card"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.know.outstand.balanc.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "120AF4C2-688A-4A1A-AEC0-95E55FB6DA84",
+    "utterance" : "Corp - How can I know the outstanding balance on the credit card?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.subscrib",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C5446D4F-45F3-4BA2-AEDB-63E0B477E79B",
+    "utterance" : "Corp - How can I subscribe to Al Ahly Net & Al Ahly Mobile"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.subscrib",
+    "testCaseType" : "INTENT",
+    "trackingId" : "90E440AD-8985-4D4B-832B-E8D68BA6F752",
+    "utterance" : "Corp - How can I subscribe to Al Ahly Net & Al Ahly Mobile?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.track.financi.transact.carri.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A7A57C13-4F6A-4FAB-B4F1-F654F5000E2B",
+    "utterance" : "Corp - How can I track financial transactions carried out on the accounts"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.track.financi.transact.carri.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "DD08B6D0-F229-4244-9A74-0359348FAA1B",
+    "utterance" : "Corp - How can I track financial transactions carried out on the accounts?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.pin.code.creat.hard.token",
+    "testCaseType" : "INTENT",
+    "trackingId" : "2C4B622C-430F-47D2-929B-2A5F27ADA60D",
+    "utterance" : "Corp - How can a PIN code be created for the hard token for Al Ahly Net/NBE Mobile"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.pin.code.creat.hard.token",
+    "testCaseType" : "INTENT",
+    "trackingId" : "9D7FB421-E408-431D-9121-7B4CA174C1C8",
+    "utterance" : "Corp - How can a PIN code be created for the hard token for Al Ahly Net/NBE Mobile?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.hard.token.obtain",
+    "testCaseType" : "INTENT",
+    "trackingId" : "757DCFC8-BD07-4F9B-8A30-69904B688A0D",
+    "utterance" : "Corp - How can a hard token be obtained for Al Ahly Net/NBE Mobile"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.hard.token.obtain",
+    "testCaseType" : "INTENT",
+    "trackingId" : "658CDABC-E6F4-4A2C-A5C1-AA7EBB9C972D",
+    "utterance" : "Corp - How can a hard token be obtained for Al Ahly Net/NBE Mobile?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.on.time.password.otp.creat.hard.taken",
+    "testCaseType" : "INTENT",
+    "trackingId" : "71269E04-DCC8-4B09-AA7A-688A8BB849FC",
+    "utterance" : "Corp - How can a one-time password (OTP) be created through the hard taken"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.on.time.password.otp.creat.hard.taken",
+    "testCaseType" : "INTENT",
+    "trackingId" : "450C475B-65BD-4CB5-847E-89F0392F62DB",
+    "utterance" : "Corp - How can a one-time password (OTP) be created through the hard taken?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.card.payment.made",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F945C597-E7D0-44C2-9155-2FF5CAAA8397",
+    "utterance" : "Corp - How can credit card payments be made"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.card.payment.made",
+    "testCaseType" : "INTENT",
+    "trackingId" : "EC4990BC-1CC1-41F4-BD0F-8EDE5CFC21B6",
+    "utterance" : "Corp - How can credit card payments be made?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.acc.detail.obtain",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C677BBC8-4A81-40CB-B72A-9F0629806495",
+    "utterance" : "Corp - How can the account details be obtained"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.acc.detail.obtain",
+    "testCaseType" : "INTENT",
+    "trackingId" : "50D240EA-4324-413D-885C-3B7BB878A7F7",
+    "utterance" : "Corp - How can the account details be obtained?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.card.collect.issuanc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "6EE23176-25E8-43B6-8D64-82FDA12FFA9F",
+    "utterance" : "Corp - How can the card be collected after issuance"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.card.collect.issuanc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "0B583359-F4DC-44C3-B354-08AEF0488518",
+    "utterance" : "Corp - How can the card be collected after issuance?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.card.receiv.issuanc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "0CC54A2C-C965-4909-96E6-C0C1ED52E64F",
+    "utterance" : "Corp - How can the card be received after issuance"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.card.receiv.issuanc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3874809F-FA75-4EF6-8AF0-A10EBB2CE93C",
+    "utterance" : "Corp - How can the card be received after issuance?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.detail.settl.chequ.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F2018BD4-3A81-4CA1-B7E0-23E38B1B2226",
+    "utterance" : "Corp - How can the details of settled cheques be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.detail.settl.chequ.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "6EB26FE9-FA48-415C-B5DE-0AF505535CEC",
+    "utterance" : "Corp - How can the details of settled cheques be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.detail.cert.deposit.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "6BF4D49D-DB87-47FF-8321-38E990254D48",
+    "utterance" : "Corp - How can the details of the certificate/deposit be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.detail.cert.deposit.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "41A8D2DB-6C69-4E01-9746-C6CC5A94962D",
+    "utterance" : "Corp - How can the details of the certificate/deposit be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.long.process.request.open.amend.redeem.cert.deposit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "5ED035BA-C022-40F3-839F-75D5260BE2E3",
+    "utterance" : "Corp - How long does it take to process any request to open/amend/redeem certificates/deposits via Al Ahly Net"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.long.process.request.open.amend.redeem.cert.deposit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "025D8C1C-F8DB-41BC-8D52-C5A495B56976",
+    "utterance" : "Corp - How long does it take to process any request to open/amend/redeem certificates/deposits via Al Ahly Net?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.balanc.inquiri.fee.atm.local.bank",
+    "testCaseType" : "INTENT",
+    "trackingId" : "86A6644A-B686-44AD-9CFF-5E2DF90EB83E",
+    "utterance" : "Corp - How much is the balance inquiry fee from ATMs of other local banks"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.balanc.inquiri.fee.atm.local.bank",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D0014F39-9232-4A0B-BB2E-612D52827471",
+    "utterance" : "Corp - How much is the balance inquiry fee from ATMs of other local banks?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.cash.withdraw.fee.atm.local.bank",
+    "testCaseType" : "INTENT",
+    "trackingId" : "BE2266C9-C743-469E-935B-DA05B687353A",
+    "utterance" : "Corp - How much is the cash withdrawal fee from ATMs of other local banks"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.cash.withdraw.fee.atm.local.bank",
+    "testCaseType" : "INTENT",
+    "trackingId" : "6AD1B9E9-9DD9-4696-9A0B-2485CFF49310",
+    "utterance" : "Corp - How much is the cash withdrawal fee from ATMs of other local banks?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.late.payment.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "FF22AF72-6719-47E3-BFB6-43E4BA0E6D6E",
+    "utterance" : "Corp - How much is the late payment fee"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.late.payment.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F5BDE97A-2C04-4BE7-9CCF-73C8B48EFFCD",
+    "utterance" : "Corp - How much is the late payment fee?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.lost.damag.card.replac.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "02CB5CCE-3A63-47B0-B55B-A5746D44B247",
+    "utterance" : "Corp - How much is the lost or damaged card replacement fee"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.lost.damag.card.replac.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "FD2C65AC-8072-44B1-B027-CBE50D5361CD",
+    "utterance" : "Corp - How much is the lost or damaged card replacement fee?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.limit.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "014010DC-3F7D-4DED-A8A7-3557B29D14D8",
+    "utterance" : "Corp - How much is the over limit fee"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.limit.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "7BEDE46A-906B-4BB6-9B9C-ACB050B99D84",
+    "utterance" : "Corp - How much is the over limit fee?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.not.mutual.fund.acc.account.creat",
+    "testCaseType" : "INTENT",
+    "trackingId" : "5FCD80DA-F0E4-4E16-A03C-3E0416AD0D4D",
+    "utterance" : "Corp - I do not have a mutual fund account, how can an account be created"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.not.mutual.fund.acc.account.creat",
+    "testCaseType" : "INTENT",
+    "trackingId" : "B538CEA1-F5C8-40B4-9332-F366D40271C0",
+    "utterance" : "Corp - I do not have a mutual fund account, how can an account be created?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.app.support.android.io.oper.system",
+    "testCaseType" : "INTENT",
+    "trackingId" : "358CAAB2-BEF3-42E1-8609-EE9333D597B7",
+    "utterance" : "Corp - Is Al Ahly Mobile application supported by Android and IOS mobile operating systems"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.app.support.android.io.oper.system",
+    "testCaseType" : "INTENT",
+    "trackingId" : "01780CE0-0724-4330-955E-4FE1940EFF5A",
+    "utterance" : "Corp - Is Al Ahly Mobile application supported by Android and IOS mobile operating systems?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.transfer.note.sent.paye",
+    "testCaseType" : "INTENT",
+    "trackingId" : "4FEEEE9E-31DC-4B67-A04E-7CD79AEE2127",
+    "utterance" : "Corp - Is a transfer note sent to the payee"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.transfer.note.sent.paye",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1492DD27-3456-4453-9130-0060276649CF",
+    "utterance" : "Corp - Is a transfer note sent to the payee?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.interest.charg.case.min.payment.made",
+    "testCaseType" : "INTENT",
+    "trackingId" : "B3D69EE1-9FDB-4980-852D-545764BE996E",
+    "utterance" : "Corp - Is interest charged in case the minimum payment is made"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.interest.charg.case.min.payment.made",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3DB9D3E2-05F9-4A92-900D-400C116B30D5",
+    "utterance" : "Corp - Is interest charged in case the minimum payment is made?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.log.us.facial.recognit.fingerprint.avail.corp.custom",
+    "testCaseType" : "INTENT",
+    "trackingId" : "EADC8A99-BADB-462F-B798-F502F452544E",
+    "utterance" : "Corp - Is logging in to Al Ahly Mobile using facial recognition/fingerprint available to corporate customers"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.log.us.facial.recognit.fingerprint.avail.corp.custom",
+    "testCaseType" : "INTENT",
+    "trackingId" : "EEBC8155-FB5D-4BF0-BD9E-E608F851E387",
+    "utterance" : "Corp - Is logging in to Al Ahly Mobile using facial recognition/fingerprint available to corporate customers?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.acc.detail.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "0937E1BA-2A46-4D6A-B920-1F6634EC574D",
+    "utterance" : "Corp - What are the account details that can be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.acc.detail.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "420711CA-04BB-421A-880E-DB59DA3A3DE6",
+    "utterance" : "Corp - What are the account details that can be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.action.avail.hard.token",
+    "testCaseType" : "INTENT",
+    "trackingId" : "FC1542AD-86CC-4B76-A077-024CFD2CE27C",
+    "utterance" : "Corp - What are the actions available for the hard token"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.action.avail.hard.token",
+    "testCaseType" : "INTENT",
+    "trackingId" : "E980A226-B3C1-4B1F-8B82-45F8062A5C63",
+    "utterance" : "Corp - What are the actions available for the hard token?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.al.ahly.mobile.corp.avail.option.amend.cert.deposit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A328A62C-3F52-4D51-8EEF-D9B36905DDBA",
+    "utterance" : "Corp - What are the available options for amending certificates or deposits"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.al.ahly.mobile.corp.avail.option.amend.cert.deposit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "13A8E9B5-2E0A-4856-82D4-95BFC0CCA42F",
+    "utterance" : "Corp - What are the available options for amending certificates or deposits?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.detail.cert.deposit.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "7813DF8A-21A1-4414-BC61-8E41FF75CD8B",
+    "utterance" : "Corp - What are the details of certificates/deposits that can be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.detail.cert.deposit.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "AAFF3FFE-DE2C-414B-90E5-D57781EA3A80",
+    "utterance" : "Corp - What are the details of certificates/deposits that can be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.detail.loan.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "547B4AE3-7091-428B-8DF1-34D4D127C6B6",
+    "utterance" : "Corp - What are the details of loans that can be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.detail.loan.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "14899B42-B9D9-4E35-9B42-8D5BA142E39C",
+    "utterance" : "Corp - What are the details of loans that can be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.detail.mutual.fund.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "AF6C655D-2514-4011-94F1-5487D8E185B5",
+    "utterance" : "Corp - What are the details of mutual funds that can be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.detail.mutual.fund.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "81054CEA-C8CE-4392-9468-D5144C5CF9D8",
+    "utterance" : "Corp - What are the details of mutual funds that can be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.avail",
+    "testCaseType" : "INTENT",
+    "trackingId" : "E4FE1177-E62D-4A05-B699-B773F3BCE481",
+    "utterance" : "Corp - What are the services available via Al Ahly Net/ NBE Mobile"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.avail",
+    "testCaseType" : "INTENT",
+    "trackingId" : "68BE9E64-7303-485F-BE98-1F6092C397FD",
+    "utterance" : "Corp - What are the services available via Al Ahly Net/ NBE Mobile?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.happen.incorrect.login.password.enter",
+    "testCaseType" : "INTENT",
+    "trackingId" : "E4BA0931-EA1D-4285-B3D3-87EEBD39B29D",
+    "utterance" : "Corp - What happens if an incorrect login password is entered"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.happen.incorrect.login.password.enter",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F38AFA40-F012-49B8-A5D7-F4774991C794",
+    "utterance" : "Corp - What happens if an incorrect login password is entered?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.happen.hard.token.pin.code.enter.incorrectli",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D6465E08-2912-4A90-8F59-FF67385750E9",
+    "utterance" : "Corp - What happens if the hard token PIN code is entered incorrectly"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.happen.hard.token.pin.code.enter.incorrectli",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1FB0AA61-2BF1-4031-8C96-7029E547C893",
+    "utterance" : "Corp - What happens if the hard token PIN code is entered incorrectly?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.multipl.transfer",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C3E94DFE-9FB3-4244-941C-D5EDAADD22AC",
+    "utterance" : "Corp - What is the \"Multiple Transfers\" service"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.multipl.transfer",
+    "testCaseType" : "INTENT",
+    "trackingId" : "40F12CAA-389C-4109-96AA-FD3B12F7F980",
+    "utterance" : "Corp - What is the \"Multiple Transfers\" service?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.card.grace.period",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1B873F92-DB64-40B7-8CA7-E5B0E3C050B1",
+    "utterance" : "Corp - What is the card grace period"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.card.grace.period",
+    "testCaseType" : "INTENT",
+    "trackingId" : "B59C3E56-6BC7-4CE4-AA31-EA7F3331BA4D",
+    "utterance" : "Corp - What is the card grace period?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.card.max.limit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8E5E43EF-687C-4B61-8709-F45C64EB6A2E",
+    "utterance" : "Corp - What is the card maximum credit limit"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.card.max.limit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "06D1842A-BB56-4247-A0F3-239712899085",
+    "utterance" : "Corp - What is the card maximum credit limit?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.card.max.daili.purchas.limit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "67AF9B23-7480-4799-BEAE-8B3BC8839636",
+    "utterance" : "Corp - What is the card maximum daily purchase limit"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.card.max.daili.purchas.limit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F14DFD8E-40AB-4171-9741-5E4C09C24124",
+    "utterance" : "Corp - What is the card maximum daily purchase limit?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.card.max.daili.withdraw.limit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D5C782D8-229E-4732-B57A-49B89BAF31CB",
+    "utterance" : "Corp - What is the card maximum daily withdrawal limit"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.card.max.daili.withdraw.limit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "EE7969E4-66A7-4068-BA7F-DEEC037F8B01",
+    "utterance" : "Corp - What is the card maximum daily withdrawal limit?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.max.number.user.singl.corp.custom",
+    "testCaseType" : "INTENT",
+    "trackingId" : "AE9C6CCC-5437-41BF-8BC3-F2BF4EE6E4C3",
+    "utterance" : "Corp - What is the maximum number of users for a single corporate customer"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.max.number.user.singl.corp.custom",
+    "testCaseType" : "INTENT",
+    "trackingId" : "42DC23A0-4D92-4F55-88B7-5FB8C46AB590",
+    "utterance" : "Corp - What is the maximum number of users for a single corporate customer?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.min.payment.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C8DAAD42-D690-4F8D-9DAD-6C85DDC67093",
+    "utterance" : "Corp - What is the minimum payment on the card"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.credit.cards.min.payment.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F1FD8791-66F4-44CB-B1E6-2489A35DD3A5",
+    "utterance" : "Corp - What is the minimum payment on the card?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.primari.acc.assign.upon.open.invest.account",
+    "testCaseType" : "INTENT",
+    "trackingId" : "0E4D1E50-9A10-4C55-9B35-47C871F6E3FA",
+    "utterance" : "Corp - What is the primary account assigned upon opening an investment account"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.primari.acc.assign.upon.open.invest.account",
+    "testCaseType" : "INTENT",
+    "trackingId" : "4065C289-29CA-459C-BD72-49F8A0F634AC",
+    "utterance" : "Corp - What is the primary account assigned upon opening an investment account?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.web.browser.us.access",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1DC97AEB-6116-4150-A5C8-BCEA79721AEF",
+    "utterance" : "Corp - Which web browser can be used to access Al Ahly Net"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.web.browser.us.access",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1B1BAB16-CA4E-40A0-8837-3CB08260677B",
+    "utterance" : "Corp - Which web browser can be used to access Al Ahly Net?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.elig.corp",
+    "testCaseType" : "INTENT",
+    "trackingId" : "263E0ACE-5F39-439B-A480-4ECBDE1A1927",
+    "utterance" : "Corp - Who is eligible for corporate debit cards"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.elig.corp",
+    "testCaseType" : "INTENT",
+    "trackingId" : "143FD168-0C75-4A0D-93E9-DF6587D8B295",
+    "utterance" : "Corp - Who is eligible for corporate debit cards?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.corp.debit.cards.card.issuanc.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8ED3BA43-CBCC-404C-99F7-2C50D39C0766",
+    "utterance" : "Corp -Debit Cards - How much is the card issuance fee"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.al.ahly.payroll.current.acc.program.chequ.book.issu",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1455D0BC-2727-4F07-8C11-BE0ECA2064DB",
+    "utterance" : "Current Account - Can a cheque book be issued"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.al.ahly.payroll.current.acc.program.chequ.book.issu",
+    "testCaseType" : "INTENT",
+    "trackingId" : "5CC9B83E-CD67-445C-B35E-9988B2464EE2",
+    "utterance" : "Current Account - Can a cheque book be issued?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.al.ahly.payroll.current.acc.program.free.charg",
+    "testCaseType" : "INTENT",
+    "trackingId" : "CD802589-2273-4348-8755-8AE332795CC4",
+    "utterance" : "Current Account - Other services which are free of charg"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.al.ahly.payroll.current.acc.program.free.charg",
+    "testCaseType" : "INTENT",
+    "trackingId" : "0CADF2B9-23E5-4502-A417-A88141D2D16F",
+    "utterance" : "Current Account - Other services which are free of charge"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.card.us.onlin.shop",
+    "testCaseType" : "INTENT",
+    "trackingId" : "56ABCBAA-CD12-4A92-ABCB-2DD07F0D5651",
+    "utterance" : "Debit Cards - Can the card be used for online shopping"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.card.us.onlin.shop",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3245FAC8-3D79-4DEC-B418-F908D6BCE6FA",
+    "utterance" : "Debit Cards - Can the card be used for online shopping?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.expir",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C5614760-3769-48AD-8A35-FA52C304D4A0",
+    "utterance" : "Do AL-AHLY Points expire"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.expir",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D1A1CE33-6660-43A6-B095-C111F269CBDF",
+    "utterance" : "Do AL-AHLY Points expire?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.salary.advance.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "93FF1A3F-9426-4ECE-A151-66A3508F8E41",
+    "utterance" : "Fee"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.salary.advance.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3C32E7A5-4CB7-4F59-8D98-BB7B5143A558",
+    "utterance" : "Fees"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.activ.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "23A595E4-466A-4802-B9F3-3056DB430116",
+    "utterance" : "How can I activate the card"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.activ.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3E4E8387-14FB-41D4-BF75-2B7EE1743E21",
+    "utterance" : "How can I activate the card?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.appli.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "2990B4A3-B42A-4417-A560-6F009FFA0B18",
+    "utterance" : "How can I apply for a debit card"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.appli.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F9F3EFC5-01C3-435B-8417-469D129BE95C",
+    "utterance" : "How can I apply for a debit card?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.appli",
+    "testCaseType" : "INTENT",
+    "trackingId" : "443A41C0-E76F-4A73-A302-2E03B62B1D41",
+    "utterance" : "How can I apply for a personal loan"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.appli",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D5A80EFF-AF07-499E-803A-3EDEF2DDE4A7",
+    "utterance" : "How can I apply for a personal loan?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.auto.loan.borrow.against.new.annual.platinum.cert.monthli.return",
+    "testCaseType" : "INTENT",
+    "trackingId" : "7C32A9C8-E259-46B0-968B-9D233285B446",
+    "utterance" : "How can I borrow against the new 18% annual platinum certificate with a monthly return"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.auto.loan.borrow.against.new.annual.platinum.cert.monthli.return",
+    "testCaseType" : "INTENT",
+    "trackingId" : "35B6CBEE-AA59-4AB4-B93A-D09B85445107",
+    "utterance" : "How can I borrow against the new 18% annual platinum certificate with a monthly return?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.chang.password",
+    "testCaseType" : "INTENT",
+    "trackingId" : "AFA39D65-0D89-44D3-965B-BD5229996769",
+    "utterance" : "How can I change my password"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.chang.password",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8A68EE58-5728-44E3-BD6C-269759E2DCE0",
+    "utterance" : "How can I change my password?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.close.wallet",
+    "testCaseType" : "INTENT",
+    "trackingId" : "2D59F15D-CE15-48D1-9C62-118F8EFCFFBB",
+    "utterance" : "How can I close my wallet"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.close.wallet",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1EBB83AD-5C58-4F06-B91F-5B00CB80B303",
+    "utterance" : "How can I close my wallet?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.collect.card.it.issuanc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "52EF15E5-5202-4A8B-8FDF-BD2D42C19080",
+    "utterance" : "How can I collect the card after its issuance"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.collect.card.it.issuanc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "7969A4FB-4D4D-4AC5-A99B-903F26B7631F",
+    "utterance" : "How can I collect the card after its issuance?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.creat.password.first.time",
+    "testCaseType" : "INTENT",
+    "trackingId" : "78D4385D-6ED3-42EE-AB3C-4E92411FDE41",
+    "utterance" : "How can I create Al Ahly PhoneCash password for the first time"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.creat.password.first.time",
+    "testCaseType" : "INTENT",
+    "trackingId" : "719CECBF-7FA7-4D52-9E9C-BA80DB2E56B2",
+    "utterance" : "How can I create Al Ahly PhoneCash password for the first time?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.earn",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1C0443F0-4B88-47E1-8D80-50F03C5F08FF",
+    "utterance" : "How can I earn AL-AHLY Points?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.machin",
+    "testCaseType" : "INTENT",
+    "trackingId" : "9E6A9085-439C-403D-9FB1-445C6CC0BAB1",
+    "utterance" : "How can I get a POS machine"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.machin",
+    "testCaseType" : "INTENT",
+    "trackingId" : "60CBA10A-FDDB-46BB-9529-AFC9D20C93B9",
+    "utterance" : "How can I get a POS machine?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "DEEC5F55-F8E9-46B0-9BB7-2443CAD238AF",
+    "utterance" : "How can I get a prepaid card"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3D2821F7-CB56-4E17-A5D4-2C8E5A1C1790",
+    "utterance" : "How can I get a prepaid card?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.mortgage.finance.residenti.unit.initi",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F2D9791C-7447-4946-B324-E1F1C64D16FD",
+    "utterance" : "How can I get a residential unit through the Mortgage Finance initiative"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.mortgage.finance.residenti.unit.initi",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F0C88F59-E717-46B3-BB19-08C47005E0C7",
+    "utterance" : "How can I get a residential unit through the Mortgage Finance initiative?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.keep.track.balanc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "5F2F9A1E-75B2-495B-BA23-0F9BF9D0B484",
+    "utterance" : "How can I keep track of my AL-AHLY Points balance"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.keep.track.balanc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "18F1EB37-3209-4953-840D-A1755203FDF7",
+    "utterance" : "How can I keep track of my AL-AHLY Points balance?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.link.card.wallet",
+    "testCaseType" : "INTENT",
+    "trackingId" : "58CBE9D9-388B-4D6C-9849-94BC5D11B232",
+    "utterance" : "How can I link any NBE card to the wallet"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.link.card.wallet",
+    "testCaseType" : "INTENT",
+    "trackingId" : "018537FF-53E3-4748-B945-D6BC4EB12DE1",
+    "utterance" : "How can I link any NBE card to the wallet?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.receiv.e.voucher",
+    "testCaseType" : "INTENT",
+    "trackingId" : "56BC2B5C-E861-4781-A112-1E35B59EFFC1",
+    "utterance" : "How can I receive my e-vouchers"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.receiv.e.voucher",
+    "testCaseType" : "INTENT",
+    "trackingId" : "2B5FA06E-EE73-4F52-A44B-AE1B78CE5D88",
+    "utterance" : "How can I receive my e-vouchers?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.redeem.mobil.top",
+    "testCaseType" : "INTENT",
+    "trackingId" : "ACA12EC6-72F3-4F61-8BE9-51FF9FD82A11",
+    "utterance" : "How can I redeem my AL-AHLY Points to Mobile top up?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.redeem.e.voucher",
+    "testCaseType" : "INTENT",
+    "trackingId" : "4BFCADE8-E827-44D8-BC30-720B6018E47D",
+    "utterance" : "How can I redeem my AL-AHLY Points to e-vouchers?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.redeem.cash.reward",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3985E9BC-0991-4F22-A796-40B41E04A809",
+    "utterance" : "How can I redeem my AL-AHLY Points to have Cash Rewards"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.redeem.cash.reward",
+    "testCaseType" : "INTENT",
+    "trackingId" : "9D18C482-E278-446C-B189-63876A44586D",
+    "utterance" : "How can I redeem my AL-AHLY Points to have Cash Rewards?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.redeem.travel.world",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1839959B-791F-4467-8C47-72DF38D10AC2",
+    "utterance" : "How can I redeem my AL-AHLY Points to travel all over the world"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.redeem.travel.world",
+    "testCaseType" : "INTENT",
+    "trackingId" : "B28B838F-2323-481B-8C11-AED81B6132EB",
+    "utterance" : "How can I redeem my AL-AHLY Points to travel all over the world?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.repai.instal",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D620BCA9-2438-497E-A14D-074F00D7239E",
+    "utterance" : "How can I repay the loan installments"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.repai.instal",
+    "testCaseType" : "INTENT",
+    "trackingId" : "97553F2E-1318-4580-8204-8D9EFF202ED1",
+    "utterance" : "How can I repay the loan installments?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.replac.card.number.link.wallet.upon.replac.due.loss.damag",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F87C5C9A-7FF8-4493-966E-A9F3AB308B9D",
+    "utterance" : "How can I replace my NBE card number that is linked to the wallet upon the replacement of the card due to loss or damage?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.reset.password",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D3591EC9-18F5-4930-8C02-B5F8EA7AE96A",
+    "utterance" : "How can I reset my password"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.reset.password",
+    "testCaseType" : "INTENT",
+    "trackingId" : "EDE06D53-9D0C-4B20-BBC5-54AE04C69D09",
+    "utterance" : "How can I reset my password?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.review.detail.transact.made.wallet",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A000040D-BBF7-4657-ADFD-F31A3878187D",
+    "utterance" : "How can I review the details of the transactions made via the wallet"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.review.detail.transact.made.wallet",
+    "testCaseType" : "INTENT",
+    "trackingId" : "73823646-C943-4839-9785-73F5DB0A4CE4",
+    "utterance" : "How can I review the details of the transactions made via the wallet?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.subscrib",
+    "testCaseType" : "INTENT",
+    "trackingId" : "9E6A8BC3-72E2-4B03-8DAD-D63B661A133A",
+    "utterance" : "How can I subscribe to AL Ahly PhoneCash"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.subscrib",
+    "testCaseType" : "INTENT",
+    "trackingId" : "43040DB5-2187-42AE-A64E-F499A30B7C22",
+    "utterance" : "How can I subscribe to AL Ahly PhoneCash?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPlatinum.services.subscrib",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A399B579-29D3-46AA-93C8-89D2A7B6D09A",
+    "utterance" : "How can I subscribe to Al Ahly Platinum Services"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPlatinum.services.subscrib",
+    "testCaseType" : "INTENT",
+    "trackingId" : "882CCBC0-73BE-4266-89E0-DC46582EFDA9",
+    "utterance" : "How can I subscribe to Al Ahly Platinum Services?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyE-Shopping.subscrib.payment.corp",
+    "testCaseType" : "INTENT",
+    "trackingId" : "0A1CFD6A-4B6B-479F-BEB8-ED5DAFC56BC9",
+    "utterance" : "How can I subscribe to the e-payment service for corporates"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyE-Shopping.subscrib.payment.corp",
+    "testCaseType" : "INTENT",
+    "trackingId" : "6160AB10-4836-4A2A-9601-B1F9359296DC",
+    "utterance" : "How can I subscribe to the e-payment service for corporates?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.us.e.voucher.merchant",
+    "testCaseType" : "INTENT",
+    "trackingId" : "BDB92025-61EE-4019-94D4-3F7038C600B9",
+    "utterance" : "How can I use my e-voucher at the merchants"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.us.e.voucher.merchant",
+    "testCaseType" : "INTENT",
+    "trackingId" : "39003B55-D78C-43F3-A2B9-E14C873A3103",
+    "utterance" : "How can I use my e-voucher at the merchants?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.al.ahly.payroll.card.program.us",
+    "testCaseType" : "INTENT",
+    "trackingId" : "2D1129B3-805B-4ABF-B584-D50051BE54AA",
+    "utterance" : "How can the card be used"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.al.ahly.payroll.card.program.us",
+    "testCaseType" : "INTENT",
+    "trackingId" : "FE9A67D3-8BA7-461F-A793-690B68BDB1A9",
+    "utterance" : "How can the card be used?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.transact.review",
+    "testCaseType" : "INTENT",
+    "trackingId" : "70742036-720D-47E4-B462-706D5153BF43",
+    "utterance" : "How can transactions be reviewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.transact.review",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A68E291D-64F1-40B1-B63D-B553954E7916",
+    "utterance" : "How can transactions be reviewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.enrol.reward.program",
+    "testCaseType" : "INTENT",
+    "trackingId" : "B359DBCE-9646-47D1-9C77-EC03E50CA935",
+    "utterance" : "How do I enroll into AL-AHLY Points reward program"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.enrol.reward.program",
+    "testCaseType" : "INTENT",
+    "trackingId" : "0144936D-56CB-40C3-8B3C-842730A3ECAC",
+    "utterance" : "How do I enroll into AL-AHLY Points reward program?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.al.ahly.payroll.current.acc.program.acc.oper",
+    "testCaseType" : "INTENT",
+    "trackingId" : "EA4226B7-F4E6-499C-902E-C4A34F578FB7",
+    "utterance" : "How is the account operated"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.al.ahly.payroll.current.acc.program.acc.oper",
+    "testCaseType" : "INTENT",
+    "trackingId" : "48C3385E-B5B0-4D57-BF95-7B163D2FD645",
+    "utterance" : "How is the account operated?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.interest.rate.calcul",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1B359F16-6194-42C1-9A50-B1E12D3F5178",
+    "utterance" : "How is the interest rate calculated"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.interest.rate.calcul",
+    "testCaseType" : "INTENT",
+    "trackingId" : "905FAB50-E517-4A12-8568-A4754B6D8B45",
+    "utterance" : "How is the interest rate calculated?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.long.cash.reward.credit.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1F03B253-76F7-4D8C-8D57-D7A2BAE19FD1",
+    "utterance" : "How long does it take to get the cash reward on my credit card"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.long.cash.reward.credit.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "9C9951B4-EDFA-47DE-B35F-909D3329235D",
+    "utterance" : "How long does it take to get the cash reward on my credit card?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.long.contract.procedur",
+    "testCaseType" : "INTENT",
+    "trackingId" : "0CFB048E-A1C4-4E07-8B00-FFA8830E3609",
+    "utterance" : "How long does the contracting procedure take"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.long.contract.procedur",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D3A2BBFF-0745-4300-8B7C-6A33C1018339",
+    "utterance" : "How long does the contracting procedure take?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.long.card.valid.period",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C74302AA-C30A-4C53-90B0-A60C306A9663",
+    "utterance" : "How long is the card validity period"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.long.card.valid.period",
+    "testCaseType" : "INTENT",
+    "trackingId" : "AE76D46C-4064-4565-B806-B7E598FCD2FA",
+    "utterance" : "How long is the card validity period?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.wallet.subscrib",
+    "testCaseType" : "INTENT",
+    "trackingId" : "9B60AAC5-E78D-4037-809D-CC12C2A98DF7",
+    "utterance" : "How many wallets can I subscribe to"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.wallet.subscrib",
+    "testCaseType" : "INTENT",
+    "trackingId" : "549810FC-CD4B-43FC-8FFE-6B91A8652914",
+    "utterance" : "How many wallets can I subscribe to?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.card.issuanc.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "2FF1AB7B-DF09-4F6E-BED5-763C732DEB39",
+    "utterance" : "How much is the card issuance fee?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.card.renew.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "4712823A-EB6A-4552-A09A-E3264D664C94",
+    "utterance" : "How much is the card renewal fee"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.card.renew.fee",
+    "testCaseType" : "INTENT",
+    "trackingId" : "9EE7D4C4-10FC-4857-BA96-3B22D67730DA",
+    "utterance" : "How much is the card renewal fee?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.cash.withdraw.fee.atm.local.bank",
+    "testCaseType" : "INTENT",
+    "trackingId" : "DFCF5A27-6DB3-4EEC-ABBE-7EF7E08DA31D",
+    "utterance" : "How much is the cash withdrawal fee from ATMs of other local banks"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.cash.withdraw.fee.atm.local.bank",
+    "testCaseType" : "INTENT",
+    "trackingId" : "449E145E-0F5B-4DA1-B82C-2430AF75D353",
+    "utterance" : "How much is the cash withdrawal fee from ATMs of other local banks?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.cash.withdraw.fee.atm",
+    "testCaseType" : "INTENT",
+    "trackingId" : "BB17F0FA-CF28-49B2-906D-6FCAFF1DCF2D",
+    "utterance" : "How much is the cash withdrawal fee from NBE's ATMs"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.cash.withdraw.fee.atm",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1E3DA4A8-5599-4E77-A10C-EF896D63C160",
+    "utterance" : "How much is the cash withdrawal fee from NBE's ATMs?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPlatinum.services.opt",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D5300391-8B96-41F9-807D-650BBE34BDEE",
+    "utterance" : "How to opt out of the service"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPlatinum.services.opt",
+    "testCaseType" : "INTENT",
+    "trackingId" : "DDA6CBBB-CA64-46EB-A245-A0EF896FD295",
+    "utterance" : "How to opt out of the service?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPlatinum.services.qualifi.elit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "9CCB7907-34E9-4727-8831-D29DBAB5D74D",
+    "utterance" : "How to qualify to Platinum Elite"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPlatinum.services.qualifi.elit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "230B7AAB-20D0-418F-9521-A00A7C92CD8A",
+    "utterance" : "How to qualify to Platinum Elite?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPlatinum.services.qualifi.plu",
+    "testCaseType" : "INTENT",
+    "trackingId" : "14A05879-2B3D-43CC-97D2-B5FBCDD502D6",
+    "utterance" : "How to qualify to Platinum Plus"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPlatinum.services.qualifi.plu",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C9942873-5579-4F23-89D7-13140DD5E596",
+    "utterance" : "How to qualify to Platinum Plus?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPlatinum.services.qualifi.segment",
+    "testCaseType" : "INTENT",
+    "trackingId" : "2A6D2C0A-9D7D-445A-9188-ACC253EFFB07",
+    "utterance" : "How to qualify to Platinum segment"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPlatinum.services.qualifi.segment",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3CE1B087-5E36-452A-A3C4-0378B7BDB0BF",
+    "utterance" : "How to qualify to Platinum segment?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPlatinum.services.subscrib.concierg",
+    "testCaseType" : "INTENT",
+    "trackingId" : "2F41BF54-12AA-490F-81BC-20853D4A1647",
+    "utterance" : "How to subscribe to Concierge service"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPlatinum.services.subscrib.concierg",
+    "testCaseType" : "INTENT",
+    "trackingId" : "073822B5-622C-432D-9285-489B041B8EAF",
+    "utterance" : "How to subscribe to Concierge service?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPlatinum.services.subscrib.road.assist",
+    "testCaseType" : "INTENT",
+    "trackingId" : "97B48B05-F344-43F5-81F5-074160C6F168",
+    "utterance" : "How to subscribe to Road Assistance Service"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPlatinum.services.subscrib.road.assist",
+    "testCaseType" : "INTENT",
+    "trackingId" : "16ED0876-1532-4B2B-81DE-F404BAFCA8B6",
+    "utterance" : "How to subscribe to Road Assistance Service?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.just.join.compani.min.period.appli",
+    "testCaseType" : "INTENT",
+    "trackingId" : "428ACBA0-4191-47BA-B0BB-A1F88179D453",
+    "utterance" : "I have just joined my company, is there a minimum period of service to apply for a Personal Loan"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.just.join.compani.min.period.appli",
+    "testCaseType" : "INTENT",
+    "trackingId" : "53217145-B799-40F2-A224-75D034445FA1",
+    "utterance" : "I have just joined my company, is there a minimum period of service to apply for a Personal Loan?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyE-Shopping.info.req.subscript.app",
+    "testCaseType" : "INTENT",
+    "trackingId" : "FCE94603-E6C1-4B1D-BEA8-D5EB1A060C3C",
+    "utterance" : "Information required in the subscription applicatio"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyE-Shopping.info.req.subscript.app",
+    "testCaseType" : "INTENT",
+    "trackingId" : "71D92C33-9CA1-4FD4-8402-955746C0E2C5",
+    "utterance" : "Information required in the subscription application"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.sm.notif.sent.when.card.us",
+    "testCaseType" : "INTENT",
+    "trackingId" : "25A89655-9442-44E9-83CE-B73C793EE8F2",
+    "utterance" : "Is an SMS notification sent when the debit card is used"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.sm.notif.sent.when.card.us",
+    "testCaseType" : "INTENT",
+    "trackingId" : "10825639-02BF-4A4D-B891-8E73E06D66C2",
+    "utterance" : "Is an SMS notification sent when the debit card is used?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.sm.notif.sent.when.card.us",
+    "testCaseType" : "INTENT",
+    "trackingId" : "19DDB7C5-BD84-4696-A69F-13C080907AC1",
+    "utterance" : "Is an SMS notification sent when the prepaid card is used"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.sm.notif.sent.when.card.us",
+    "testCaseType" : "INTENT",
+    "trackingId" : "04C2C790-0D12-4679-A1A6-F959B0F7CB5D",
+    "utterance" : "Is an SMS notification sent when the prepaid card is used?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.allow.issu.chequ.book.current.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "0F322275-8430-40AF-8F6E-6D1DA21307F1",
+    "utterance" : "Is it allowed to issue a cheque book for the current account"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.allow.issu.chequ.book.current.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F9D317B1-8674-4BAD-A180-3B66C5F8E8CE",
+    "utterance" : "Is it allowed to issue a cheque book for the current account?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.max.amount.open.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "BB097145-F449-43DE-8184-18286FF6789E",
+    "utterance" : "Is there a maximum amount for opening an account"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.max.amount.open.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "918ADB76-D370-481B-805F-7C9CFE8424FD",
+    "utterance" : "Is there a maximum amount for opening an account?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.rental.fee.machin",
+    "testCaseType" : "INTENT",
+    "trackingId" : "CCD2E863-4304-4837-924E-8551307BFD6D",
+    "utterance" : "Is there a rental fee for the POS machine"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.rental.fee.machin",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F03D1E48-8417-418E-A9FB-18392921EDC3",
+    "utterance" : "Is there a rental fee for the POS machine?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.altern.paper.statement.acc.cancel",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A740C7CD-3592-4444-90CB-A79C8AF15374",
+    "utterance" : "Is there an alternative for paper statements of account or can this service be cancelled"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.altern.paper.statement.acc.cancel",
+    "testCaseType" : "INTENT",
+    "trackingId" : "9107EF85-E107-474E-B0A7-8A538E4DBA39",
+    "utterance" : "Is there an alternative for paper statements of account or can this service be cancelled?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.insur.avail",
+    "testCaseType" : "INTENT",
+    "trackingId" : "4145DB1F-17BE-43DD-AD5E-2B8B90D592A4",
+    "utterance" : "Is there an insurance available for the Personal Loan"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.insur.avail",
+    "testCaseType" : "INTENT",
+    "trackingId" : "38841E77-D200-4AF5-B71B-1C7CFCE2E55A",
+    "utterance" : "Is there an insurance available for the Personal Loan?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.transfer.salari.obligatori",
+    "testCaseType" : "INTENT",
+    "trackingId" : "2AF6B7E0-6203-4A5F-B323-270467481BD1",
+    "utterance" : "Is transferring the salary obligatory to get a personal loan"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.transfer.salari.obligatori",
+    "testCaseType" : "INTENT",
+    "trackingId" : "00A10E55-F918-4519-A63D-068E05A0DDB6",
+    "utterance" : "Is transferring the salary obligatory to get a personal loan?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.card.us.onlin.shop",
+    "testCaseType" : "INTENT",
+    "trackingId" : "BA9E8455-8117-4EB5-A50B-2A260CE32CD7",
+    "utterance" : "Prepaid Cards - Can the card be used for online shopping"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.card.us.onlin.shop",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D2824353-94C3-4D59-8317-DB5FE780BE33",
+    "utterance" : "Prepaid Cards - Can the card be used for online shopping?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.bill.payment.recharg.enabl",
+    "testCaseType" : "INTENT",
+    "trackingId" : "AB48061E-58AC-480E-A643-61BF94C8FD27",
+    "utterance" : "Retail - Are bill payment and mobile recharge services enabled"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.bill.payment.recharg.enabl",
+    "testCaseType" : "INTENT",
+    "trackingId" : "485B9CE5-6B24-42A6-B48D-D3D44CA5352D",
+    "utterance" : "Retail - Are bill payment and mobile recharge services enabled?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.debit.card.avail.origin.supplementari.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C37B7205-E779-473D-938D-1BA6C633825E",
+    "utterance" : "Retail - Are debit card services available for both the original and supplementary cards"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.debit.card.avail.origin.supplementari.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "DCD5B425-C15F-4C95-9971-4E41139A00A7",
+    "utterance" : "Retail - Are debit card services available for both the original and supplementary cards?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.add.new.categori.classif.transact",
+    "testCaseType" : "INTENT",
+    "trackingId" : "B150536E-4D29-4826-81EC-857811D8ECF3",
+    "utterance" : "Retail - Can I add new categories for the classification of my transactions"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.add.new.categori.classif.transact",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1CC89232-A8F9-46C2-8E33-3ABA6F580BAF",
+    "utterance" : "Retail - Can I add new categories for the classification of my transactions?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.amend.person.info",
+    "testCaseType" : "INTENT",
+    "trackingId" : "05063AEC-D552-4631-8943-D65C30B6171F",
+    "utterance" : "Retail - Can I amend my personal information via Al Ahly Net/ NBE Mobile"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.amend.person.info",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F5839404-C046-40A9-8390-0A717F66149E",
+    "utterance" : "Retail - Can I amend my personal information via Al Ahly Net/ NBE Mobile?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.appli.product",
+    "testCaseType" : "INTENT",
+    "trackingId" : "97AED0B2-E5BC-4C7E-A898-175CFBD206D2",
+    "utterance" : "Retail - Can I apply for NBE�s products"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.appli.product",
+    "testCaseType" : "INTENT",
+    "trackingId" : "38357B95-35F2-4481-9A5B-386A0AF9F969",
+    "utterance" : "Retail - Can I apply for NBE�s products?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.cancel.transact.classif.sub.transact",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D530D338-0CF5-4026-A689-BD0717D419F8",
+    "utterance" : "Retail - Can I cancel a transaction�s classification into sub-transactions"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.cancel.transact.classif.sub.transact",
+    "testCaseType" : "INTENT",
+    "trackingId" : "7698817D-1F26-4686-9E50-494F72BEF3DC",
+    "utterance" : "Retail - Can I cancel a transaction�s classification into sub-transactions?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.chang.user.id",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8FFDF152-9181-46ED-B98E-70ED154A4956",
+    "utterance" : "Retail - Can I change my user ID"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.chang.user.id",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C2E0D357-BB0F-4DB7-A313-E75AF5DA959D",
+    "utterance" : "Retail - Can I change my user ID?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.choos.branch.new.sub.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "34EC7981-B1AF-4212-B432-E0045C7E3861",
+    "utterance" : "Retail - Can I choose the branch of the new sub-account"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.choos.branch.new.sub.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "21614CA9-B35A-4E64-A277-7964571B7F69",
+    "utterance" : "Retail - Can I choose the branch of the new sub-account?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.creat.budget",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C9331C53-026B-446D-A0FD-4DA4E65B8375",
+    "utterance" : "Retail - Can I create a budget via Al Ahly Net/NBE Mobile"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.creat.budget",
+    "testCaseType" : "INTENT",
+    "trackingId" : "62FB974E-30F7-4926-BB2E-93AF5D571018",
+    "utterance" : "Retail - Can I create a budget via Al Ahly Net/NBE Mobile?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.supplementari.card.determin.it.limit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "CAFE97BA-F7F9-4D00-BA3B-D119F913D9C8",
+    "utterance" : "Retail - Can I get a supplementary credit card? How can I determine its credit limit"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.supplementari.card.determin.it.limit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "60E55476-0BBF-4DBA-BD63-B2CA2C293777",
+    "utterance" : "Retail - Can I get a supplementary credit card? How can I determine its credit limit?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.login.first.time.app",
+    "testCaseType" : "INTENT",
+    "trackingId" : "03A85253-CB1B-4610-9C60-947EB7D73DCE",
+    "utterance" : "Retail - Can I login for the first time via NBE Mobile application"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.login.first.time.app",
+    "testCaseType" : "INTENT",
+    "trackingId" : "2D2A6C89-2543-4FC3-A5D9-B203695EE8C1",
+    "utterance" : "Retail - Can I login for the first time via NBE Mobile application?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.credit.card.due.payment",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3045EA7F-85B0-44A3-A8B1-6A82B08D8649",
+    "utterance" : "Retail - Can I make credit card due payments"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.credit.card.due.payment",
+    "testCaseType" : "INTENT",
+    "trackingId" : "E18B2EA4-BE86-4B77-B466-77FCA93C11CD",
+    "utterance" : "Retail - Can I make credit card due payments?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.open.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "6E2E193C-F770-41DB-A866-50242C0AC3E0",
+    "utterance" : "Retail - Can I open an account via Al Ahly Net/NBE Mobile"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.open.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "FE84BAE0-16C3-4EE3-BD31-CFF76A961E75",
+    "utterance" : "Retail - Can I open an account via Al Ahly Net/NBE Mobile?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.print.statement.loan.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "86E63A3B-945A-4C61-9C9F-266AE059AAFF",
+    "utterance" : "Retail - Can I print a statement of loan accounts"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.print.statement.loan.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "36C96809-D2F6-48A5-BD63-AB34351958C6",
+    "utterance" : "Retail - Can I print a statement of loan accounts?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.remov.categori.classifi.transact",
+    "testCaseType" : "INTENT",
+    "trackingId" : "280B369F-E37C-4315-98EE-AC782D6ABEDF",
+    "utterance" : "Retail - Can I remove a category which classifies a transaction"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.remov.categori.classifi.transact",
+    "testCaseType" : "INTENT",
+    "trackingId" : "BB2CBE6E-0716-4C42-93B0-5A799B3F4EDF",
+    "utterance" : "Retail - Can I remove a category which classifies a transaction?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.remov.categori.add.place",
+    "testCaseType" : "INTENT",
+    "trackingId" : "64D89D71-061A-42C9-B041-A547BBEF767E",
+    "utterance" : "Retail - Can I remove categories and add other categories in their place"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.remov.categori.add.place",
+    "testCaseType" : "INTENT",
+    "trackingId" : "6BC5E7F4-2E00-4DD8-98DA-599E92492465",
+    "utterance" : "Retail - Can I remove categories and add other categories in their place?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.remov.modifi.ad.categori.bank",
+    "testCaseType" : "INTENT",
+    "trackingId" : "4839E168-465D-45D0-85C8-FB37E695D951",
+    "utterance" : "Retail - Can I remove/modify added categories through the Bank"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.remov.modifi.ad.categori.bank",
+    "testCaseType" : "INTENT",
+    "trackingId" : "529F3937-83AF-4859-AA17-1092C5DCBF7C",
+    "utterance" : "Retail - Can I remove/modify added categories through the Bank?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.submit.score.credit.report.request",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A42F20CE-4246-4146-9CBB-A0465F258CC9",
+    "utterance" : "Retail - Can I submit an I-Score credit report request via Al Ahly Net/NBE Mobile"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.submit.score.credit.report.request",
+    "testCaseType" : "INTENT",
+    "trackingId" : "B507B5D8-24B7-4BF7-B7AA-C714814EF507",
+    "utterance" : "Retail - Can I submit an I-Score credit report request via Al Ahly Net/NBE Mobile?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.track.expens",
+    "testCaseType" : "INTENT",
+    "trackingId" : "066E6C6A-69C0-4A38-BFC6-2EF92A4B6B8D",
+    "utterance" : "Retail - Can I track my expenses via Al Ahly Net/NBE Mobile"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.track.expens",
+    "testCaseType" : "INTENT",
+    "trackingId" : "E4DDE450-4E7B-4E5B-A2B8-9267091D7078",
+    "utterance" : "Retail - Can I track my expenses via Al Ahly Net/NBE Mobile?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.track.statu.submit.loan.app",
+    "testCaseType" : "INTENT",
+    "trackingId" : "084F9B28-AEC9-4D96-9F2A-EE0F808B59E3",
+    "utterance" : "Retail - Can I track the status of the submitted loan application"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.track.statu.submit.loan.app",
+    "testCaseType" : "INTENT",
+    "trackingId" : "EF707A2F-0982-4595-888F-C6DDB1094C52",
+    "utterance" : "Retail - Can I track the status of the submitted loan application?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.transfer.fund.across.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A0C1DD3F-02A0-40FF-A6CA-F70DE57E157B",
+    "utterance" : "Retail - Can I transfer funds across my accounts"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.transfer.fund.across.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "9A5528B7-6D23-4BE5-B5A7-0E7D1FD0C915",
+    "utterance" : "Retail - Can I transfer funds across my accounts?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.transfer.fund.acc.bank.insid.egypt",
+    "testCaseType" : "INTENT",
+    "trackingId" : "169A4FF2-6B2B-42A3-ADCD-6CD28BD4DD3F",
+    "utterance" : "Retail - Can I transfer funds to accounts at other banks inside Egypt"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.transfer.fund.acc.bank.insid.egypt",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C0C63231-DC4B-4227-AB46-13B8810BE7D1",
+    "utterance" : "Retail - Can I transfer funds to accounts at other banks inside Egypt?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.view.detail.credit.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "AF619FDB-D902-45D7-9FDF-A16B449422EC",
+    "utterance" : "Retail - Can I view the details of NBE credit cards via Al Ahly Net"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.view.detail.credit.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A7694F46-E461-47C7-BB8F-D9996923BB51",
+    "utterance" : "Retail - Can I view the details of NBE credit cards via Al Ahly Net?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.machin.link.ret.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "EC3B2827-D7A0-4767-AC4E-70B1957E9404",
+    "utterance" : "Retail - Can a POS machine be linked to a retail account"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.machin.link.ret.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F16117BF-DEFD-4C05-9B7D-60481DF22C6E",
+    "utterance" : "Retail - Can a POS machine be linked to a retail account?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.primari.acc.select.carri.financi.transact",
+    "testCaseType" : "INTENT",
+    "trackingId" : "35EC557F-FA96-45E9-A591-2DAA67D05856",
+    "utterance" : "Retail - Can a primary account be selected for carrying out financial transactions"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.primari.acc.select.carri.financi.transact",
+    "testCaseType" : "INTENT",
+    "trackingId" : "33C1AE3A-7FAA-4CE9-A35D-F0636BC1998F",
+    "utterance" : "Retail - Can a primary account be selected for carrying out financial transactions?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.type.cert.deposit.differ.currenc.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "EB2DCBF3-6622-4E2D-9575-3E20EA068B9D",
+    "utterance" : "Retail - Can all types of certificates/deposits in different currencies be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.type.cert.deposit.differ.currenc.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "CB299A9D-A3C7-43F1-B188-662CC421CCD0",
+    "utterance" : "Retail - Can all types of certificates/deposits in different currencies be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.type.loan.displai",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A46087AA-4D1D-4197-877E-A378BCAC6BA8",
+    "utterance" : "Retail - Can all types of loans be displayed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.type.loan.displai",
+    "testCaseType" : "INTENT",
+    "trackingId" : "0CF20054-6019-4F8C-83F1-29283245F031",
+    "utterance" : "Retail - Can all types of loans be displayed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.cert.deposit.open",
+    "testCaseType" : "INTENT",
+    "trackingId" : "64A5AB3D-8A49-4BC7-8D39-F15DEA2CCE3F",
+    "utterance" : "Retail - Can certificates/deposits be opened via the service"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.cert.deposit.open",
+    "testCaseType" : "INTENT",
+    "trackingId" : "ED8FFBB4-FB70-4225-BD12-769FF4AF766A",
+    "utterance" : "Retail - Can certificates/deposits be opened via the service?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.cert.deposit.redeem",
+    "testCaseType" : "INTENT",
+    "trackingId" : "E8EBCDE6-E443-4A03-AB49-A73180D32878",
+    "utterance" : "Retail - Can certificates/deposits be redeemed via the service"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.cert.deposit.redeem",
+    "testCaseType" : "INTENT",
+    "trackingId" : "2B821E60-2AEE-4330-88CA-0D098719D5CD",
+    "utterance" : "Retail - Can certificates/deposits be redeemed via the service?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.debit.credit.transact.view.separ",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F8BB57D8-D9B0-490C-A868-1343F2610846",
+    "utterance" : "Retail - Can debit and credit transactions be viewed separately"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.debit.credit.transact.view.separ",
+    "testCaseType" : "INTENT",
+    "trackingId" : "2A5A264A-D246-4DCD-B446-B9BD893BD397",
+    "utterance" : "Retail - Can debit and credit transactions be viewed separately?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.donat.made",
+    "testCaseType" : "INTENT",
+    "trackingId" : "51B8521B-4CAD-4642-A04D-D285653A244E",
+    "utterance" : "Retail - Can donations be made"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.donat.made",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D50FE0F9-8EF2-45D8-9DAF-241475A6A88E",
+    "utterance" : "Retail - Can donations be made?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.financi.transact.print",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D0AA696B-8AA9-4300-82B4-5EF73047765A",
+    "utterance" : "Retail - Can financial transactions be printed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.financi.transact.print",
+    "testCaseType" : "INTENT",
+    "trackingId" : "BB545478-BAF3-4A2B-82D2-EA4C907CB2A4",
+    "utterance" : "Retail - Can financial transactions be printed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.fingerprint.activ.soft.token.app",
+    "testCaseType" : "INTENT",
+    "trackingId" : "DB73D8EB-A546-413E-B46A-CE01CD840265",
+    "utterance" : "Retail - Can fingerprint be activated on the soft token App"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.fingerprint.activ.soft.token.app",
+    "testCaseType" : "INTENT",
+    "trackingId" : "6C4BD778-CCB7-41C3-8202-4374629B578D",
+    "utterance" : "Retail - Can fingerprint be activated on the soft token App?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.monei.transfer.e.wallet.bank",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8CD6B037-B859-49EC-B1A8-8ED779355F9F",
+    "utterance" : "Retail - Can money be transferred to an e-wallet with another bank"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.monei.transfer.e.wallet.bank",
+    "testCaseType" : "INTENT",
+    "trackingId" : "7F4FA1E0-84A0-4608-8241-75898424C950",
+    "utterance" : "Retail - Can money be transferred to an e-wallet with another bank?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.stand.instruct.modifi.stop",
+    "testCaseType" : "INTENT",
+    "trackingId" : "FEF542BC-94BD-4D7C-9A5D-7155D352686C",
+    "utterance" : "Retail - Can standing instructions be modified or stopped"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.stand.instruct.modifi.stop",
+    "testCaseType" : "INTENT",
+    "trackingId" : "07B244C9-A0B0-468E-836E-358EB8CE231D",
+    "utterance" : "Retail - Can standing instructions be modified or stopped?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.login.password.chang",
+    "testCaseType" : "INTENT",
+    "trackingId" : "08723D63-6C58-4F64-A12A-164BA0837048",
+    "utterance" : "Retail - Can the \"Login Password� be changed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.login.password.chang",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A90006D7-4696-4EE8-8FF9-2F9B33F6F491",
+    "utterance" : "Retail - Can the \"Login Password� be changed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.detail.chequ.inquir",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3AEBA7BC-E0BD-4302-A8B1-212B219120C3",
+    "utterance" : "Retail - Can the details of cheques be inquired about"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.detail.chequ.inquir",
+    "testCaseType" : "INTENT",
+    "trackingId" : "341D63F0-8438-4681-9360-760E32CEF07C",
+    "utterance" : "Retail - Can the details of cheques be inquired about?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.detail.execut.stand.instruct.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F9EF5A04-02A3-4705-A626-2285ED3A9F95",
+    "utterance" : "Retail - Can the details of executed standing instructions be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.detail.execut.stand.instruct.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3B3137B1-3489-45D7-8CB7-E5EC878A960C",
+    "utterance" : "Retail - Can the details of executed standing instructions be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.detail.differ.type.mutual.fund.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "AA42965E-D0C0-47C4-960B-AE476889F933",
+    "utterance" : "Retail - Can the details of the different types of mutual funds be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.detail.differ.type.mutual.fund.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "213459C7-6FDF-4434-88A5-F34F71F96B63",
+    "utterance" : "Retail - Can the details of the different types of mutual funds be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.differ.detail.prepaid.card.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C39E6C0A-73DA-42BE-9E91-D7DC080F6110",
+    "utterance" : "Retail - Can the different details of prepaid cards be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.differ.detail.prepaid.card.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "821C6869-7415-43C8-9968-E724931A911D",
+    "utterance" : "Retail - Can the different details of prepaid cards be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.hard.token.us",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A81A048E-E9FC-4A41-B348-A54F5EE1CEE3",
+    "utterance" : "Retail - Can the hard token services be used via Al Ahly Net/NBE Mobile"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.hard.token.us",
+    "testCaseType" : "INTENT",
+    "trackingId" : "51999065-6238-4701-BB51-525F6749383A",
+    "utterance" : "Retail - Can the hard token services be used via Al Ahly Net/NBE Mobile?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.soft.token.app.hard.us.togeth.creat.otp",
+    "testCaseType" : "INTENT",
+    "trackingId" : "92E7815B-8AAF-4362-A074-AD9AAE872433",
+    "utterance" : "Retail - Can the soft token App and hard token be used together in creating an OTP"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.soft.token.app.hard.us.togeth.creat.otp",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8F924698-917B-478D-A640-4D3D3655643C",
+    "utterance" : "Retail - Can the soft token App and hard token be used together in creating an OTP?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.statu.chequ.collect.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "807A41A2-612A-4DEC-BB78-858F0EBC4D1D",
+    "utterance" : "Retail - Can the status of cheques under collection be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.statu.chequ.collect.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "403139CB-9660-4DDD-89D2-F2A0BFA7750F",
+    "utterance" : "Retail - Can the status of cheques under collection be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.system.remind.payment.instal",
+    "testCaseType" : "INTENT",
+    "trackingId" : "2C5BF06A-80EE-452B-B346-69B9E8FD8B2E",
+    "utterance" : "Retail - Can the system remind me of my payments or installments"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.system.remind.payment.instal",
+    "testCaseType" : "INTENT",
+    "trackingId" : "AAEE8394-AD8F-47B2-8D21-618B5D2ABE55",
+    "utterance" : "Retail - Can the system remind me of my payments or installments?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.transact.inquir",
+    "testCaseType" : "INTENT",
+    "trackingId" : "92844545-3A8F-440D-A4C2-BA148A908DD2",
+    "utterance" : "Retail - Can transactions be inquired about"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.transact.inquir",
+    "testCaseType" : "INTENT",
+    "trackingId" : "84209C99-745C-46FE-96DB-3B1E3A4C4308",
+    "utterance" : "Retail - Can transactions be inquired about?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.transfer.made.acc.insid.outsid",
+    "testCaseType" : "INTENT",
+    "trackingId" : "4B508A65-87F9-4B18-A7FF-3B5BA5BE54C7",
+    "utterance" : "Retail - Can transfers be made to other accounts inside or outside NBE"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.transfer.made.acc.insid.outsid",
+    "testCaseType" : "INTENT",
+    "trackingId" : "867F22E2-06E1-4EFF-89B5-D115BFB8B141",
+    "utterance" : "Retail - Can transfers be made to other accounts inside or outside NBE?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.stand.instruct.enabl.make.transfer.outsid.custom.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3AC39657-6ADA-4549-B74D-043AA62C6354",
+    "utterance" : "Retail - Do standing instructions enable making transfer outside the customer's accounts"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.stand.instruct.enabl.make.transfer.outsid.custom.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D94C1255-3924-4658-83CD-B08489ACE163",
+    "utterance" : "Retail - Do standing instructions enable making transfer outside the customer's accounts?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.password.us",
+    "testCaseType" : "INTENT",
+    "trackingId" : "9CD9182E-33CD-49E6-8AD5-E6D899002898",
+    "utterance" : "Retail - How can I get a password to use Al Ahly Net & NBE Mobile"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.password.us",
+    "testCaseType" : "INTENT",
+    "trackingId" : "DA7BE1A5-83F8-4B9C-8592-71901EF1E959",
+    "utterance" : "Retail - How can I get a password to use Al Ahly Net & NBE Mobile?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.know.card.limit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "6E30523D-D6AB-424B-A264-C07F81A2D392",
+    "utterance" : "Retail - How can I know my card credit limit"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.know.card.limit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "4DCE8BBF-9770-4DB1-8CD1-7862B20B40AC",
+    "utterance" : "Retail - How can I know my card credit limit?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.know.card.renew.date",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8EA5BAC9-4E8C-4FC0-BF96-D35EBF90DA6F",
+    "utterance" : "Retail - How can I know the card renewal date"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.know.card.renew.date",
+    "testCaseType" : "INTENT",
+    "trackingId" : "9CEF24EB-7392-4E93-AEB6-BCFFA4ACDD37",
+    "utterance" : "Retail - How can I know the card renewal date?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.card.payment",
+    "testCaseType" : "INTENT",
+    "trackingId" : "01ED8A29-D321-4560-BA89-048AB686EAEA",
+    "utterance" : "Retail - How can I make my credit card payments"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.card.payment",
+    "testCaseType" : "INTENT",
+    "trackingId" : "05FF8606-DA30-4480-88B6-097D8F257670",
+    "utterance" : "Retail - How can I make my credit card payments?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.subscrib.card.e.statement",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D58EA2A1-4EB2-4E1A-8FD7-D4FB23868A4B",
+    "utterance" : "Retail - How can I subscribe to the credit card e-statement service"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.subscrib.card.e.statement",
+    "testCaseType" : "INTENT",
+    "trackingId" : "B0D49BE5-AE71-489F-94D4-82DE41B33231",
+    "utterance" : "Retail - How can I subscribe to the credit card e-statement service?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.track.financi.transact.carri.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8C497D06-F538-4110-8660-AEB15BBB7418",
+    "utterance" : "Retail - How can I track financial transactions carried out on the accounts"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.track.financi.transact.carri.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "83125F9B-3569-4FBA-AF91-6726C0811931",
+    "utterance" : "Retail - How can I track financial transactions carried out on the accounts?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.view.statement.loan.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "107426D8-5105-43F3-92BD-685C9A91490E",
+    "utterance" : "Retail - How can I view a statement of loan accounts"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.view.statement.loan.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "7A2AD474-6D0B-4917-8AFC-11B55BA6B3AD",
+    "utterance" : "Retail - How can I view a statement of loan accounts?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.pin.code.assign.hard.token",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1E948245-14A5-496B-B918-EB5FA81CE889",
+    "utterance" : "Retail - How can a PIN code be assigned for the hard token for Al Ahly Net/NBE Mobile"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.pin.code.assign.hard.token",
+    "testCaseType" : "INTENT",
+    "trackingId" : "CE195E88-32C2-40B0-A4AC-BA9D68A01F4D",
+    "utterance" : "Retail - How can a PIN code be assigned for the hard token for Al Ahly Net/NBE Mobile?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.hard.token.obtain",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8823DC94-5152-4992-9335-18FD36493F3E",
+    "utterance" : "Retail - How can a hard token be obtained for Al Ahly Net/NBE Mobile"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.hard.token.obtain",
+    "testCaseType" : "INTENT",
+    "trackingId" : "EF4F61A9-3A43-4E1B-B886-E616A8A13FCD",
+    "utterance" : "Retail - How can a hard token be obtained for Al Ahly Net/NBE Mobile?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.on.time.password.otp.creat.hard.token",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F36A0D21-2CE4-4A8E-B0C3-15620DADCFCF",
+    "utterance" : "Retail - How can a one-time password (OTP) be created through the hard token"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.on.time.password.otp.creat.hard.token",
+    "testCaseType" : "INTENT",
+    "trackingId" : "29D24142-D3DF-4CA2-B4A4-F591E4A406E4",
+    "utterance" : "Retail - How can a one-time password (OTP) be created through the hard token?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.detail.loan.acc.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D2F96032-425D-45AE-A312-AFFFB79B0C43",
+    "utterance" : "Retail - How can the details of loan accounts be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.detail.loan.acc.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "68806186-A1DA-403E-BFE0-6BFBAEFED346",
+    "utterance" : "Retail - How can the details of loan accounts be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.detail.settl.chequ.obtain",
+    "testCaseType" : "INTENT",
+    "trackingId" : "AB7A8262-70C8-4B07-9F7D-0B28FDDF55EE",
+    "utterance" : "Retail - How can the details of settled cheques be obtained"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.detail.settl.chequ.obtain",
+    "testCaseType" : "INTENT",
+    "trackingId" : "71DD97E4-9C11-4B1C-9407-8290BF67AFA0",
+    "utterance" : "Retail - How can the details of settled cheques be obtained?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.detail.cert.deposit.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "03B4BBC9-B11E-4B6E-9A7D-86C66A1F80DE",
+    "utterance" : "Retail - How can the details of the certificate/deposit be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.detail.cert.deposit.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8E4AFBC9-AF89-4672-9948-8DD1CAF6F277",
+    "utterance" : "Retail - How can the details of the certificate/deposit be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.soft.token.us.make.transfer.carri.transact",
+    "testCaseType" : "INTENT",
+    "trackingId" : "EE9EF933-91CA-4342-8182-09827D122F61",
+    "utterance" : "Retail - How can the soft token be used in making transfers and carrying out transactions"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.soft.token.us.make.transfer.carri.transact",
+    "testCaseType" : "INTENT",
+    "trackingId" : "78F62463-3824-4450-BB9C-7A34418F139C",
+    "utterance" : "Retail - How can the soft token be used in making transfers and carrying out transactions?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.report.card.case.lost.damag",
+    "testCaseType" : "INTENT",
+    "trackingId" : "FA6EC4E2-3E75-4FCA-96B7-B1363DCD9878",
+    "utterance" : "Retail - How do I report my credit card in case the card is lost/damaged"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.report.card.case.lost.damag",
+    "testCaseType" : "INTENT",
+    "trackingId" : "9FCA8009-E169-4EE5-AC9D-BFA5CC3D0474",
+    "utterance" : "Retail - How do I report my credit card in case the card is lost/damaged?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.long.process.request.open.redeem.amend.cert.deposit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "BD74AC4A-1D74-4E83-B228-5B0D6461A2C5",
+    "utterance" : "Retail - How long does it take to process any request to open/redeem/amend certificates/deposits via Al Ahly Net"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.long.process.request.open.redeem.amend.cert.deposit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "16C3698C-9BD6-4B46-B442-8D998A043196",
+    "utterance" : "Retail - How long does it take to process any request to open/redeem/amend certificates/deposits via Al Ahly Net?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.not.mutual.fund.acc.account.creat",
+    "testCaseType" : "INTENT",
+    "trackingId" : "28E26181-6AB7-4821-9184-3F9D334DBF1A",
+    "utterance" : "Retail - I do not have a mutual fund account, how can an account be created"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.not.mutual.fund.acc.account.creat",
+    "testCaseType" : "INTENT",
+    "trackingId" : "22254C69-2FDC-4A91-936E-88CDAEF4B640",
+    "utterance" : "Retail - I do not have a mutual fund account, how can an account be created?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.hard.token.avail.ret.corp.custom",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F8E38C8B-1128-406B-A46B-4DD1E4099ACA",
+    "utterance" : "Retail - Is Hard Token service available to both retail and corporate customers"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.hard.token.avail.ret.corp.custom",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A637724F-76BD-4F26-AB99-11F06CB0C4E7",
+    "utterance" : "Retail - Is Hard Token service available to both retail and corporate customers?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.soft.token.app.avail.ret.corp.custom",
+    "testCaseType" : "INTENT",
+    "trackingId" : "0E387AA4-249B-4990-9F56-DB491D3198DD",
+    "utterance" : "Retail - Is Soft Token App service available to both retail and corporate customers"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.soft.token.app.avail.ret.corp.custom",
+    "testCaseType" : "INTENT",
+    "trackingId" : "5C1BBD60-433A-4905-AF2D-0A1FFAEB6A10",
+    "utterance" : "Retail - Is Soft Token App service available to both retail and corporate customers?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.action.avail.hard.token",
+    "testCaseType" : "INTENT",
+    "trackingId" : "E62992F0-EEB3-4C96-919A-47F6BB47FA63",
+    "utterance" : "Retail - What are the actions available for the hard token"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.action.avail.hard.token",
+    "testCaseType" : "INTENT",
+    "trackingId" : "4A6F6752-1C6E-4C83-BB69-1B1BF4886C79",
+    "utterance" : "Retail - What are the actions available for the hard token?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.avail.option.amend.cert.deposit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "6450D9D4-0B92-4CD9-9910-3E26F45C83A5",
+    "utterance" : "Retail - What are the available options for amending certificates/deposits"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.avail.option.amend.cert.deposit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "63911EDD-E202-4213-96BE-00B287BB7FFF",
+    "utterance" : "Retail - What are the available options for amending certificates/deposits?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.offer",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8681B587-7F19-4697-BD40-BC334119E291",
+    "utterance" : "Retail - What are the credit cards offered by NBE"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.offer",
+    "testCaseType" : "INTENT",
+    "trackingId" : "FAD1574A-D66B-404D-93E6-514F222A6D3F",
+    "utterance" : "Retail - What are the credit cards offered by NBE?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.currenc.enabl",
+    "testCaseType" : "INTENT",
+    "trackingId" : "965B3499-C0DD-41DC-93F5-4728E426A031",
+    "utterance" : "Retail - What are the currencies enabled via Al Ahly Net"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.currenc.enabl",
+    "testCaseType" : "INTENT",
+    "trackingId" : "67F691A9-433E-4DC5-91EE-E4F7D7F48940",
+    "utterance" : "Retail - What are the currencies enabled via Al Ahly Net?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.debit.card.avail",
+    "testCaseType" : "INTENT",
+    "trackingId" : "61803F18-A1F9-4340-B543-03C73CD2EEA3",
+    "utterance" : "Retail - What are the debit card services available through Al Ahly Net/ NBE Mobile"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.debit.card.avail",
+    "testCaseType" : "INTENT",
+    "trackingId" : "5BFF514E-E8C7-434A-BFD2-49E210AAC178",
+    "utterance" : "Retail - What are the debit card services available through Al Ahly Net/ NBE Mobile?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.detail.loan.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8CA1375F-D17C-4059-BF7B-A2CC15E2606D",
+    "utterance" : "Retail - What are the details of loans that can be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.detail.loan.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A9B87350-493D-4B86-B1D7-6BFA0A0CA3EF",
+    "utterance" : "Retail - What are the details of loans that can be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.detail.mutual.fund.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A551663E-4217-4E5F-B545-9CA66BA9CDC2",
+    "utterance" : "Retail - What are the details of mutual funds that can be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.detail.mutual.fund.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "ECF9A94F-2A05-4602-ADE1-55BBDD383E96",
+    "utterance" : "Retail - What are the details of mutual funds that can be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.detail.cert.deposit.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "BD721150-1EB7-4F32-BB53-78348F0C0380",
+    "utterance" : "Retail - What are the details of the certificates/deposits that can be viewed"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.detail.cert.deposit.view",
+    "testCaseType" : "INTENT",
+    "trackingId" : "7DF2A57E-C736-4571-AC26-E0FE91869743",
+    "utterance" : "Retail - What are the details of the certificates/deposits that can be viewed?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.reason.not.get.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "6C4B8D9F-5F4E-4270-A033-DAD8C408C400",
+    "utterance" : "Retail - What are the reasons for not getting a credit card"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.reason.not.get.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "ED40195B-C53C-459E-8F2D-DA1066F983AE",
+    "utterance" : "Retail - What are the reasons for not getting a credit card?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.avail.prepaid.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "57E35687-29AC-49F1-A7CE-ACE4E696E2C8",
+    "utterance" : "Retail - What are the services available for prepaid cards"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.avail.prepaid.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "67594198-452A-4D1C-87EB-62663BC4870F",
+    "utterance" : "Retail - What are the services available for prepaid cards?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.type.issu.ret.custom",
+    "testCaseType" : "INTENT",
+    "trackingId" : "9DB810EA-E564-4C90-A129-A5D4CCBCD1EF",
+    "utterance" : "Retail - What are the types of debit cards issued for retail customers"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.type.issu.ret.custom",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C6535654-27FB-4892-B17F-C98C5FDEBE70",
+    "utterance" : "Retail - What are the types of debit cards issued for retail customers?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.happen.incorrect.login.password.enter",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3455D31D-C41B-4123-B0C0-140BEA79405B",
+    "utterance" : "Retail - What happens if an incorrect login password is entered"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.happen.incorrect.login.password.enter",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F22D0732-6FB6-4541-8DB6-D991ADECB0B4",
+    "utterance" : "Retail - What happens if an incorrect login password is entered?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.card.pin.code.why.import",
+    "testCaseType" : "INTENT",
+    "trackingId" : "5E42961E-A294-48BE-B10C-5158A0FD6D9F",
+    "utterance" : "Retail - What is a credit card PIN code? Why is it important"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.card.pin.code.why.import",
+    "testCaseType" : "INTENT",
+    "trackingId" : "0D87928A-22C7-424C-BA6F-724C9B472269",
+    "utterance" : "Retail - What is a credit card PIN code? Why is it important?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.grace.period.debit.interest.calcul",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F6C6839D-D252-4724-96EE-9540FFCA230A",
+    "utterance" : "Retail - What is the grace period for credit cards? How is debit interest calculated"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.grace.period.debit.interest.calcul",
+    "testCaseType" : "INTENT",
+    "trackingId" : "DADF8D6C-86BE-4BAE-B3BD-D54E52C7442C",
+    "utterance" : "Retail - What is the grace period for credit cards? How is debit interest calculated?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.multipl.transfer",
+    "testCaseType" : "INTENT",
+    "trackingId" : "7A77B9B9-DEF7-4EB9-97E0-312BDF03C0C9",
+    "utterance" : "Retail - What is the multiple transfers service"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.multipl.transfer",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C4835A47-C2B0-458C-BBDB-6F84D9BB8FF6",
+    "utterance" : "Retail - What is the multiple transfers service?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.primari.acc.assign.upon.open.invest.account",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A76465A7-44F2-445F-86B8-49E2C6B2DBCB",
+    "utterance" : "Retail - What is the primary account assigned upon opening an investment account"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.primari.acc.assign.upon.open.invest.account",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8582874C-A26E-4053-9AB3-5FA68CD024AA",
+    "utterance" : "Retail - What is the primary account assigned upon opening an investment account?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.case.forget.pin.code",
+    "testCaseType" : "INTENT",
+    "trackingId" : "727A07E6-19B7-4BF5-B809-99F02F6E0A24",
+    "utterance" : "Retail - What should I do in case I forget the PIN code"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.case.forget.pin.code",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A396484D-AD38-47F7-915B-B57237CB82DF",
+    "utterance" : "Retail - What should I do in case I forget the PIN code?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.when.us",
+    "testCaseType" : "INTENT",
+    "trackingId" : "33331191-026F-41E3-BE6E-C0B54997441B",
+    "utterance" : "Retail - When can I use Al Ahly Net"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.when.us",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8854CF26-EFC2-40A6-B6CF-D5D4FD43127E",
+    "utterance" : "Retail - When can I use Al Ahly Net?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.when.card.deactiv",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F00FF438-B602-477B-B0BA-42137CCBDBBB",
+    "utterance" : "Retail - When is the card deactivated"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.credit.cards.ret.when.card.deactiv",
+    "testCaseType" : "INTENT",
+    "trackingId" : "82F6BA9F-AB48-45CF-9503-3A9D3E272409",
+    "utterance" : "Retail - When is the card deactivated?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.web.browser.us.access",
+    "testCaseType" : "INTENT",
+    "trackingId" : "62C33673-A9D1-47EB-B925-5D33FFEFAAB6",
+    "utterance" : "Retail - Which web browser can be used to access Al Ahly Net"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.web.browser.us.access",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1D130138-A342-44F0-8C4F-1ACC66CAF136",
+    "utterance" : "Retail - Which web browser can be used to access Al Ahly Net?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPlatinum.services.s.custom.segment.criteria",
+    "testCaseType" : "INTENT",
+    "trackingId" : "B942B86A-86F3-47A0-BAB8-C62E76FD5034",
+    "utterance" : "What are NBE's customers' segmentation criteria?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.condit.req.document",
+    "testCaseType" : "INTENT",
+    "trackingId" : "BA7CAEEB-128F-4095-A5F2-367E68F09790",
+    "utterance" : "What are personal loan conditions and required documents"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.condit.req.document",
+    "testCaseType" : "INTENT",
+    "trackingId" : "7D6D1555-0902-437C-8406-523C608BABFD",
+    "utterance" : "What are personal loan conditions and required documents?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.cash.reward.denomin",
+    "testCaseType" : "INTENT",
+    "trackingId" : "9E1F1F42-1743-4E8F-BF93-C9754A8F620B",
+    "utterance" : "What are the Cash Reward denomination"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.cash.reward.denomin",
+    "testCaseType" : "INTENT",
+    "trackingId" : "4854A142-0CB2-4FF0-AEAF-58D360AD4D37",
+    "utterance" : "What are the Cash Reward denomination?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.product.offer",
+    "testCaseType" : "INTENT",
+    "trackingId" : "610EB97E-3A62-40FB-9FC9-6F4C70A917B4",
+    "utterance" : "What are the NBE Products and Services that offer AL-AHLY Points"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.product.offer",
+    "testCaseType" : "INTENT",
+    "trackingId" : "5C763203-4E57-4FBD-BE46-505FC77F1A59",
+    "utterance" : "What are the NBE Products and Services that offer AL-AHLY Points?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.voucher.denomin",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D790000C-CCBF-4833-9E09-9E0F403CFCD5",
+    "utterance" : "What are the Vouchers denominations"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.voucher.denomin",
+    "testCaseType" : "INTENT",
+    "trackingId" : "51554FD9-09D1-4F90-A488-1BE4EFF0EF8F",
+    "utterance" : "What are the Vouchers denominations?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.card.accept.machin",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1EEAF6D2-99CD-47B4-9C76-683E58A25C55",
+    "utterance" : "What are the cards acceptable at POS machines"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.card.accept.machin",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F5D635FA-8CC4-4272-8704-1B205EFE8F20",
+    "utterance" : "What are the cards acceptable at POS machines?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.contract.procedur",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8366B7FC-C1D4-44F0-AF56-022CE79680BC",
+    "utterance" : "What are the contracting procedures"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.contract.procedur",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A4A05F34-85E7-4A6B-AA42-62F15F00A99E",
+    "utterance" : "What are the contracting procedures?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.document.req.issuanc.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D72170D4-984E-4B67-8ED9-136983DE1466",
+    "utterance" : "What are the documents required for the issuance of the card"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.document.req.issuanc.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "136BA0CE-850A-4D3A-B243-B50845050E2D",
+    "utterance" : "What are the documents required for the issuance of the card?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.document.req.appli",
+    "testCaseType" : "INTENT",
+    "trackingId" : "CE82F1ED-13F8-41FD-B64D-0AD18487BAF5",
+    "utterance" : "What are the documents required to apply for a Personal Loan"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.document.req.appli",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D5D20903-F1FC-489E-B3F9-C75E27AA2D37",
+    "utterance" : "What are the documents required to apply for a Personal Loan?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyE-Shopping.latest.payment.offer.bank",
+    "testCaseType" : "INTENT",
+    "trackingId" : "0376F38E-FF36-488E-80A8-6FDE36084D61",
+    "utterance" : "What are the latest e-payment services offered by the Bank"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyE-Shopping.latest.payment.offer.bank",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C3B4BE60-3E9F-4C49-A73B-E52EBB114A4F",
+    "utterance" : "What are the latest e-payment services offered by the Bank?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.advantag.machin",
+    "testCaseType" : "INTENT",
+    "trackingId" : "45389AA8-562D-48D3-9BF0-487AA2ACC176",
+    "utterance" : "What are the other advantages of POS machines"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.advantag.machin",
+    "testCaseType" : "INTENT",
+    "trackingId" : "04B88A8C-2FBC-4168-9C86-011198902472",
+    "utterance" : "What are the other advantages of POS machines?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.req.document",
+    "testCaseType" : "INTENT",
+    "trackingId" : "62E0B83C-8A56-4CE3-9D39-3AE4E86082EA",
+    "utterance" : "What are the required documents for POS"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.req.document",
+    "testCaseType" : "INTENT",
+    "trackingId" : "FC33ABEC-2B1A-4678-ACF4-FF794CFF0714",
+    "utterance" : "What are the required documents for POS?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.req.document.subscript",
+    "testCaseType" : "INTENT",
+    "trackingId" : "5A3C12A2-CD7B-48EB-A3E5-3134CAB8014C",
+    "utterance" : "What are the required documents for subscription"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.req.document.subscript",
+    "testCaseType" : "INTENT",
+    "trackingId" : "3A1BEBBA-7D12-4A54-9970-EF58AE1FFEE1",
+    "utterance" : "What are the required documents for subscription?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyE-Shopping.req.document.subscrib",
+    "testCaseType" : "INTENT",
+    "trackingId" : "B9603420-A23A-4B16-88A7-E1608A38A585",
+    "utterance" : "What are the required documents to subscribe to the service"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyE-Shopping.req.document.subscrib",
+    "testCaseType" : "INTENT",
+    "trackingId" : "21B568EC-1B23-41C1-8B5E-4A7C47788DDE",
+    "utterance" : "What are the required documents to subscribe to the service?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.mortgage.finance.requir.financ.residenti.unit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A2EBB20F-0671-4394-A656-2FB4EF9F5F45",
+    "utterance" : "What are the requirements of financeable residential units"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.mortgage.finance.requir.financ.residenti.unit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "44A80615-521D-45D4-A201-D15EEA22B000",
+    "utterance" : "What are the requirements of financeable residential units?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPlatinum.services.subscript.fee.when.appli",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C2AB17D1-454C-49D4-B91B-AE5C4D4BAD84",
+    "utterance" : "What are the subscription fees? And when are fees applied to the service?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.term.condit.loan",
+    "testCaseType" : "INTENT",
+    "trackingId" : "4486D0E2-4DC3-487C-BE47-E0905B1BE063",
+    "utterance" : "What are the terms & conditions of Personal Loans"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.term.condit.loan",
+    "testCaseType" : "INTENT",
+    "trackingId" : "D0B2FF67-0C77-44EE-BD2A-269E3E2951BB",
+    "utterance" : "What are the terms & conditions of Personal Loans?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.term.avail.local.currenc.cert.issu",
+    "testCaseType" : "INTENT",
+    "trackingId" : "7EFE9224-A66B-42F9-8971-3205E6BDD9BE",
+    "utterance" : "What are the terms of the available local currency certificates issued by NBE"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.term.avail.local.currenc.cert.issu",
+    "testCaseType" : "INTENT",
+    "trackingId" : "EF05C213-ECAB-44CC-A257-E5745DD50745",
+    "utterance" : "What are the terms of the available local currency certificates issued by NBE?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.term.foreign.currenc.cert.issu",
+    "testCaseType" : "INTENT",
+    "trackingId" : "22D586C5-42EC-49DD-BBE8-CB712B180CC7",
+    "utterance" : "What are the terms of the foreign currency certificates issued by NBE"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.term.foreign.currenc.cert.issu",
+    "testCaseType" : "INTENT",
+    "trackingId" : "70B102A5-8BD9-4FDE-9E8C-C3208B582F1C",
+    "utterance" : "What are the terms of the foreign currency certificates issued by NBE?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.chang.mobil.phone.devic",
+    "testCaseType" : "INTENT",
+    "trackingId" : "339C0052-A16A-41D2-BA88-095CCCA0AE45",
+    "utterance" : "What if I change my mobile phone device"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.chang.mobil.phone.devic",
+    "testCaseType" : "INTENT",
+    "trackingId" : "DC204927-205C-418A-85BA-89BB1513C314",
+    "utterance" : "What if I change my mobile phone device?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.chang.mobil.number",
+    "testCaseType" : "INTENT",
+    "trackingId" : "BEACC0CF-CFCC-423E-B22A-125A3AFCD473",
+    "utterance" : "What if I changed my mobile number"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.chang.mobil.number",
+    "testCaseType" : "INTENT",
+    "trackingId" : "82B8A2BD-1013-4F21-942E-88EFB896D043",
+    "utterance" : "What if I changed my mobile number?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.enter.wrong.password.onc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "11771274-DAD5-412D-A7FE-784724501573",
+    "utterance" : "What if I entered a wrong password more than once"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.enter.wrong.password.onc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F4659F17-3D77-4F2E-983A-6F49F205EF2D",
+    "utterance" : "What if I entered a wrong password more than once?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.mobil.sim.link.wallet.stolen.lost",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F82D900C-73B8-401F-98DB-455AAA44F206",
+    "utterance" : "What if the mobile SIM linked to the wallet is stolen/lost"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPhoneCash.mobil.sim.link.wallet.stolen.lost",
+    "testCaseType" : "INTENT",
+    "trackingId" : "DAB7E875-C005-453A-8E50-DC9641581DDB",
+    "utterance" : "What if the mobile SIM linked to the wallet is stolen/lost?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.program",
+    "testCaseType" : "INTENT",
+    "trackingId" : "330355B6-9BB4-455C-8D64-FB9A5C4583C6",
+    "utterance" : "What is AL-AHLY Points program"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.alAhlyPoints.program",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A4EEB32C-3BC4-4697-BB17-032B5BB66233",
+    "utterance" : "What is AL-AHLY Points program?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.",
+    "testCaseType" : "INTENT",
+    "trackingId" : "FE7A0341-43FB-47EB-8074-909465A4BB72",
+    "utterance" : "What is a Personal Loan"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.",
+    "testCaseType" : "INTENT",
+    "trackingId" : "12A88CC9-9016-4327-9584-3934B5F94920",
+    "utterance" : "What is a Personal Loan?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "7CA7CEE3-7AAB-4D27-A6F8-4BA418FC8F74",
+    "utterance" : "What is a debit card"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.card",
+    "testCaseType" : "INTENT",
+    "trackingId" : "7B136BA4-C0B2-4D35-8E10-26AA706AA957",
+    "utterance" : "What is a debit card?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.card.max.daili.withdraw.limit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "29A856EA-94B5-42E8-A945-FA4C113DF6AC",
+    "utterance" : "What is the card maximum daily withdrawal limit"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.card.max.daili.withdraw.limit",
+    "testCaseType" : "INTENT",
+    "trackingId" : "605F0B05-2B3A-4F0E-9286-7ADD1A30732E",
+    "utterance" : "What is the card maximum daily withdrawal limit?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.contactless.featur",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1D5C1A86-0C4E-48C7-ADD4-F18FB7B4FCCA",
+    "utterance" : "What is the contactless feature"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.debit.cards.contactless.featur",
+    "testCaseType" : "INTENT",
+    "trackingId" : "ADEF45BC-39BE-4E2C-963A-5B73F3916BA5",
+    "utterance" : "What is the contactless feature?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.auto.loan.max.tenor",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F1F2B83C-42BD-4BD0-B0AB-BDABCD04B6FE",
+    "utterance" : "What is the maximum Auto Loan tenor"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.auto.loan.max.tenor",
+    "testCaseType" : "INTENT",
+    "trackingId" : "4E8D4375-C07B-48E0-9D23-799ABF1F6C28",
+    "utterance" : "What is the maximum Auto Loan tenor?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.max.ag.matur",
+    "testCaseType" : "INTENT",
+    "trackingId" : "810A4385-2C87-44F0-A6E8-59638A454945",
+    "utterance" : "What is the maximum age at loan maturity"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.max.ag.matur",
+    "testCaseType" : "INTENT",
+    "trackingId" : "C8F6EBA3-A78A-4104-BF41-26F0E41AE9E7",
+    "utterance" : "What is the maximum age at loan maturity?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.max.amount",
+    "testCaseType" : "INTENT",
+    "trackingId" : "195145AE-8B43-4C13-88E7-D3A132C20AEE",
+    "utterance" : "What is the maximum loan amount"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.max.amount",
+    "testCaseType" : "INTENT",
+    "trackingId" : "2DECF495-45C0-4EF8-9CF2-865181592A96",
+    "utterance" : "What is the maximum loan amount?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.max.tenor",
+    "testCaseType" : "INTENT",
+    "trackingId" : "079B542A-4400-44CD-BAD9-D7C1B0CC8606",
+    "utterance" : "What is the maximum tenor for personal loan"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.max.tenor",
+    "testCaseType" : "INTENT",
+    "trackingId" : "154199E1-5E97-4AB2-A1F6-2876822E2B86",
+    "utterance" : "What is the maximum tenor for personal loan?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.min.ag.appli",
+    "testCaseType" : "INTENT",
+    "trackingId" : "8CDB9F22-CF7D-46E9-B14B-14BCC69B002B",
+    "utterance" : "What is the minimum age to apply for a personal loan"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.personal.loan.min.ag.appli",
+    "testCaseType" : "INTENT",
+    "trackingId" : "1D928EB4-0A20-453D-9743-63F804E89874",
+    "utterance" : "What is the minimum age to apply for a personal loan?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.min.amount.open.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "B7C2E9CA-E7A3-4047-9B9A-436D184CCB68",
+    "utterance" : "What is the minimum amount for opening an account"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.acc.cert.saving.pools.min.amount.open.acc",
+    "testCaseType" : "INTENT",
+    "trackingId" : "4747E213-1FB1-4CC7-94CB-3E258C26CE63",
+    "utterance" : "What is the minimum amount for opening an account?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.period.req.mainten",
+    "testCaseType" : "INTENT",
+    "trackingId" : "A1ECCCA9-5715-4022-A118-FD7B1092C604",
+    "utterance" : "What is the period required for POS maintenance"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.period.req.mainten",
+    "testCaseType" : "INTENT",
+    "trackingId" : "CB206F59-3E29-48A6-B3C2-7E7BB82E9677",
+    "utterance" : "What is the period required for POS maintenance?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.set.settlement.time",
+    "testCaseType" : "INTENT",
+    "trackingId" : "AA913A85-56E5-478E-8D66-F9E06C8AAF9B",
+    "utterance" : "What is the set settlement time for a POS"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.set.settlement.time",
+    "testCaseType" : "INTENT",
+    "trackingId" : "4A66B0B0-EAD8-45B7-B3DB-D6830641EABA",
+    "utterance" : "What is the set settlement time for a POS?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.elig",
+    "testCaseType" : "INTENT",
+    "trackingId" : "958C4B24-E1C1-4034-989B-B642E09444E1",
+    "utterance" : "Who is eligible for prepaid cards"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.prepaid.cards.elig",
+    "testCaseType" : "INTENT",
+    "trackingId" : "DEF26564-9B1B-4ED0-AA4A-0346FE96B6F9",
+    "utterance" : "Who is eligible for prepaid cards?"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.commiss.deduct.sale.transact",
+    "testCaseType" : "INTENT",
+    "trackingId" : "FD089415-AD22-42F3-9D22-3EE07D0E2B95",
+    "utterance" : "what is the commission deducted for sale transactions"
+  }, {
+    "enabled" : true,
+    "expectedEntities" : [ ],
+    "expectedIntentName" : "ANS.FAQs.pos.commiss.deduct.sale.transact",
+    "testCaseType" : "INTENT",
+    "trackingId" : "F4768FF3-4008-4021-9D38-D682B281C476",
+    "utterance" : "what is the commission deducted for sale transactions?"
+  } ],
+  "trackingId" : "27175E15-A4BD-33A0-9C7C-0DBC3E74DF16"
+}

@@ -1,0 +1,21 @@
+add "تم رفض الطلب" to body.requestDeatiledStatusAr
+medical claim
+gym
+overtime cancel
+housingFinancing
+businessTripCancel
+resignation
+earlyRepayment
+
+push logs payload
+gym
+medical claim
+housingFinancing
+businessTripCancel was infected
+resignation
+earlyRepayment
+
+onPageLoad function names
+medical claim
+
+

@@ -1,0 +1,60 @@
+DECLARE
+    first_name         VARCHAR2(200);
+    last_name          VARCHAR2(500);
+    full_name          VARCHAR2(500);
+    age                VARCHAR2(500);
+    birth_of_date      DATE;
+    object_json        json_object_t;
+    pid                VARCHAR2(200);
+     user_img_filename  VARCHAR2(500);
+    mimeimgtype        VARCHAR2(500);
+    img_blob           BLOB;
+    base64img          cLOB;
+    email               VARCHAR2(500);
+BEGIN
+    object_json := json_object_t.parse(:body_text);
+    first_name := object_json.get_string('first_name');
+    last_name := object_json.get_string('last_name');
+    full_name := object_json.get_string('full_name');
+    age := object_json.get_number('age');
+    birth_of_date := object_json.get_date('date_of_birth');
+--    dbms_output.put_line('messagejpayload ' || object_json.get_date('date_of_birth'));
+    base64img := object_json.get_clob('imgBase64');
+    user_img_filename := object_json.get_string('file_name');
+    mimeimgtype :=object_json.get_string('imgMimeType');
+--    img_blob := base64img;
+--    dbms_output.put_line('messagejpayload ' || to_char(messagejpayload));
+--    dbms_output.put_line('bot_type ' || bot_type);
+    email :=object_json.get_string('email');
+    INSERT INTO new_users (
+        first_name,
+        last_name,
+        full_name,
+        age,
+        date_of_birth,
+        user_email,
+
+        user_imgclob,
+        filename,
+        mimetype
+    ) VALUES (
+        first_name,
+        last_name,
+        full_name,
+        age,
+        birth_of_date,
+        email,
+        base64img,
+        user_img_filename,
+        mimeimgtype
+    ) RETURN person_id INTO :user_id;
+
+    :statusmsg := 'Saved Successfully';
+    :status := '200';
+    dbms_output.put_line('messagejpayload ' || to_char(pid));
+EXCEPTION
+    WHEN OTHERS THEN
+        :statusmsg := 'An error happend while saving ' || sqlerrm;
+        :status := '400';
+        htp.print(sqlerrm);
+END;

@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What are the documents required to apply for a Personal Loan?",
+    "trackingId" : "4EEFD24C-0F70-4FFC-9602-2EE1B2E9F8F8",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What documents do I need to provide as part of my cash financing application?",
+    "trackingId" : "E9C9E56F-3E72-4291-90FD-206EBD51C196",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.personal.loan.document.req.appli",
+  "trackingId" : "64EC9BA1-F8FF-47AF-A6A1-BFEB884DB69C"
+}

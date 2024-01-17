@@ -1,0 +1,33 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "ForeignCurrAccountsList",
+    "fullName" : "ForeignCurrAccountsList",
+    "type" : "ENTITY",
+    "entityName" : "NBE.ENT.RETAIL.ACCOUNTS.SA.FOREIGN_CURR",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "NBE.ENT.RETAIL.ACCOUNTS.SA.FOREIGN_CURR",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "6EB81127-187B-4FA9-BFE5-BF88E67A90BC",
+    "children" : null
+  } ],
+  "eventHandler" : "EventHandlers:RetailSavingsAccountForeignCurr",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.RETAIL.ACCOUNTS.SA.FOREIGN_CURR",
+  "promptForDisambiguation" : true,
+  "trackingId" : "5CB9DE15-B568-4871-BE75-73C375945041",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

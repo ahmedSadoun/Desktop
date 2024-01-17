@@ -1,0 +1,23 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Corporate Certificate 3 Years",
+    "extensionType" : null,
+    "synonyms" : [ "3 years", "certificate 3 years", "corporate 3 years", "3 سنوات", "3 سنين", "٣ سنوات", "٣ سنين", "شهادة ٣ سنوات" ],
+    "trackingId" : "555CFA47-C7BA-4DB7-8904-BCB96B12097D"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Corporate Certificate 5 Years",
+    "extensionType" : null,
+    "synonyms" : [ "5 years", "certificate 5 years", "corporate 5 years", "شهادة ٥ سنوات", "5 سنين", "5 سنوات", "٥ سنين" ],
+    "trackingId" : "3630E46C-DD60-40BB-AB45-044E8EC487F5"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.CORP.CD.SAVINGS.LOCAL_CURRENCY",
+  "promptForDisambiguation" : true,
+  "trackingId" : "D209EE9B-6229-4C3F-9995-3839064EB542",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

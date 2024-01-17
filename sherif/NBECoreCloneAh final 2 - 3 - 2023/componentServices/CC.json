@@ -1,0 +1,14 @@
+{
+  "type" : "HOSTED",
+  "name" : "CC",
+  "packageFileName" : "VFD-CC-1.0.0.tgz",
+  "packageChecksum" : "017643788887eb9ebafcf6c520da0b25",
+  "runtime" : "node",
+  "status" : {
+    "code" : "created",
+    "message" : "The service is created but not ready."
+  },
+  "loggingEnabled" : false,
+  "enabled" : true,
+  "trackingId" : "9992F6AF-1992-4537-B3B5-2C8B9A584B1F"
+}

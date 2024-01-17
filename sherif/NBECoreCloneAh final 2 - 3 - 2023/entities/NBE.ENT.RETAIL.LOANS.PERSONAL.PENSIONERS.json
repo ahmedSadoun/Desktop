@@ -1,0 +1,17 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Pensioners",
+    "extensionType" : null,
+    "synonyms" : null,
+    "trackingId" : "720C49C6-04E4-4914-9877-69E4BB1E4751"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.LOANS.PERSONAL.PENSIONERS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "1D4A9DB6-A9E8-4BA1-83D6-529E4F012068",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

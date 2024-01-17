@@ -1,0 +1,691 @@
+name: "RetailCardsFlow"
+trackingId: "A10F85B0-A916-45A2-9932-F163D178CEA6"
+type: "task"
+version: "2.0"
+interface: {}
+configuration:
+  requiresAuthorization: false
+variables:
+- name: "outputMsg"
+  type: "string"
+  description: ""
+  metadata:
+    isFreeMarker: true
+  system: false
+- name: "retailCardsEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.RETAIL.CARDS"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retailCreditCardsEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.RETAIL.CARDS.CREDIT_CARD"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retailCCInstallmentEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.RETAIL.CARDS.CC.INSTALLMENT"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "offset"
+  type: "int"
+  defaultValue: 1
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "toBeResolved"
+  type: "string"
+  description: ""
+  metadata:
+    isFreeMarker: true
+  system: false
+- name: "cardsMenuChoice"
+  type: "string"
+  description: ""
+  metadata:
+    isFreeMarker: true
+  system: false
+- name: "retailCreditCardTypesCBE"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.CARDS.CC.CREDIT_CARD_TYPES"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retailDebitCardCBE"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.CARDS.DEBIT_CARD"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retailPrepaidCardCBE"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.CARDS.PREPAID_CARD"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+defaultTransitions:
+  actions:
+    system.startTaskFlow: "resolveRetailCardsEntity"
+states:
+  invokeSurveyFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "SurveyFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  resetCardsChoiceVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retailCardsEntityChoices"
+    transitions:
+      next: "resolveRetailCardsEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  invokeRetailFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "RetailFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  switchCreditCardsChoice:
+    component: "System.Switch"
+    properties:
+      variable: "retailCreditCardsEntityChoices"
+    transitions:
+      actions:
+        Installment & discount programs: "resolveCCInstallmentEntity"
+        Credit Card Types: "resolveCreditCardTypesBag"
+      next: "setCreditCardOutputMsgVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  setCreditCardOutputMsgVariable:
+    component: "System.SetVariable"
+    properties:
+      variable: "outputMsg"
+      value: "${'RETAIL.CARDS.CREDIT_CARD.' + retailCreditCardsEntityChoices.value.value + '.MSG'}"
+    transitions:
+      next: "creditCardOutputMsg"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false
+  resolveDebitCardsBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retailDebitCardCBE"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        previousPage: "resolveDebitCardsBag"
+        nextPage: "resolveDebitCardsBag"
+        resolveAgain: "resolveDebitCardsBag"
+        back: "resetCardsChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "displayDebitCardsBagOutput"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false
+  resolveCreditCardsEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('RETAIL.CARDS.CREDIT_CARD.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "retailCreditCardsEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetCardsChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "switchCreditCardsChoice"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  creditCardOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${rb(outputMsg.value)}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetCreditCardChoicesVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  displayDebitCardsBagOutput:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetDebitCBEVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  invokeStartFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "StartFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  invokeMainMenuFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "MainMenuFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  resetCCInstallmentChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retailCCInstallmentEntityChoices,outputMsg"
+    transitions:
+      next: "resolveCCInstallmentEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  invokeExitFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "ExitFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  setCCInstallamentOutputMsgVariable:
+    component: "System.SetVariable"
+    properties:
+      variable: "outputMsg"
+      value: "${'RETAIL.CARDS.CC.INSTALLMENT.' + retailCCInstallmentEntityChoices.value.value + '.MSG'}"
+    transitions:
+      next: "ccInstallamentOutputMsg"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false
+  resetPrepaidChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retailPrepaidCardCBE,cardsMenuChoice"
+    transitions:
+      next: "resolvePrepaidCardsBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resolveCCInstallmentEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('RETAIL.CARDS.CC.INSTALLMENT.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "retailCCInstallmentEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetCreditCardChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "setCCInstallamentOutputMsgVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resolvePrepaidCardsBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retailPrepaidCardCBE"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        previousPage: "resolvePrepaidCardsBag"
+        nextPage: "resolvePrepaidCardsBag"
+        resolveAgain: "resolvePrepaidCardsBag"
+        back: "resetCardsChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "displayPrepaidCBEOutput"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false
+  ccInstallamentOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${rb(outputMsg.value)}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetCCInstallmentChoicesVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resetCreditCardChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retailCreditCardsEntityChoices,outputMsg"
+    transitions:
+      next: "resolveCreditCardsEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  displayCreditCardsTypesCBEOutput:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetCreditCardsTypesCBEVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  switchCardsChoice:
+    component: "System.Switch"
+    properties:
+      variable: "retailCardsEntityChoices"
+    transitions:
+      actions:
+        Prepaid Cards: "resolvePrepaidCardsBag"
+        Debit Cards: "resolveDebitCardsBag"
+        Credit Cards: "resolveCreditCardsEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  displayPrepaidCBEOutput:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetPrepaidChoicesVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resolveCreditCardTypesBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retailCreditCardTypesCBE"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        previousPage: "resolveCreditCardTypesBag"
+        nextPage: "resolveCreditCardTypesBag"
+        resolveAgain: "resolveCreditCardTypesBag"
+        back: "resetCreditCardChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "displayCreditCardsTypesCBEOutput"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false
+  resetDebitCBEVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retailDebitCardCBE,cardsMenuChoice"
+    transitions:
+      next: "resolveDebitCardsBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resetCreditCardChoiceVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retailCreditCardsEntityChoices"
+    transitions:
+      next: "resolveCreditCardsEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resetCreditCardsTypesCBEVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retailCreditCardTypesCBE,cardsMenuChoice"
+    transitions:
+      next: "resolveCreditCardTypesBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resolveRetailCardsEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('RETAIL.CARDS.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "retailCardsEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "invokeRetailFlow"
+        menu: "invokeMainMenuFlow"
+      next: "switchCardsChoice"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false

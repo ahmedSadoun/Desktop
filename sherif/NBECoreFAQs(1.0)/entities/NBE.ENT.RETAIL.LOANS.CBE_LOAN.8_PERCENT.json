@@ -1,0 +1,17 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Middle Income 8%",
+    "extensionType" : null,
+    "synonyms" : null,
+    "trackingId" : "771C8CD9-DC08-4237-922A-D67184EF11C1"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.LOANS.CBE_LOAN.8_PERCENT",
+  "promptForDisambiguation" : true,
+  "trackingId" : "427B6A93-E7B1-4A3F-9DE7-EF9409FC6697",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

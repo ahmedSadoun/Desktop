@@ -1,0 +1,59 @@
+name: "UnresolvedIntent"
+trackingId: "F9B3F4A2-410E-4E80-894B-D66CE3676E23"
+type: "task"
+version: "2.0"
+description: "This starter skill has no intents yet, so the flow will be invoked when a user starts the chat."
+interface: {}
+configuration:
+  requiresAuthorization: false
+defaultTransitions:
+  actions:
+    system.startTaskFlow: "switchFromStartSkill"
+states:
+  unresolvedMessage:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${rb('unreolvedMessage')}"
+          type: "text"
+      keepTurn: true
+    transitions:
+      next: "invokeFlow"
+    metadata:
+      virtualComponent: "Virtual.Output"
+      propertySheetIsFreeMarkerMap:
+        requiresAuthorization: false
+  invokeStartFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "StartFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  invokeFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "MainMenuFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  switchFromStartSkill:
+    component: "System.Switch"
+    properties:
+      variable: "skill.fromStartSkillFlow"
+    transitions:
+      actions:
+        "yes": "unresolvedMessage"
+      next: "invokeStartFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false

@@ -1,0 +1,47 @@
+{
+  "conversationHistoryEnabled" : false,
+  "insightsEnabled" : true,
+  "intentResultHistoryEnabled" : false,
+  "qnAResultHistoryEnabled" : false,
+  "settings" : {
+    "Multistage_Pipeline" : true,
+    "predominantLanguage" : "en",
+    "Verbose_Output" : false,
+    "Pipeline_Output_Size" : 100,
+    "Result_Size" : 10,
+    "dynamicEntityConfig" : {
+      "baseUrl" : null,
+      "interval" : 6
+    },
+    "botConfig" : [ {
+      "displayName" : "answerIdentifyingPattern",
+      "name" : "answerIdentifyingPattern",
+      "type" : "string",
+      "value" : "ANS.FAQs"
+    }, {
+      "displayName" : "da.answerIntentMinimumThreshold",
+      "name" : "da.answerIntentMinimumThreshold",
+      "type" : "float",
+      "value" : 0.6
+    }, {
+      "displayName" : "da.numberOfAnswersDisplayed",
+      "name" : "da.numberOfAnswersDisplayed",
+      "type" : "int",
+      "value" : 5
+    }, {
+      "displayName" : "Use Enhanced Slot Filling",
+      "name" : "system.useEnhancedSlotFilling",
+      "description" : "If switched on, enhanced slot filling rules will become active. These rules include prioritizing the current resolving item when an entity match applies to multiple items, and showing a disambiguation dialog when an entity match applies to multiple non-resolving bag items.",
+      "type" : "boolean",
+      "value" : true
+    } ],
+    "translator" : "google",
+    "timeouts" : {
+      "customComponent" : {
+        "readTimeout" : 60000
+      }
+    },
+    "aicConfig" : [ ],
+    "piiEntityNames" : [ ]
+  }
+}

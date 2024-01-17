@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - How much is the cash withdrawal fee from ATMs of other local banks?",
+    "trackingId" : "42A71B9C-4BAA-4492-964D-99885619737E",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - What is the fee for withdrawing cash from local bank machines?",
+    "trackingId" : "E186CEFD-9CF5-4D94-AF8A-2525EB485587",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.corp.debit.cards.cash.withdraw.fee.atm.local.bank",
+  "trackingId" : "F57F6B5A-CE41-47EF-A371-4B62A9E5108B"
+}

@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Is there an alternative for paper statements of account or can this service be cancelled?",
+    "trackingId" : "910C7AF9-7348-4D11-A9C9-C2C635D808D0",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Is there an alternative to the paper account statement or cancellation?",
+    "trackingId" : "64209F5D-3F43-4AB5-BCB5-4A0C113D5EA6",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.acc.cert.saving.pools.altern.paper.statement.acc.cancel",
+  "trackingId" : "C82D396F-9373-41F8-9723-D6998BC50BE5"
+}

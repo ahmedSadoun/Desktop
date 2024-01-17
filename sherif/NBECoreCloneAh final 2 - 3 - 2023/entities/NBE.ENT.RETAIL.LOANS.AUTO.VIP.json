@@ -1,0 +1,17 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "NBE's VIP Customers",
+    "extensionType" : null,
+    "synonyms" : [ "vip" ],
+    "trackingId" : "A75E622A-22B9-4D26-AEF3-D2E901C063B0"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.LOANS.AUTO.VIP",
+  "promptForDisambiguation" : true,
+  "trackingId" : "DAB5B805-955D-42DC-AF96-83C5699E1ADD",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

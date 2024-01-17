@@ -1,0 +1,997 @@
+name: "MainCertificatesAndDepositsFlow"
+trackingId: "36A4FB8E-03CE-459E-8BEE-522B36881916"
+type: "task"
+version: "2.0"
+interface: {}
+configuration:
+  requiresAuthorization: false
+variables:
+- name: "outputMsg"
+  type: "string"
+  description: ""
+  metadata:
+    isFreeMarker: true
+  system: false
+- name: "certAndDepEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.CORP.CERTIFICATES_DEPOSITS"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "cdSavingsEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.CORP.CD.SAVINGS_CERTIFICATES"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "cdDepositsEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.CORP.CD.CORPORATE_DEPOSITS"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "cdSavingsLocalEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.CORP.CD.SAVINGS.LOCAL_CURRENCY"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "cdSavingsForeignEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.CORP.CD.SAVINGS.FOREIGN_CURRENCY"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retailCertAndDepEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.RETAIL.CERTIFICATES_DEPOSITS"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retailCdCertificatesEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.RETAIL.CD.CERTIFICATES"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retailCdDepositsEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.RETAIL.CD.DEPOSITS"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retailCdCertSavingLocalEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.RETAIL.CD.SAVINGS.LOCAL_CURRENCY"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retailCdCertSavingForeignEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.RETAIL.CD.SAVINGS.FOREIGN_CURRENCY"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retailCdCertInvestmentEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.RETAIL.CD.INVESTMENT_CERTIFICATES"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+defaultTransitions:
+  actions:
+    system.startTaskFlow: "switchFromStartSkillFlow"
+states:
+  invokeSurveyFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "SurveyFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  invokeRetailFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "RetailFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  setDepositOutputMsgVariable:
+    component: "System.SetVariable"
+    properties:
+      variable: "outputMsg"
+      value: "${'CORP.CD.CORPORATE_DEPOSITS.' + cdDepositsEntityChoices.value.value + '.MSG'}"
+    transitions:
+      next: "depositOutputMsg"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false
+  resetcdDepositChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "cdDepositsEntityChoices,outputMsg"
+    transitions:
+      next: "resolveCorpDepositsEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  setSavingsForeignOutputMsgVariable:
+    component: "System.SetVariable"
+    properties:
+      variable: "outputMsg"
+      value: "${'CORP.CD.SAVINGS.FOREIGN_CURRENCY.' + cdSavingsForeignEntityChoices.value.value + '.MSG'}"
+    transitions:
+      next: "savingsForeignOutputMsg"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false
+  switchFromStartSkillFlow:
+    component: "System.Switch"
+    properties:
+      variable: "skill.fromStartSkillFlow"
+    transitions:
+      actions:
+        "no": "invokeStartFlow"
+        "yes": "switchBotType"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  switchBotType:
+    component: "System.Switch"
+    properties:
+      variable: "user.botType"
+    transitions:
+      actions:
+        Retail: "invokeRetailCertAndDepFlow"
+        Corporate: "resolveCorpChoicesEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  switchBotTypeForBack:
+    component: "System.Switch"
+    properties:
+      variable: "user.botType"
+    transitions:
+      actions:
+        Retail: "invokeRetailFlow"
+        Corporate: "invokeCorporateFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  switchCertAndDepChoice:
+    component: "System.Switch"
+    properties:
+      variable: "certAndDepEntityChoices"
+    transitions:
+      actions:
+        Savings Certificates: "resolveSavingsCertEntity"
+        Corporate deposits: "resolveCorpDepositsEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  resolveLocalCurrenyEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('CORP.CD.SAVINGS.LOCAL_CURRENCY.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "cdSavingsLocalEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetSavingVariable"
+        main: "invokeMainMenuFlow"
+      next: "setSavingsLocalOutputMsgVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  invokeStartFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "StartFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  output:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "to be done"
+          type: "text"
+      keepTurn: true
+    transitions: {}
+    metadata:
+      virtualComponent: "Virtual.Output"
+      propertySheetIsFreeMarkerMap:
+        requiresAuthorization: false
+  resolveRetailCertSavingForeignEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${system.entityToResolve.value.prompt}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${action.label}"
+            type: "postback"
+        globalActions:
+        - visible:
+            expression: "${system.entityToResolve.value.needShowPreviousButton}"
+          payload:
+            variables:
+              ${system.entityToResolve.value.rangeStartVar}: "${system.entityToResolve.value.previousRangeStart}"
+            action: "system.showPrevious"
+          label: "${rb('systemComponent_ResolveEntities_showPreviousLabel')}"
+          type: "postback"
+        - visible:
+            expression: "${system.entityToResolve.value.needShowMoreButton}"
+          payload:
+            variables:
+              ${system.entityToResolve.value.rangeStartVar}: "${system.entityToResolve.value.nextRangeStart}"
+            action: "system.showMore"
+          label: "${rb('systemComponent_ResolveEntities_showMoreLabel')}"
+          type: "postback"
+        - visible:
+            onInvalidUserInput: true
+          payload:
+            action: "cancel"
+          label: "Cancel"
+          type: "postback"
+      variable: "retailCdCertSavingForeignEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "switchBotTypeForBack"
+        menu: "invokeMainMenuFlow"
+      next: "setRetailCertSavingForeignVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  invokeMainMenuFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "MainMenuFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  invokeExitFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "ExitFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  invokeRetailCertAndDepFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "RetailCertificatesAndDepositsFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  resetSavingsLocalChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "cdSavingsLocalEntityChoices,outputMsg"
+    transitions:
+      next: "resolveLocalCurrenyEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resolveForeignCurrencyEntity:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('CORP.CD.SAVINGS.FOREIGN_CURRENCY.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "cdSavingsForeignEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetSavingVariable"
+        menu: "invokeMainMenuFlow"
+      next: "setSavingsForeignOutputMsgVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  setSavingsLocalOutputMsgVariable:
+    component: "System.SetVariable"
+    properties:
+      variable: "outputMsg"
+      value: "${'CORP.CD.SAVINGS.LOCAL_CURRENCY.' + cdSavingsLocalEntityChoices.value.value + '.MSG'}"
+    transitions:
+      next: "savingsLocalOutputMsg"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false
+  resolveCorpDepositsEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('CORP.CD.CORPORATE_DEPOSITS.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "cdDepositsEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetCertAndDepositVariable"
+        menu: "invokeMainMenuFlow"
+      next: "setDepositOutputMsgVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  depositOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${rb(outputMsg.value)}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetcdDepositChoicesVariable"
+        survey: "invokeSurveyFlow"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  setRetailCertSavingForeignVariable:
+    component: "System.SetVariable"
+    properties:
+      variable: "outputMsg"
+      value: "${'RETAIL.CD.CERT.SAVING_FOREIGN.' + retailCdCertSavingForeignEntityChoices.value.value + '.MSG'}"
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false
+  resetSavingsForeignChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "cdSavingsForeignEntityChoices,outputMsg"
+    transitions:
+      next: "resolveForeignCurrencyEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  switchRetailCertAndDepChoice:
+    component: "System.Switch"
+    properties:
+      variable: "retailCdCertificatesEntityChoices"
+    transitions:
+      actions:
+        Belady Certificates (for Egyptian expatriates): "setBeladyOutputMsgVariable"
+        Saving Certificates (Local Currency): "resolveRetailCertSavingLocalEntity"
+        Saving Certificates (Foreign currency): "resolveRetailCertSavingForeignEntity"
+        Investment Certificates: "resolveRetailCertInvestEntity"
+      next: "output"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  setBeladyOutputMsgVariable:
+    component: "System.SetVariable"
+    properties:
+      variable: "outputMsg"
+      value: "${'RETAIL.CD.CERT.' + retailCdCertificatesEntityChoices.value.value + '.MSG'}"
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false
+  resolveCorpChoicesEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('CORP.CERTIFICATES_DEPOSITS.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "certAndDepEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "switchBotTypeForBack"
+        menu: "invokeMainMenuFlow"
+      next: "switchCertAndDepChoice"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resetSavingVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "cdSavingsEntityChoices"
+    transitions:
+      next: "resolveSavingsCertEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  savingsLocalOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${rb(outputMsg.value)}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetSavingsLocalChoicesVariable"
+        survey: "invokeSurveyFlow"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  switchSavingsChoice:
+    component: "System.Switch"
+    properties:
+      variable: "cdSavingsEntityChoices"
+    transitions:
+      actions:
+        Local currency: "resolveLocalCurrenyEntity"
+        Foreign currency: "resolveForeignCurrencyEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  resolveRetailCertAndDepEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('RETAIL.CERTIFICATES_DEPOSITS.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "retailCertAndDepEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "switchBotTypeForBack"
+        menu: "invokeMainMenuFlow"
+      next: "switchRetailCertAndDepChoice"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resolveRetailCertSavingLocalEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${system.entityToResolve.value.prompt}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${action.label}"
+            type: "postback"
+        globalActions:
+        - visible:
+            expression: "${system.entityToResolve.value.needShowPreviousButton}"
+          payload:
+            variables:
+              ${system.entityToResolve.value.rangeStartVar}: "${system.entityToResolve.value.previousRangeStart}"
+            action: "system.showPrevious"
+          label: "${rb('systemComponent_ResolveEntities_showPreviousLabel')}"
+          type: "postback"
+        - visible:
+            expression: "${system.entityToResolve.value.needShowMoreButton}"
+          payload:
+            variables:
+              ${system.entityToResolve.value.rangeStartVar}: "${system.entityToResolve.value.nextRangeStart}"
+            action: "system.showMore"
+          label: "${rb('systemComponent_ResolveEntities_showMoreLabel')}"
+          type: "postback"
+        - visible:
+            onInvalidUserInput: true
+          payload:
+            action: "cancel"
+          label: "Cancel"
+          type: "postback"
+      variable: "retailCdCertSavingLocalEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "switchBotTypeForBack"
+        menu: "invokeMainMenuFlow"
+      next: "setRetailCertSavingLocalMsgVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  savingsForeignOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${rb(outputMsg.value)}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetSavingsForeignChoicesVariable"
+        survey: "invokeSurveyFlow"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  invokeCorporateFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "CorporateFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  resetCertAndDepositVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "certAndDepEntityChoices"
+    transitions:
+      next: "resolveCorpChoicesEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resolveRetailCertInvestEntity:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${system.entityToResolve.value.prompt}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${action.label}"
+            type: "postback"
+        globalActions:
+        - visible:
+            expression: "${system.entityToResolve.value.needShowPreviousButton}"
+          payload:
+            variables:
+              ${system.entityToResolve.value.rangeStartVar}: "${system.entityToResolve.value.previousRangeStart}"
+            action: "system.showPrevious"
+          label: "${rb('systemComponent_ResolveEntities_showPreviousLabel')}"
+          type: "postback"
+        - visible:
+            expression: "${system.entityToResolve.value.needShowMoreButton}"
+          payload:
+            variables:
+              ${system.entityToResolve.value.rangeStartVar}: "${system.entityToResolve.value.nextRangeStart}"
+            action: "system.showMore"
+          label: "${rb('systemComponent_ResolveEntities_showMoreLabel')}"
+          type: "postback"
+        - visible:
+            onInvalidUserInput: true
+          payload:
+            action: "cancel"
+          label: "Cancel"
+          type: "postback"
+      variable: "retailCdCertInvestmentEntityChoices"
+      processUserMessage: true
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  setRetailCertSavingLocalMsgVariable:
+    component: "System.SetVariable"
+    properties:
+      variable: "retailCdCertSavingLocalEntityChoices"
+      value: "${'RETAIL.CD.CERT.SAVING_LOCAL.' + retailCdCertSavingLocalEntityChoices.value.value + '.MSG'}"
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false
+  resolveSavingsCertEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('CORP.CD.SAVINGS_CERTIFICATES.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "cdSavingsEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetCertAndDepositVariable"
+        menu: "invokeMainMenuFlow"
+      next: "switchSavingsChoice"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false

@@ -1,0 +1,35 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Prices of mutual fund certificates",
+    "extensionType" : null,
+    "synonyms" : [ "Prices", "certifacates prices" ],
+    "trackingId" : "AC78900A-0579-4EAE-AF7A-D7342249F613"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "How to redeem",
+    "extensionType" : null,
+    "synonyms" : [ "redeem" ],
+    "trackingId" : "96D6315B-0F8D-4B6A-8F66-C4865A594D3E"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "How to purchase",
+    "extensionType" : null,
+    "synonyms" : [ "purchase" ],
+    "trackingId" : "05019C38-0ACB-4672-BF31-A256F8D5CFF1"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Advantages",
+    "extensionType" : null,
+    "synonyms" : [ "advantage" ],
+    "trackingId" : "674A4834-5127-4C47-B00F-668E2AD8DCD1"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.OTHER_SERVICES.MUTUAL_FUNDS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "E59B4359-6723-4B8B-ABE8-E5ACBCBDC480",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

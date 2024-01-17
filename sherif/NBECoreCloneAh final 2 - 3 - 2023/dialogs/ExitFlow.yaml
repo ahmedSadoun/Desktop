@@ -1,0 +1,37 @@
+name: "ExitFlow"
+trackingId: "5DE2B400-B46C-4307-93F3-0BEF3FDDE058"
+type: "task"
+version: "2.0"
+interface: {}
+configuration:
+  requiresAuthorization: false
+defaultTransitions:
+  actions:
+    system.startTaskFlow: "setFromStartSkillVariable"
+states:
+  output:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${rb('End Msg')}"
+          type: "text"
+      keepTurn: true
+    transitions: {}
+    metadata:
+      virtualComponent: "Virtual.Output"
+      propertySheetIsFreeMarkerMap:
+        requiresAuthorization: false
+  setFromStartSkillVariable:
+    description: "Set it to no"
+    component: "System.SetVariable"
+    properties:
+      variable: "skill.fromStartSkillFlow"
+      value: "no"
+    transitions:
+      next: "output"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: false
+        requiresAuthorization: false

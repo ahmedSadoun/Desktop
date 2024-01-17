@@ -1,0 +1,78 @@
+1- Arabic task title contains instanceId rather than instanceNumber
+	instanceId be like "bpmn:161601081" instanceNumber be like "161601081" without "bpmn:"
+	
+2- Activity name doesn't end with Task word like "Line Manager" it should be "Line Manager Task"
+3- Final submit integration name should be named "Invoke Final Submit"
+4- Payroll Admin role to Payroll Administrator 
+5- CITC Payroll Administrator to Payroll Administrator
+
+Details
+ComplaintAboutInsuranceServicesProcess
+161601081
+
+========
+
+
+AddMedicalCenterProcess
+161627745
+
+========
+
+MedicalInsuranceRequestProcess
+161627971
+
+task title delete ? 
+========
+
+StayAtWorkProcess
+161628359
+
+========
+
+IdentificationLettersProcess
+161596961
+None Approvers
+========
+
+OvertimePaymentProcess
+161632736
+
+========
+
+OvertimeAssignmentRequestProcess
+161629075
+
+========
+
+ChangeBankAccountProcess
+161629743
+
+========
+
+CancelHousingSupportProcess
+161640114
+
+========
+
+BusinessTripRequestProcess
+161640722
+Task title CREATE Business Trip Request
+========
+
+BusinessTripPaymentProcess
+161612284
+
+========
+
+leaveRequestProcess
+no pcs
+
+
+
+
+
+
+
+
+
+

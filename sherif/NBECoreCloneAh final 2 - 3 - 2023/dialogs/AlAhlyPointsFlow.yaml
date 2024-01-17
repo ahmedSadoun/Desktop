@@ -1,0 +1,515 @@
+name: "AlAhlyPointsFlow"
+trackingId: "1FCD8706-B544-4D46-8ED9-90337AA1F159"
+type: "task"
+version: "2.0"
+interface: {}
+configuration:
+  requiresAuthorization: false
+variables:
+- name: "ahlyPointsMainList"
+  type: "list"
+  defaultValue:
+  - nameAr: "الاهلي بوينتس"
+    keywords: "ahly points,points,الاهلى بوينتس,اهلى بوينتس,اهلي بوينتس,الأهلي بوينتس,الأهلى بوينتس,بوينتس"
+    nameEn: "Al Ahly Points"
+  - nameAr: "العروض"
+    keywords: "offer,عروض"
+    nameEn: "Offers"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "selectedChoice"
+  type: "string"
+  description: "To hold main menu choice"
+  metadata:
+    isFreeMarker: true
+  system: false
+- name: "ahlyPointsEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.RETAIL.AHLY_POINTS"
+  description: "Used to resolve the entity"
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "ahlyPointsOutputMsg"
+  type: "string"
+  description: "Holds the name of the rb based on the choice"
+  metadata:
+    isFreeMarker: true
+  system: false
+- name: "pointsRedemptionEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.RETAIL.AHLY_POINTS_REDEMPTION"
+  description: "Sub entity for the main entity"
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "pointsRedemptionOutputMsg"
+  type: "string"
+  description: ""
+  metadata:
+    isFreeMarker: true
+  system: false
+- name: "mainAhlyPointsEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.RETAIL.MAIN_AHLY_POINTS"
+  description: "To resolve ahly points or offers"
+  metadata:
+    isFreeMarker: false
+  system: false
+defaultTransitions:
+  actions:
+    system.startTaskFlow: "switchFromStartSkill"
+states:
+  resolveRedemptionEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('RETAIL.AHLY_POINTS_REDEMPTION.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "pointsRedemptionEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetVariables"
+        menu: "invokeMainMenuFlow"
+      next: "setPointsRedemptionOutputMsgVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  setAhlyPointsOutputMsgVariable:
+    description: "Holds the name of the rb based on the choice and concatenate Msg to the choice"
+    component: "System.SetVariable"
+    properties:
+      variable: "ahlyPointsOutputMsg"
+      value: "${'RETAIL.AHLY_POINTS.' + ahlyPointsEntityChoices.value.value + '.MSG'}"
+    transitions:
+      next: "ahlyPointsOutputMsg"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false
+  invokeSurveyFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "SurveyFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  pointsRedemptionOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${rb(pointsRedemptionOutputMsg.value)}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetRedemptionChoicesVariable"
+        survey: "invokeSurveyFlow"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resetVariables:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "ahlyPointsEntityChoices"
+    transitions:
+      next: "resolveAhlyPointsEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  invokeRetailFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "RetailFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  offersOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${rb('RETAIL.MAIN_AHLY_POINTS.OFFERS.MSG')}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetMainAhlyPointsChoiceVariable"
+        survey: "invokeSurveyFlow"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  switchSelectedMainChoice:
+    description: "To show ahly points options or reply with offers"
+    component: "System.Switch"
+    properties:
+      variable: "mainAhlyPointsEntityChoices"
+    transitions:
+      actions:
+        Al Ahly Points: "resolveAhlyPointsEntity"
+        Offers: "offersOutputMsg"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  switchFromStartSkill:
+    component: "System.Switch"
+    properties:
+      variable: "skill.fromStartSkillFlow"
+    transitions:
+      actions:
+        "yes": "resolveMainAhlyPointsEntity"
+      next: "invokeStartFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  resetAhlyPointsVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "ahlyPointsEntityChoices,ahlyPointsOutputMsg"
+    transitions:
+      next: "resolveAhlyPointsEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  invokeStartFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "StartFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  resolveAhlyPointsEntity:
+    description: "Al Ahly Points Entity"
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('RETAIL.AHLY_POINTS.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "ahlyPointsEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetMainAhlyPointsChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "switchAhlyPointsChoices"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resetMainAhlyPointsChoiceVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "mainAhlyPointsEntityChoices"
+    transitions:
+      next: "resolveMainAhlyPointsEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resetRedemptionChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "pointsRedemptionEntityChoices,pointsRedemptionOutputMsg"
+    transitions:
+      next: "resolveRedemptionEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  invokeMainMenuFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "MainMenuFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  ahlyPointsOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${rb(ahlyPointsOutputMsg.value)}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetAhlyPointsVariable"
+        survey: "invokeSurveyFlow"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  invokeExitFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "ExitFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  resolveMainAhlyPointsEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('RETAIL.MAIN_AHLY_POINTS.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "mainAhlyPointsEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "invokeRetailFlow"
+        menu: "invokeMainMenuFlow"
+      next: "switchSelectedMainChoice"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  setPointsRedemptionOutputMsgVariable:
+    component: "System.SetVariable"
+    properties:
+      variable: "pointsRedemptionOutputMsg"
+      value: "${'RETAIL.AHLY_POINTS_REDEMPTION.' + pointsRedemptionEntityChoices.value.value + '.MSG'}"
+    transitions:
+      next: "pointsRedemptionOutputMsg"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false
+  switchAhlyPointsChoices:
+    description: "To check if will resolve more entity or just output msg"
+    component: "System.Switch"
+    properties:
+      variable: "ahlyPointsEntityChoices"
+    transitions:
+      actions:
+        Point Redemption: "resolveRedemptionEntity"
+      next: "setAhlyPointsOutputMsgVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false

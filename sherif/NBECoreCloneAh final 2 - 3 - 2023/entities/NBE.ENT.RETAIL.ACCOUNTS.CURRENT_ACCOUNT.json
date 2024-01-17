@@ -1,0 +1,23 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Current account",
+    "extensionType" : null,
+    "synonyms" : [ "الحساب الجاري", "حساب جاري" ],
+    "trackingId" : "970DDB07-0F79-49FF-88A7-8D5689FDD09B"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Fayda Plus account",
+    "extensionType" : null,
+    "synonyms" : [ "فايدة بلس" ],
+    "trackingId" : "F01420D9-1258-4BD9-AC79-0F52C674AD68"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.ACCOUNTS.CURRENT_ACCOUNT",
+  "promptForDisambiguation" : true,
+  "trackingId" : "3742AE5B-4139-462A-8195-4897E7484762",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

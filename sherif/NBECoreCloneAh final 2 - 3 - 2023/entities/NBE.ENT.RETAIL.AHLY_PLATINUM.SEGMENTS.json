@@ -1,0 +1,29 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al Ahly Platinum Elite",
+    "extensionType" : null,
+    "synonyms" : [ "Elite", "إيليت", "الاهلي بلاتينم ايليت" ],
+    "trackingId" : "3AF366AD-4034-434D-B45A-0AE2BEBED2C2"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al Ahly Platinum Plus",
+    "extensionType" : null,
+    "synonyms" : [ "Plus", "بلس", "الاهلي بلاتينم بلس" ],
+    "trackingId" : "054F125B-99AA-424D-A03E-3979EF9208E0"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al Ahly Platinum",
+    "extensionType" : null,
+    "synonyms" : [ "ahly platinum", "الاهلي بلاتينم" ],
+    "trackingId" : "0BF865E2-F0C5-4037-9815-F03F2ECB58F1"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.AHLY_PLATINUM.SEGMENTS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "27E82833-05B7-49B7-B10F-E541A130063D",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

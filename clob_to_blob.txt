@@ -1,0 +1,17 @@
+create or replace FUNCTION "CLOB_TO_BLOB" (src_clob CLOB) RETURN BLOB IS
+    tgt_blob BLOB;
+    amount INTEGER := DBMS_LOB.lobmaxsize;
+    dest_offset INTEGER := 1;
+    src_offset INTEGER  := 1;
+    blob_csid INTEGER := nls_charset_id('UTF8');
+    lang_context INTEGER := DBMS_LOB.default_lang_ctx;
+    warning INTEGER := 0;
+begin
+    if src_clob is null then
+        return null;
+    end if;
+
+    DBMS_LOB.CreateTemporary(tgt_blob, true);
+    DBMS_LOB.ConvertToBlob(tgt_blob, src_clob, amount, dest_offset, src_offset, blob_csid, lang_context, warning);
+    return tgt_blob;
+end clob_to_blob;

@@ -1,0 +1,17 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Current account",
+    "extensionType" : null,
+    "synonyms" : [ "current" ],
+    "trackingId" : "3D4E03EA-D025-487B-9CF3-00D3ACC6BB59"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.CORP.ACCOUNTS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "81B0CE00-4503-4755-B779-6D927499605F",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

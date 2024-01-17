@@ -1,0 +1,11 @@
+{
+  "botPrompts" : [ ],
+  "entityGazetteers" : [ ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "PERSON",
+  "promptForDisambiguation" : true,
+  "trackingId" : "C361DF7C-90C7-4F8A-AA88-95838D064DD1",
+  "type" : "SYSTEM",
+  "validationRules" : [ ]
+}

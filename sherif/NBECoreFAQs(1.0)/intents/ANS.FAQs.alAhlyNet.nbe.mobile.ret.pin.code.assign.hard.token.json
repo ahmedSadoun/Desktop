@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - How can a PIN code be assigned for the hard token for Al Ahly Net/NBE Mobile?",
+    "trackingId" : "3B6F5DBC-ABEE-44E0-90EF-83A6207ECD4A",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - How to set a PIN for the security code device on Al-Ahly Net / Al-Ahly Mobily service?",
+    "trackingId" : "C4CB4F31-FD39-4187-80D3-1833F082893B",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.pin.code.assign.hard.token",
+  "trackingId" : "056D3851-16A7-4871-9FFB-A9AEE4150138"
+}

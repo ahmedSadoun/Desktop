@@ -1,0 +1,12 @@
+Javascript 
+html
+css
+bootstrap
+jquery
+knockout
+require.js
+
+Oracle DB
+VBCS
+PCS
+ICS

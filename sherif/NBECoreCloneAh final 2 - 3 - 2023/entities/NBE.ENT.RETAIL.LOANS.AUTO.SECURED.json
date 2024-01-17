@@ -1,0 +1,17 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Secured auto loan",
+    "extensionType" : null,
+    "synonyms" : null,
+    "trackingId" : "314C1069-DBDE-44B6-9A4B-B293595BCFF4"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.LOANS.AUTO.SECURED",
+  "promptForDisambiguation" : true,
+  "trackingId" : "BD67D0E2-8240-48E9-AD4A-4A86CB35587D",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

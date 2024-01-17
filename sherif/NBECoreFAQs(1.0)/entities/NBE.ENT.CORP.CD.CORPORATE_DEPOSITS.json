@@ -1,0 +1,29 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Corporate Time Deposits with Minimum EGP 1 Million",
+    "extensionType" : null,
+    "synonyms" : [ "corporate time deposits", "corp time deposits", "a million deposit", "1000000 deposit", "الودائع لأجل للشركات بحد أدنى مليون جم", "وديعة ب 1000000 جنيه مصري" ],
+    "trackingId" : "2DD9B8B5-B553-4D9F-996A-D23504609EF6"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Multi Frequencies Time Deposits",
+    "extensionType" : null,
+    "synonyms" : [ "multi frequencies", "multi time deposits", "multi frequencies deposits", "الودائع ذات دوريات متنوعة", "ودائع بفترات زمنية متنوعه" ],
+    "trackingId" : "B2D327E8-C187-4F80-81D2-DF5CB10BF63E"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Time Deposits with Interest Paid at Maturity",
+    "extensionType" : null,
+    "synonyms" : [ "الودائع ذات العائد يصرف نهاية المدة", "paid at maturity" ],
+    "trackingId" : "8163A7D2-6B7A-44D2-815D-881D38A9984F"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.CORP.CD.CORPORATE_DEPOSITS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "3CFFCBEE-9C8C-4B8C-8CD2-D5ECADA1D3B2",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

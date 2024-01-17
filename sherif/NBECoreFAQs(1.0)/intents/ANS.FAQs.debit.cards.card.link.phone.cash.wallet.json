@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can a debit card be linked to a phone cash wallet?",
+    "trackingId" : "F6DB9DFF-671E-4100-A7FA-2BD8AD115EC1",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can the debit card be linked to the Phone Cash wallet?",
+    "trackingId" : "A0A32ECA-5CB6-40F3-A055-E27163779F78",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.debit.cards.card.link.phone.cash.wallet",
+  "trackingId" : "2EA4DEE7-38E7-43D8-B12F-3CA214BD1780"
+}

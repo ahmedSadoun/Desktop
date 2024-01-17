@@ -1,0 +1,187 @@
+name: "RetailFlow"
+trackingId: "082A0B95-0CCB-4381-8F8B-5420B522BDAD"
+type: "task"
+version: "2.0"
+interface:
+  returnActions:
+  - "done"
+configuration:
+  requiresAuthorization: false
+variables:
+- name: "retailMenu"
+  type: "list"
+  defaultValue:
+  - website: ""
+    nameAr: "الفروع وماكينات الصراف الآلي"
+    keywords: "locate,locate us,locateus,الفروع وماكينات الصراف الآلى,الفروع وماكينات الصراف الالى,الفروع وماكينات الصراف الالي,الفروع وماكينات الصراف الألى,الفروع وماكينات الصراف الألي,الفروع,فروع,الفروع وماكينات,فروع وماكينات,ماكينات,الفروع والماكينات,الفروع و الماكينات,ماكينات,ماكينات الصراف,الصراف الآلى,الصراف الالى,الصراف الالي,الصراف الألى,الصراف الألي,الفروع و ماكينات الصراف الآلى,الفروع و ماكينات الصراف الالى,الفروع و ماكينات الصراف الالي,الفروع و ماكينات الصراف الألى,الفروع و ماكينات الصراف الألي,الفروع و ماكينات,فروع و ماكينات"
+    imageUrl: ""
+    description: ""
+    nameEn: "Locate Us"
+  - website: ""
+    nameAr: "الحسابات"
+    keywords: "accounts,account,الحسابات,حسابات"
+    imageUrl: ""
+    description: ""
+    nameEn: "Accounts"
+  - website: ""
+    nameAr: "الشهادات والودائع"
+    keywords: "certificates & deposits,Certificates and Deposits,certificates and deposits,certificates,deposits,Certificates,Deposits,الشهادات و الودائع,الشهادات,الودائع,شهادات,ودائع,شهادات و ودائع,شهادات وودائع"
+    imageUrl: ""
+    description: ""
+    nameEn: "Certificates & Deposits"
+  - website: ""
+    nameAr: "البطاقات"
+    keywords: "cards,بطاقات"
+    imageUrl: ""
+    description: ""
+    nameEn: "Cards"
+  - website: ""
+    nameAr: "القروض"
+    keywords: "loans,قروض"
+    imageUrl: ""
+    description: ""
+    nameEn: "Loans"
+  - website: ""
+    nameAr: "الخدمات الرقمية"
+    keywords: "digital bankig,الخدمات الرقميه,خدمات رقمية,خدمات رقميه"
+    imageUrl: ""
+    description: ""
+    nameEn: "Digital Banking"
+  - website: ""
+    nameAr: "الخدمات الذاتية"
+    keywords: "Self Services,self-services,self services,الخدمات الذاتيه,خدمات ذاتية,خدمات ذاتيه"
+    imageUrl: ""
+    description: ""
+    nameEn: "Self-Services"
+  - website: ""
+    nameAr: "الأهلي بلاتنيم"
+    keywords: "al ahly platinum,ahly platinum,platinum,الأهلى بلاتنيم,الاهلي بلاتنيم,الاهلى بلاتنيم,أهلي بلاتنيم,أهلى بلاتنيم,اهلي بلاتنيم,اهلى بلاتنيم"
+    imageUrl: ""
+    description: ""
+    nameEn: "Al Ahly Platinum"
+  - website: ""
+    nameAr: "الاهلي بوينتس و العروض"
+    keywords: "al ahly points,ahly points,points,الأهلى بوينتس,الاهلي بوينتس,الاهلى بوينتس,أهلي بوينتس,أهلى بوينتس,اهلي بوينتس,اهلى بوينتس"
+    imageUrl: ""
+    description: ""
+    nameEn: "Al Ahly Points and Offers"
+  - website: ""
+    nameAr: "خدمات أخرى"
+    keywords: "other services,other,خدمات اخرى,أخرى,اخرى"
+    imageUrl: ""
+    description: ""
+    nameEn: "Other Services"
+  description: "Retail tree menu"
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retailMenuChoice"
+  type: "string"
+  description: "The selected retail value"
+  metadata:
+    isFreeMarker: true
+  system: false
+defaultTransitions:
+  actions:
+    system.startTaskFlow: "retailTypesMenu"
+states:
+  invokeStartFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "StartFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  invokeBotTypeFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "BotTypeFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  endFlow:
+    component: "System.EndFlow"
+    properties:
+      action: "done"
+    transitions: {}
+    metadata: {}
+  invokeExitFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "ExitFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  retailTypesMenu:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - cardLayout: "horizontal"
+          cards:
+          - iteratorVariable: "menuItem"
+            iteratorExpression: "${retailMenu.value}"
+            imageUrl: "${menuItem.imageUrl}"
+            description: "${menuItem.description}"
+            cardUrl: "${menuItem.website}"
+            title: "<#if profile.languageTag == 'en'>${menuItem.nameEn}<#else>${menuItem.nameAr}</#if>"
+            actions:
+            - payload:
+                variables:
+                  retailMenuChoice: "${menuItem.nameEn}"
+                action: "${menuItem.nameEn}"
+              label: "<#if profile.languageTag == 'en'>${menuItem.nameEn}<#else>${menuItem.nameAr}</#if>"
+              type: "postback"
+              keyword: "${menuItem.keywords}"
+          headerText: "${rb('RetailMenuMsg')}"
+          type: "cards"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "invokeBotTypeFlow"
+      next: "setUtteranceVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  setUtteranceVariable:
+    description: "Set utterance with what the user chose to match the right intent"
+    component: "System.SetVariable"
+    properties:
+      variable: "skill.system.intent.utterance"
+      value: "${retailMenuChoice.value}"
+    transitions:
+      next: "endFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false

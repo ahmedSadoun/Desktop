@@ -1,0 +1,47 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Meeza",
+    "extensionType" : null,
+    "synonyms" : [ "meeza", "ميزة" ],
+    "trackingId" : "18C8D462-A33B-4ACC-93CC-79374DBDECA3"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Classic debit card",
+    "extensionType" : null,
+    "synonyms" : [ "classic debit card", "بطاقات الخصم المباشر الكلاسيكية" ],
+    "trackingId" : "8E8CE6D0-93B0-4F1E-8B50-A777DDB262EB"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Gold debit card",
+    "extensionType" : null,
+    "synonyms" : [ "gold debit card", "بطاقات الخصم المباشر الذهبية" ],
+    "trackingId" : "272BF4AA-8F89-4DBA-AEE0-EAE92E258D40"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Platinum debit card",
+    "extensionType" : null,
+    "synonyms" : [ "platinum debit card", "بطاقات الخصم المباشر البلاتينية" ],
+    "trackingId" : "2DC7BA6D-91DD-4930-ADF7-E4E304FFFBD0"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Mastercard World Elite",
+    "extensionType" : null,
+    "synonyms" : [ "mastercard wolrd elite", "ماستركارد وورلد ايليت" ],
+    "trackingId" : "54E94D27-34F2-4405-AEA5-4A683DBDA2DD"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "MasterCard World",
+    "extensionType" : null,
+    "synonyms" : [ "ماستركارد وورلد", "mastercard world" ],
+    "trackingId" : "D4B11272-559A-4A8F-9E99-2B0143BB8D70"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.CARDS.DEBIT_CARD",
+  "promptForDisambiguation" : true,
+  "trackingId" : "ED7866FE-804B-4FDD-AE17-15AF3A4925CD",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

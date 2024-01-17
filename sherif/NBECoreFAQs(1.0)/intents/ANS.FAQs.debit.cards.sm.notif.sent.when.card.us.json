@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Is a text message sent when using the discount card?",
+    "trackingId" : "34D82498-D671-43C3-9E9E-49FC9EB9B7CE",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Is an SMS notification sent when the debit card is used?",
+    "trackingId" : "9D941D97-E0AB-4558-A0BD-0B8267B6B5F7",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.debit.cards.sm.notif.sent.when.card.us",
+  "trackingId" : "D093BE85-91C7-44A1-8B3C-674AC88FA31C"
+}

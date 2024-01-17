@@ -1,0 +1,371 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Are there any limits on the amount or frequency of transactions with the corporate POS/QR code payment system?",
+    "trackingId" : "381E2D9D-37F2-45CA-8D29-0FF299970AC6",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Are there any promotions available at the bank's bus branch?",
+    "trackingId" : "5948BC4C-38E7-4D1A-A3D7-9BDC77F480C9",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Are there any promotions or discounts available for using the corporate POS/QR code payment system?",
+    "trackingId" : "E786428F-6965-48C7-914B-6AB1BA83F34D",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can I get a demo of the corporate POS/QR code payment system before signing up?",
+    "trackingId" : "FCAF4A97-5A2D-4522-997B-8AA731A54F58",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can I open an account at the bank's bus branch?",
+    "trackingId" : "3D410822-016D-449D-9E0C-614113B8B499",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can I use the corporate POS/QR code payment system for both in-store and online transactions?",
+    "trackingId" : "FB2A629C-A3C5-457A-9B00-38EF87CAAC01",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can you tell me how to get to the bank's bus branch?",
+    "trackingId" : "2E3FAC57-DFBA-4BA2-8E22-BF2D00A40704",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Do I need an appointment to visit the bank's bus branch?",
+    "trackingId" : "2940311C-E39A-40F5-A069-D0E6F6798E98",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Find me the nearest bus branch for the bank.",
+    "trackingId" : "AD29F37A-53A2-4515-8544-4FE0FBEFDD41",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How can I set up POS/QR code payments for my business with your bank?",
+    "trackingId" : "69A0FBE8-5BC8-4AEB-8EED-2EEC7CD74196",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How does the corporate POS/QR code payment system integrate with my existing accounting and inventory management systems?",
+    "trackingId" : "CE884935-BA0E-4AC7-A824-E12378CB0AFB",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How secure is the corporate POS/QR code payment system?",
+    "trackingId" : "2F5FEF0C-3377-4ADE-9358-D9477DE45A29",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "I want to know the location of the bank's bus branch.",
+    "trackingId" : "47D6A22F-8EFB-468F-8DF6-B6F89553288F",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Is it possible to customize the design and branding of the POS/QR code payment screen for my business?",
+    "trackingId" : "325526E6-3A84-4FC7-892A-5BCDC5FA32E3",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Is there a phone number I can call to reach the bank's bus branch?",
+    "trackingId" : "AED87FB0-47C2-430E-85B6-93E2F98E8BF7",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What are the fees and requirements for using the corporate POS/QR code payment system?",
+    "trackingId" : "9A273221-51ED-4FB5-A70B-2B15AF2FE409",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What are the hours of operation for the bank's bus branch?",
+    "trackingId" : "2E5B292C-EAB6-46F1-A944-7E209CAB1D67",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What kind of reporting and analytics are available with the corporate POS/QR code payment system?",
+    "trackingId" : "4CAA328E-1C15-4943-B4E1-BC4FE8E99BC7",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What services are available at the bank's bus branch?",
+    "trackingId" : "182BC0A4-5388-4278-8D96-A502A55ED043",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Where can I find the bus branch for the bank?",
+    "trackingId" : "46D37E6A-315D-411F-97FE-319144A9351F",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "digital banking",
+    "trackingId" : "34058F87-6CC8-4C81-87FF-4AB9BD47ABCB",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "digital banking available",
+    "trackingId" : "86A5796E-655A-4EF2-96CA-DFA391203C37",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : "en",
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "i want to know about digital banking",
+    "trackingId" : "FBDAE87D-4366-4E5A-B8C9-1C068DA1A896",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "what is digital banking",
+    "trackingId" : "DA2CA74A-B3E3-44D1-8C29-EC31F65245BA",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ {
+    "entity" : "NBE.ENT.CORP.DIGITAL_BANKING",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "ABD8BF00-9344-4710-941B-1188A55A8EE8"
+  }, {
+    "entity" : "NBE.ENT.CORP.DB.QR",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "86107A8B-FD23-44C4-B2E7-D2E269D0C92B"
+  }, {
+    "entity" : "NBE.ENT.RETAIL.DB.IVR",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "0FEE3E7A-FB41-48CF-ADD1-16AF6405F2DE"
+  }, {
+    "entity" : "NBE.ENT.CORP.DB.QR.AVAILABLE_SERVICES",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "EC008EA0-2C1F-4CD5-A689-3D73E227D061"
+  }, {
+    "entity" : "NBE.ENT.RETAIL.DB.AHLY_NET",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "68CED2E0-2776-48CA-AAB3-8FE956E33B33"
+  }, {
+    "entity" : "NBE.ENT.RETAIL.DIGITAL_BANKING",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "5CC9B2F1-23F1-4719-B9A4-C3FF45DD4142"
+  }, {
+    "entity" : "NBE.ENT.CORP.DB.AHLY_NET",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "82C22BBA-4D8A-4F1F-9B7A-7B858A4A6096"
+  } ],
+  "name" : "NBE.Core.DigitalBanking",
+  "trackingId" : "FA2C9556-8725-4C28-BE66-13C8F9FDF1DC",
+  "type" : "NLPIntent"
+}

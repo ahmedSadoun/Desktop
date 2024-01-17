@@ -1,0 +1,23 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Savings Account",
+    "extensionType" : null,
+    "synonyms" : [ "savings account", "حساب توفير" ],
+    "trackingId" : "90B7F5B5-D277-4E2B-9BDD-7E20CE8FC1B8"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Prizes Savings Account",
+    "extensionType" : null,
+    "synonyms" : [ "prizes account", "prizes savings", "prizes savings account", "حساب توفير ذو الجوائز بالعملة الأجنبية", "حساب توفير بجوائز" ],
+    "trackingId" : "1B5E9173-2B81-4DE8-9D18-A4E8D98D7D52"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.ACCOUNTS.SA.FOREIGN_CURR",
+  "promptForDisambiguation" : true,
+  "trackingId" : "8C05C06A-2F95-4284-9F09-7274D725CE6D",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

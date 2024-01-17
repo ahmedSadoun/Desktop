@@ -1,0 +1,33 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "CurrentCardsList",
+    "fullName" : "CurrentCardsList",
+    "type" : "ENTITY",
+    "entityName" : "NBE.ENT.CORP.CARDS",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "NBE.ENT.CORP.CARDS",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "801F33E2-A75A-40EB-B7FC-E2B34E81B7E1",
+    "children" : null
+  } ],
+  "eventHandler" : "EventHandlers:CorporateCards",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.CORP.CARDS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "6A031537-D236-467A-80F7-4F69516EA506",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

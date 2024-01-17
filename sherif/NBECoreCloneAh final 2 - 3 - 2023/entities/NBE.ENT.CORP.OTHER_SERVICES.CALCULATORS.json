@@ -1,0 +1,29 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Currency converter",
+    "extensionType" : null,
+    "synonyms" : [ "curr converter", "حاسبة العملات", "العملات", "currency" ],
+    "trackingId" : "0EB788E5-3C77-40EF-8BFA-1856EA225AFA"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Loan calculator",
+    "extensionType" : null,
+    "synonyms" : [ "loan calc", "حاسبة القروض", "القروض", "loan" ],
+    "trackingId" : "2F4288B5-0714-4333-BEFA-5B55DEF68859"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Deposit calculator",
+    "extensionType" : null,
+    "synonyms" : [ "deposit calc", "حاسبة الودائع", "الودائع", "deposit" ],
+    "trackingId" : "119BD556-D2DA-485F-B3F9-4232EA0EBEDE"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.CORP.OTHER_SERVICES.CALCULATORS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "59176C40-1BCF-4F89-9D4F-8F72107CE355",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

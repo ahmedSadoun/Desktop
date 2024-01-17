@@ -1,0 +1,33 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "CurrentPersonalLoanSelfEmpList",
+    "fullName" : "CurrentPersonalLoanSelfEmpList",
+    "type" : "ENTITY",
+    "entityName" : "NBE.ENT.RETAIL.LOANS.PERSONAL.SELF_EMPLOYED",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "NBE.ENT.RETAIL.LOANS.PERSONAL.SELF_EMPLOYED",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "9AF97206-CDC8-4BC3-8D1F-2430B5C9D774",
+    "children" : null
+  } ],
+  "eventHandler" : "EventHandlers:RetailLoansPersonalSelfEmployed",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.RETAIL.LOANS.PERSONAL.SELF_EMPLOYED",
+  "promptForDisambiguation" : true,
+  "trackingId" : "BC07C0B8-CD92-44C9-8E05-A28A333A78CB",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

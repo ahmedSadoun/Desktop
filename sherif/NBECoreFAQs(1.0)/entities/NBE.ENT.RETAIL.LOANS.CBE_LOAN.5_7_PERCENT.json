@@ -1,0 +1,17 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Low income 5% & 7%",
+    "extensionType" : null,
+    "synonyms" : null,
+    "trackingId" : "68689239-05DC-4577-A2E4-290E37B08EDB"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.LOANS.CBE_LOAN.5_7_PERCENT",
+  "promptForDisambiguation" : true,
+  "trackingId" : "7A3FB237-3F6D-4DD0-80DB-6FD0AB248C60",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

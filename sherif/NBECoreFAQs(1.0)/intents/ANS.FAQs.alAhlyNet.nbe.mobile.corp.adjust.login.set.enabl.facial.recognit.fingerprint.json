@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - How can I adjust Al Ahly Mobile login settings to enable facial recognition/fingerprint?",
+    "trackingId" : "AE83E836-E33B-49E3-95ED-3E9AD014CED6",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - How can I log in to the mobile banking service using the fingerprint / face ID??",
+    "trackingId" : "9F0E6B22-C552-4647-B809-A55C5531EF59",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.adjust.login.set.enabl.facial.recognit.fingerprint",
+  "trackingId" : "68D60556-DEEB-48C1-B294-CA405226B661"
+}

@@ -1,0 +1,14 @@
+{
+  "type" : "HOSTED",
+  "name" : "AnswerCarouselNER_EEH",
+  "packageFileName" : "AnswerCarouselNER_EEH-1.0.0.tgz",
+  "packageChecksum" : "ad96404d33d2ca603d462168b0b8c108",
+  "runtime" : "node",
+  "status" : {
+    "code" : "created",
+    "message" : "The service is created but not ready."
+  },
+  "loggingEnabled" : true,
+  "enabled" : true,
+  "trackingId" : "05124035-604a-4bbb-8824-6c69159d74bb"
+}

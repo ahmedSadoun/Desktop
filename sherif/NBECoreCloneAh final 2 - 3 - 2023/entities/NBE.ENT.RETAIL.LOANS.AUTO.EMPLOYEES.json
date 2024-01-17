@@ -1,0 +1,29 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Salary transfer",
+    "extensionType" : null,
+    "synonyms" : null,
+    "trackingId" : "1785192E-E38A-4271-BCEC-0677BB684777"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Income proof",
+    "extensionType" : null,
+    "synonyms" : null,
+    "trackingId" : "03B0D0BC-15FA-414E-8B6C-E59289D415A1"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "40% down payment",
+    "extensionType" : null,
+    "synonyms" : null,
+    "trackingId" : "202CB543-826D-4C00-BA94-D4E476E143CC"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.LOANS.AUTO.EMPLOYEES",
+  "promptForDisambiguation" : true,
+  "trackingId" : "8D1E503E-6C56-4F93-B7A9-5D90A968E795",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

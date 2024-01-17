@@ -1,0 +1,228 @@
+<!-- Page specific title and actions for desktop formfactor -->
+
+<div class="vb-content-header oj-flex">
+  <div class="oj-flex-item">
+    <!-- Add Page specific actions etc -->
+    <main class="main-content p-5" onclick="closeNav()">
+      <div class="card p-3">
+        <div class="card-body">
+          <blockquote class="blockquote mb-0 block d-flex align-items-center">
+            <img alt="" :src="[[ $application.path + 'resources/images/Group (1).svg' ]]">
+            <h6>
+              <oj-bind-text value="[[$application.translations.app.clearance_request_page_title]]">
+              </oj-bind-text>
+            </h6>
+          </blockquote>
+        </div>
+      </div>
+      <br>
+      <oj-vb-fragment bridge="[[vbBridge]]" name="requester_info_frag">
+        <oj-vb-fragment-param name="requesterEmployeeInfoObj" value="[[ $application.variables.loggedInEmployeeInfo ]]">
+        </oj-vb-fragment-param>
+      </oj-vb-fragment>
+      <br>
+      <div class="card card-main p-3" id="content">
+        <div class="card-body">
+          <h6 id="leaveInfoCollapsible" class="headerLabel">
+            <oj-bind-text value="[[$application.translations.app.clearance_request_details]]"></oj-bind-text>
+          </h6>
+          <br>
+          <blockquote class="blockquote mb-0">
+
+            <oj-form-layout class="oj-formlayout-full-width sb-form">
+              <oj-validation-group id="requestForm">
+                <div class="oj-flex row">
+                  <div class="oj-md-6 oj-sm-12">
+                    <oj-label class="sb-label" for="startDate1">
+                      <oj-bind-text value="[[$application.translations.app.request_date]]"></oj-bind-text>
+                    </oj-label>
+                    <oj-input-date class="sb-text" id="startDate1" :dir="[[ $application.variables.customAppVar.dir ]]"
+                      disabled="true" value="{{ $variables.formObj.requestDate }}"
+                      converter='{"type": "datetime", "options": {"pattern":"dd/MM/yyyy"}}'></oj-input-date>
+                  </div>
+                  <div class="oj-md-6 oj-sm-12">
+                    <oj-label class="sb-label" :dir="[[ $application.variables.customAppVar.dir ]]"
+                      for="line_manager_name">
+                      <oj-bind-text value="[[$application.translations.app.line_manager_name]]"></oj-bind-text>
+                    </oj-label>
+                    <oj-input-text class="sb-text" id="line_manager_name" disabled="true"
+                      value="{{ $variables.formObj.line_manager}}" length.max="20"></oj-input-text>
+                  </div>
+                </div>
+                <div class="oj-flex row">
+                  <div class="oj-md-6 oj-sm-12">
+                    <oj-label class="sb-label" for="hiring_date">
+                      <oj-bind-text value="[[$application.translations.app.hiring_date]]"></oj-bind-text>
+                    </oj-label>
+                    <oj-input-date class="sb-text" id="hiring_date" disabled="true"
+                      :dir="[[ $application.variables.customAppVar.dir ]]" required="true"
+                      converter='{"type": "datetime", "options": {"pattern":"dd/MM/yyyy"}}'
+                      value="{{ $variables.formObj.hiring_date }}"></oj-input-date>
+                  </div>
+                  <div class="oj-md-6 oj-sm-12">
+                    <oj-label class="sb-label" for="last_working_day">
+                      <oj-bind-text value="[[$application.translations.app.last_working_day]]"></oj-bind-text>
+                    </oj-label>
+                    <oj-input-date class="sb-text" id="last_working_day" disabled="true"
+                      :dir="[[ $application.variables.customAppVar.dir ]]" required="true"
+                      converter='{"type": "datetime", "options": {"pattern":"dd/MM/yyyy"}}'
+                      value="{{ $variables.formObj.last_working_day }}"></oj-input-date>
+                  </div>
+                </div>
+                <div class="oj-flex row">
+
+                  <div class="oj-md-6 oj-sm-12">
+                    <oj-label class="sb-label" :dir="[[ $application.variables.customAppVar.dir ]]"
+                      for="personal_email">
+                      <oj-bind-text value="[[$application.translations.app.personal_email]]"></oj-bind-text>
+                    </oj-label>
+                    <oj-input-text class="sb-text" id="personal_email"
+                      validators="[[ $page.functions.validatePersonalEmail($application.variables.locale) ]]"
+                      disabled='[[ $application.variables.mode !== "init" && !$flow.variables.isResubmitTask ]]'
+                      value="{{ $variables.formObj.personal_email }}" length.max="20" required="true"></oj-input-text>
+                  </div>
+
+                  <div class="oj-md-6 oj-sm-12">
+                    <oj-label class="sb-label" :dir="[[ $application.variables.customAppVar.dir ]]"
+                      for="personal_mobile_number">
+                      <oj-bind-text value="[[$application.translations.app.personal_mobile_number]]"></oj-bind-text>
+                    </oj-label>
+                    <oj-input-text class="sb-text" id="personal_mobile_number"
+                      validators="[[ $page.functions.validateMobileNumber($application.variables.locale) ]]"
+                      disabled='[[ $application.variables.mode !== "init" && !$flow.variables.isResubmitTask ]]'
+                      value="{{ $page.variables.formObj.personal_mobile_number }}" length.max="20" required="true">
+                    </oj-input-text>
+                  </div>
+                </div>
+                <oj-bind-if test='[[ $application.variables.mode === "edit" || $application.variables.mode === "view" ]]'>
+                  <oj-bind-for-each data="[[ $variables.clearanceQuestionsList ]]">
+                    <template>
+                      <!-- <oj-bind-text value="[[$current.data.section_ar]]"> -->
+
+                      <div class="oj-flex row" data-vb-layout-type="flex">
+                        <h6 id="[['I--305923437-1'+ $current.index]]" class="headerLabel">
+                          <oj-bind-text
+                            value="[[$application.variables.locale === 'en' ? $current.data.section_en : $current.data.section_ar]]">
+                          </oj-bind-text>
+                        </h6>
+                        <oj-bind-for-each data="[[ $current.data.questions ]]" as="questions">
+                          <template>
+                            <div class="oj-flex row" data-vb-layout-type="flex">
+                              <div class="oj-md-6 oj-sm-12">
+                                <oj-label class="sb-label" :dir="[[ $application.variables.customAppVar.dir ]]">
+                                  <oj-bind-text
+                                    value='[[$application.variables.locale === "en" ? questions.data.question_en : questions.data.question_ar]]'>
+                                  </oj-bind-text>
+                                </oj-label>
+                              </div>
+                              <div class="oj-md-6 oj-sm-12">
+                                <oj-bind-if test="[[questions.data.question_answer_type === 'LIST']]">
+                                  <div style="width:50%">
+                                    <oj-select-single class="sb-text"
+                                      :dir="[[ $application.variables.customAppVar.dir ]]"
+                                      disabled='[[ $application.variables.mode === "view"  || $flow.variables.activityName !== "Line Manager Task" ]]'
+                                      id="[['I--305923437-1'+ $current.index+2]]" value="{{questions.data.answer}}"
+                                      required="true">
+                                    </oj-select-single>
+                                  </div>
+                                </oj-bind-if>
+                                <oj-bind-if test="[[questions.data.question_answer_type !== 'LIST']]">
+                                  <oj-checkboxset id="[['I--305923437-1'+ $current.index+1]]"
+                                    class="oj-choice-direction-row sb-checkboxset" label-edge="inside"
+                                    disabled='[[$application.variables.mode == "view" || questions.data.is_field_disabled  ]]'
+                                    value="{{questions.data.value}}">
+                                    <oj-option value="YES">
+                                    </oj-option>
+                                  </oj-checkboxset>
+                                </oj-bind-if>
+                              </div>
+                            </div>
+
+                          </template>
+                        </oj-bind-for-each>
+
+                      </div>
+                    </template>
+                  </oj-bind-for-each>
+                </oj-bind-if>
+
+        </div>
+        <oj-bind-if
+          test='[[ ["Line Manager Task", "Payroll Administrator Task"].includes($flow.variables.activityName) ]]'>
+          <oj-bind-if
+            test='[[ ($application.variables.mode ==="edit" || $application.variables.mode ==="view") && (!$flow.variables.isResubmitTask || $flow.variables.isResubmitTask ==="" || $flow.variables.isResubmitTask ===null || $flow.variables.isResubmitTask ===undefined)]]'>
+
+            <oj-vb-fragment bridge="[[vbBridge]]" name="rejection_reason_frag" class="oj-flex-item oj-sm-12 oj-md-12">
+              <oj-vb-fragment-param name="rejection_reason" value="{{ $variables.formObj.rejection_reason }}">
+              </oj-vb-fragment-param>
+              <oj-vb-fragment-param name="disableRejectionReasonTextArea"
+                value='[[ $flow.variables.isResubmitTask || $application.variables.mode == "view" ]]'>
+              </oj-vb-fragment-param>
+              <oj-vb-fragment-param name="showRejectionReason"
+                value='[[ $application.variables.mode == "edit" ||  ( $application.variables.mode == "view" && ( $variables.formObj.rejection_reason != null && $variables.formObj.rejection_reason != undefined && $variables.formObj.rejection_reason != "" ) && ( $variables.formObj.correction_reason == null || $variables.formObj.correction_reason == undefined || $variables.formObj.correction_reason == "" ) ) ]]'>
+              </oj-vb-fragment-param>
+              <oj-vb-fragment-param name="isRejectionReasonRequired" value="[[ $variables.isRejectionReasonRequired ]]">
+              </oj-vb-fragment-param>
+              <oj-vb-fragment-param name="formStatus" value="[[ $variables.rejectionFormStatus ]]">
+              </oj-vb-fragment-param>
+              <oj-vb-fragment-param name="showRejectedBySection"
+                value='[[ ($application.variables.mode == "edit" && $variables.formObj.returned_by && $variables.formObj.returned_by !== null && $variables.formObj.returned_by !== undefined) ||  ( $application.variables.mode == "view" && ( $variables.formObj.rejection_reason != null && $variables.formObj.rejection_reason != undefined && $variables.formObj.rejection_reason != "" ) && ( $variables.formObj.correction_reason == null || $variables.formObj.correction_reason == undefined || $variables.formObj.correction_reason == "" ) ) ]]'>
+              </oj-vb-fragment-param>
+              <oj-vb-fragment-param name="rejected_by" value="{{ $variables.formObj.returned_by }}">
+              </oj-vb-fragment-param>
+            </oj-vb-fragment>
+          </oj-bind-if>
+        </oj-bind-if>
+        <oj-vb-fragment bridge="[[vbBridge]]" name="comments_frag">
+          <oj-vb-fragment-param name="commentsArr" value="{{ $variables.generalCommentsADP.data }}">
+          </oj-vb-fragment-param>
+        </oj-vb-fragment>
+
+        <oj-vb-fragment bridge="[[vbBridge]]" name="attachment_frag">
+          <oj-vb-fragment-param name="attachmentsArr" value="{{ $variables.generalAttachmentADP.data }}">
+          </oj-vb-fragment-param>
+          <oj-vb-fragment-param name="attachmentSection" value="GENERAL"></oj-vb-fragment-param>
+          <oj-vb-fragment-param name="isResubmitTask" value="[[ $flow.variables.isResubmitTask ]]">
+          </oj-vb-fragment-param>
+          <oj-vb-fragment-param name="attachmentTitle" value="[[ $application.translations.app.attachment_title ]]">
+          </oj-vb-fragment-param>
+          <oj-vb-fragment-param name="isGeneralAttachment" value="true"></oj-vb-fragment-param>
+
+        </oj-vb-fragment>
+
+
+        <br>
+        <div class="buttons-container d-flex justify-content-center align-items-center">
+          <oj-button class="sb-primary-btn" on-oj-action="[[$listeners.buttonAction]]"
+            :hidden="[[$application.variables.mode != 'init']]" disabled="[[ $variables.disableSubmit ]]">
+            <oj-bind-text value="[[$application.translations.app.submit_btn]]"></oj-bind-text>
+          </oj-button>
+
+          <oj-button class="sb-primary-btn" id="oj-button-approve"
+            :hidden='{{ $flow.functions.isHideAction($flow.variables.taskActions,"APPROVE")}}'
+            disabled="[[ $variables.disableTakeAction ]]" on-oj-action="[[$listeners.ojButtonApproveAction]]">
+            <oj-bind-text value="[[$application.translations.app.Approve]]"></oj-bind-text>
+          </oj-button>
+
+          <oj-button class="sb-primary-btn" id="oj-button-reject"
+            :hidden='{{ $flow.functions.isHideAction($flow.variables.taskActions,"REJECT")}}'
+            disabled="[[ $variables.disableTakeAction ]]" on-oj-action="[[$listeners.ojButtonRejectAction]]">
+            <oj-bind-text value="[[$application.translations.app.Reject]]"></oj-bind-text>
+          </oj-button>
+
+          <oj-vb-fragment bridge="[[vbBridge]]" name="cancel_button_frag"></oj-vb-fragment>
+
+        </div>
+        <!-- </div> -->
+
+        </oj-validation-group>
+        </oj-form-layout>
+        </blockquote>
+      </div>
+      <oj-vb-fragment id="shell-footer" bridge="[[vbBridge]]" name="shell-footer">
+      </oj-vb-fragment>
+    </main>
+  </div>
+
+
+</div>

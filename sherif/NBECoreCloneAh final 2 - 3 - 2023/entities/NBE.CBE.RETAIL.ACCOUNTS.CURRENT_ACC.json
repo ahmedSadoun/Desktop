@@ -1,0 +1,33 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "CurrentAccountsList",
+    "fullName" : "CurrentAccountsList",
+    "type" : "ENTITY",
+    "entityName" : "NBE.ENT.RETAIL.ACCOUNTS.CURRENT_ACCOUNT",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "NBE.ENT.RETAIL.ACCOUNTS.CURRENT_ACCOUNT",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "7F119FD7-CDF7-4E34-80D7-00568F2D0FAD",
+    "children" : null
+  } ],
+  "eventHandler" : "EventHandlers:RetailCurrentAccounts",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.RETAIL.ACCOUNTS.CURRENT_ACC",
+  "promptForDisambiguation" : true,
+  "trackingId" : "7B2114C6-BB7C-40D3-8643-689892304DCC",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

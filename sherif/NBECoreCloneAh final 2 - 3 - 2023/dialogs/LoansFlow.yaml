@@ -1,0 +1,1516 @@
+name: "LoansFlow"
+trackingId: "0EE8C0D3-24E0-4D1E-A2BB-07F9B5933491"
+type: "task"
+version: "2.0"
+interface: {}
+configuration:
+  requiresAuthorization: false
+variables:
+- name: "retaiLoansEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.RETAIL.LOANS"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "offset"
+  type: "int"
+  defaultValue: 1
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "cardsMenuChoice"
+  type: "string"
+  description: ""
+  metadata:
+    isFreeMarker: true
+  system: false
+- name: "toBeResolved"
+  type: "string"
+  description: ""
+  metadata:
+    isFreeMarker: true
+  system: false
+- name: "retaiLoansPersonalEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.RETAIL.LOANS.PERSONAL_LOAN"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retaiLoansAutoEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.RETAIL.LOANS.AUTO_LOAN"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retaiLoansCBEEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.RETAIL.LOANS.CBE_LOAN"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retaiPersonalWithSalaryCBEChoices"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.LOANS.PERSONAL.WITH_SALARY"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retaiPersonalWithoutSalaryCBEChoices"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.LOANS.PERSONAL.WITHOUT_SALARY"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retaiPersonalSelfEmpCBEChoices"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.LOANS.PERSONAL.SELF_EMPLOYED"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retaiPersonalPensionersCBEChoices"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.LOANS.PERSONAL.PENSIONERS"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retaiPersonalSecuredCBEChoices"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.LOANS.PERSONAL.SECURED"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retaiAutoEmployeesCBEChoices"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.LOANS.AUTO.EMPLOYEES"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retaiAutoSelfEmpCBEChoices"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.LOANS.AUTO.SELF_EMPLOYED"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retaiAutoSecuredCBEChoices"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.LOANS.AUTO.SECURED"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retaiAutoFinancingCBEChoices"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.LOANS.AUTO.FINANCING"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retaiAutoVIPCBEChoices"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.LOANS.AUTO.VIP"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retaiCBE5_7PercentCBEChoices"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.LOANS.CBE_LOAN.5_7_PERCENT"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retaiCBE8PercentCBEChoices"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.LOANS.CBE_LOAN.8_PERCENT"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retaiCBE3PercentCBEChoices"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.LOANS.CBE_LOAN.3_PERCENT"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+defaultTransitions:
+  actions:
+    system.startTaskFlow: "switchFromStartSkillFlow"
+states:
+  resolveLoansAutoChoicesEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('RETAIL.LOANS.AUTO.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "retaiLoansAutoEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetLoanEntityChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "switchLoanAutoEntityChoice"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  invokeSurveyFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "SurveyFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  loanAutoEmployeesBagOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetLoanAutoEmployeesChoicesVariables"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  loanAutoSecuredBagOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetLoanAutoSecuredChoicesVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  personalSelfEmpBagOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetPerosnalSelfEmpChoicesVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  loanAutoVIPBagOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetLoanAutoVIPChoicesVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  switchCBELoanEntityChoice:
+    component: "System.Switch"
+    properties:
+      variable: "retaiLoansCBEEntityChoices"
+    transitions:
+      actions:
+        CBE's 3% initiative: "resolveCBE3PercentBag"
+        Low income 5% & 7%: "resolveCBE5_7PercentBag"
+        Middle income 8%: "resolveCBE8PercentBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  resolveCBE5_7PercentBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retaiCBE5_7PercentCBEChoices"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        previousPage: "resolveCBE5_7PercentBag"
+        nextPage: "resolveCBE5_7PercentBag"
+        resolveAgain: "resolveCBE5_7PercentBag"
+        back: "resetCBELoanEntityChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "cbe5_7PercentBagOutputMsg"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false
+  personalWithoutSalaryBagOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetPersonalWithoutSalaryChoicesVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resolveLoansCBEEntityChoices:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('RETAIL.LOANS.CBE.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "retaiLoansCBEEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetLoanEntityChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "switchCBELoanEntityChoice"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resetPersonalEntityChoiceVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retaiLoansPersonalEntityChoices,cardsMenuChoice"
+    transitions:
+      next: "resolveLoanPersonalChoiceEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  invokeMainMenuFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "MainMenuFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  resetLoanAutoSelfEmpChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retaiAutoSelfEmpCBEChoices,cardsMenuChoice"
+    transitions:
+      next: "resolveLoanAutoSelfEmpBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resolveCBE8PercentBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retaiCBE8PercentCBEChoices"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        textReceived: "invokeStartFlow"
+        system.textReceived: "invokeStartFlow"
+        previousPage: "resolveCBE8PercentBag"
+        nextPage: "resolveCBE8PercentBag"
+        resolveAgain: "resolveCBE8PercentBag"
+        back: "resetCBELoanEntityChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "cbe8PercentBagOutputMsg"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false
+  resetPersonalWithoutSalaryChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retaiPersonalWithoutSalaryCBEChoices,cardsMenuChoice"
+    transitions:
+      next: "resolvePersonalWithoutSalaryBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  switchLoansEntityChoices:
+    component: "System.Switch"
+    properties:
+      variable: "retaiLoansEntityChoices"
+    transitions:
+      actions:
+        CBE's initiatives: "resolveLoansCBEEntityChoices"
+        Personal cash loan: "resolveLoanPersonalChoiceEntity"
+        Auto loan: "resolveLoansAutoChoicesEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  cbe3PercentBagOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetCBE3PerecntageVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resolveCBE3PercentBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retaiCBE3PercentCBEChoices"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        previousPage: "resolveCBE3PercentBag"
+        nextPage: "resolveCBE3PercentBag"
+        resolveAgain: "resolveCBE3PercentBag"
+        back: "resetCBELoanEntityChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "cbe3PercentBagOutputMsg"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false
+  resolveLoanAutoSelfEmpBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retaiAutoSelfEmpCBEChoices"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        previousPage: "resolveLoanAutoSelfEmpBag"
+        nextPage: "resolveLoanAutoSelfEmpBag"
+        resolveAgain: "resolveLoanAutoSelfEmpBag"
+        back: "resetAutoEntityChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "loanAutoSelfEmpBagOutputMsg"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false
+  resetPersonalPensionersChoicesVariables:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retaiPersonalPensionersCBEChoices,cardsMenuChoice"
+    transitions:
+      next: "resolvePersonalPensionersBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resetCBE8PercentageVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retaiCBE8PercentCBEChoices,cardsMenuChoice"
+    transitions:
+      next: "resolveCBE8PercentBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resetLoansAutoFinancingChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retaiAutoFinancingCBEChoices,cardsMenuChoice"
+    transitions:
+      next: "resolveLoansAutoFinancingBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  cbe5_7PercentBagOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetCBE5_7ChoicesVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  personalPensionersBagOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetPersonalPensionersChoicesVariables"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resolveLoansEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('RETAIL.LOANS.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "retaiLoansEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "invokeRetailFlow"
+        menu: "invokeMainMenuFlow"
+      next: "switchLoansEntityChoices"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  personalWithSalaryBagOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetPerosnalWithSalaryChoicesVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resetPerosnalSelfEmpChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retaiPersonalSelfEmpCBEChoices,cardsMenuChoice"
+    transitions:
+      next: "resolvePersonalSelfEmpBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resetLoanEntityChoiceVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retaiLoansEntityChoices,cardsMenuChoice"
+    transitions:
+      next: "resolveLoansEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resolvePersonalWithoutSalaryBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retaiPersonalWithoutSalaryCBEChoices"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        previousPage: "resolvePersonalWithoutSalaryBag"
+        nextPage: "resolvePersonalWithoutSalaryBag"
+        resolveAgain: "resolvePersonalWithoutSalaryBag"
+        back: "resetPersonalEntityChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "personalWithoutSalaryBagOutputMsg"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false
+  invokeRetailFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "RetailFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  switchFromStartSkillFlow:
+    component: "System.Switch"
+    properties:
+      variable: "skill.fromStartSkillFlow"
+    transitions:
+      actions:
+        "no": "invokeStartFlow"
+        "yes": "resolveLoansEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  resolvePersonalWithSalaryBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retaiPersonalWithSalaryCBEChoices"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        previousPage: "resolvePersonalWithSalaryBag"
+        nextPage: "resolvePersonalWithSalaryBag"
+        resolveAgain: "resolvePersonalWithSalaryBag"
+        back: "resetPersonalEntityChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "personalWithSalaryBagOutputMsg"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false
+  resetPersonalSecuredChoicesVariables:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retaiPersonalSecuredCBEChoices,cardsMenuChoice"
+    transitions:
+      next: "resolvePersonalSecuredBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resetCBELoanEntityChoiceVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retaiLoansCBEEntityChoices,cardsMenuChoice"
+    transitions:
+      next: "resolveLoansCBEEntityChoices"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  invokeStartFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "StartFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  loansAutoFinancingBagOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetLoansAutoFinancingChoicesVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  invokeExitFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "ExitFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  resetCBE5_7ChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retaiCBE5_7PercentCBEChoices,cardsMenuChoice"
+    transitions:
+      next: "resolveCBE5_7PercentBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resolveLoanAutoSecuredBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retaiAutoSecuredCBEChoices"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        previousPage: "resolveLoanAutoSecuredBag"
+        nextPage: "resolveLoanAutoSecuredBag"
+        resolveAgain: "resolveLoanAutoSecuredBag"
+        back: "resetAutoEntityChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "loanAutoSecuredBagOutputMsg"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false
+  cbe8PercentBagOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetCBE8PercentageVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  displayCBEOutput:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+      processUserMessage: true
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resolveLoanPersonalChoiceEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('RETAIL.LOANS.PERSONAL.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "retaiLoansPersonalEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetLoanEntityChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "switchPersonalLoanEntityChoice"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resolvePersonalSelfEmpBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retaiPersonalSelfEmpCBEChoices"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        previousPage: "resolvePersonalSelfEmpBag"
+        nextPage: "resolvePersonalSelfEmpBag"
+        resolveAgain: "resolvePersonalSelfEmpBag"
+        back: "resetPersonalEntityChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "personalSelfEmpBagOutputMsg"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false
+  resetAutoEntityChoiceVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retaiLoansAutoEntityChoices,cardsMenuChoice"
+    transitions:
+      next: "resolveLoansAutoChoicesEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resolvePersonalSecuredBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retaiPersonalSecuredCBEChoices"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        previousPage: "resolvePersonalSecuredBag"
+        nextPage: "resolvePersonalSecuredBag"
+        resolveAgain: "resolvePersonalSecuredBag"
+        back: "resetPersonalEntityChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "personalSecuredBagOutputMsg"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false
+  resolvePersonalPensionersBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retaiPersonalPensionersCBEChoices"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        previousPage: "resolvePersonalPensionersBag"
+        nextPage: "resolvePersonalPensionersBag"
+        resolveAgain: "resolvePersonalPensionersBag"
+        back: "resetPersonalEntityChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "personalPensionersBagOutputMsg"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false
+  loanAutoSelfEmpBagOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetLoanAutoSelfEmpChoicesVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resolveLoansAutoFinancingBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retaiAutoFinancingCBEChoices"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        previousPage: "resolveLoansAutoFinancingBag"
+        nextPage: "resolveLoansAutoFinancingBag"
+        resolveAgain: "resolveLoansAutoFinancingBag"
+        back: "resetAutoEntityChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "loansAutoFinancingBagOutputMsg"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false
+  resolveLoanAutoEmployeesBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retaiAutoEmployeesCBEChoices"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        previousPage: "resolveLoanAutoEmployeesBag"
+        nextPage: "resolveLoanAutoEmployeesBag"
+        resolveAgain: "resolveLoanAutoEmployeesBag"
+        back: "resetAutoEntityChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "loanAutoEmployeesBagOutputMsg"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false
+  resetLoanAutoEmployeesChoicesVariables:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retaiAutoEmployeesCBEChoices,cardsMenuChoice"
+    transitions:
+      next: "resolveLoanAutoEmployeesBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resetLoanAutoVIPChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retaiAutoVIPCBEChoices,cardsMenuChoice"
+    transitions:
+      next: "resolveLoanAutoVIPBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  switchLoanAutoEntityChoice:
+    component: "System.Switch"
+    properties:
+      variable: "retaiLoansAutoEntityChoices"
+    transitions:
+      actions:
+        Employees: "resolveLoanAutoEmployeesBag"
+        Financing 100% of car price against 50% collateral of car price: "resolveLoansAutoFinancingBag"
+        Self-employed & professionals: "resolveLoanAutoSelfEmpBag"
+        NBE's VIP customers: "resolveLoanAutoVIPBag"
+        Secured auto loan: "resolveLoanAutoSecuredBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  personalSecuredBagOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetPersonalSecuredChoicesVariables"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resetCBE3PerecntageVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retaiCBE3PercentCBEChoices,cardsMenuChoice"
+    transitions:
+      next: "resolveCBE3PercentBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resetPerosnalWithSalaryChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retaiPersonalWithSalaryCBEChoices,cardsMenuChoice"
+    transitions:
+      next: "resolvePersonalWithSalaryBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resetLoanAutoSecuredChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retaiAutoSecuredCBEChoices,cardsMenuChoice"
+    transitions:
+      next: "resolveLoanAutoSecuredBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  switchPersonalLoanEntityChoice:
+    component: "System.Switch"
+    properties:
+      variable: "retaiLoansPersonalEntityChoices"
+    transitions:
+      actions:
+        Business owners and self-employed: "resolvePersonalSelfEmpBag"
+        With salary/ installment transfer: "resolvePersonalWithSalaryBag"
+        Without salary/ installment transfer: "resolvePersonalWithoutSalaryBag"
+        Pensioners: "resolvePersonalPensionersBag"
+        Secured personal loan: "resolvePersonalSecuredBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  resolveLoanAutoVIPBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retaiAutoVIPCBEChoices"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        previousPage: "resolveLoanAutoVIPBag"
+        nextPage: "resolveLoanAutoVIPBag"
+        resolveAgain: "resolveLoanAutoVIPBag"
+        back: "resetAutoEntityChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "loanAutoVIPBagOutputMsg"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false

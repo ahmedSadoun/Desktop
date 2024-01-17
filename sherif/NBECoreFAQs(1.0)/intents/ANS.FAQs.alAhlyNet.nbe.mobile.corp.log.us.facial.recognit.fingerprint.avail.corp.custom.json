@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Is logging in to Al Ahly Mobile using facial recognition/fingerprint available to corporate customers?",
+    "trackingId" : "E4859B81-9244-4FA3-8CD3-989FE5CF696A",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Is logging in to the Mobile Banking service using the fingerprint ID or the face ID available for corporate customers?",
+    "trackingId" : "419C289A-B0EE-4971-98BB-6ED718CBAECD",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.log.us.facial.recognit.fingerprint.avail.corp.custom",
+  "trackingId" : "FDE836BC-D9E3-4F74-91AB-EF2E1EAFFEC4"
+}

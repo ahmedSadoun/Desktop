@@ -1,0 +1,5 @@
+from where i could get the today's date in pcs? we can't send it in the payload
+what is the priority in human task component pcs?
+what is the due date in human task component pcs?
+why do i need to create a blobURL, where every time i use it i extract the blob from it using res.blob()?
+what makes your way difference than mine, i use base64 and retrieve base64, while you send blob?

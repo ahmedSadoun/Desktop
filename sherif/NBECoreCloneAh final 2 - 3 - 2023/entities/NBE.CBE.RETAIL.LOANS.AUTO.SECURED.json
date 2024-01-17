@@ -1,0 +1,33 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "CurrentAutoLoanSecuredList",
+    "fullName" : "CurrentAutoLoanSecuredList",
+    "type" : "ENTITY",
+    "entityName" : "NBE.ENT.RETAIL.LOANS.AUTO.SECURED",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "NBE.ENT.RETAIL.LOANS.AUTO.SECURED",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "3898006B-4FD3-4659-B97C-6E9859A35338",
+    "children" : null
+  } ],
+  "eventHandler" : "EventHandlers:RetailLoansAutoSecured",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.RETAIL.LOANS.AUTO.SECURED",
+  "promptForDisambiguation" : true,
+  "trackingId" : "EFAFBC11-BFBF-44FA-BDCD-B669837D188B",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

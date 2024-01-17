@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How can I borrow against the new 18% annual platinum certificate with a monthly return?",
+    "trackingId" : "1D3E9A3A-4686-4635-9833-2D22EB330FBF",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How to borrow with the guarantee of new platinum certificates with a monthly return of 18%?",
+    "trackingId" : "C3BD7A85-E5DA-4CC2-BA64-7CB25647987B",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.auto.loan.borrow.against.new.annual.platinum.cert.monthli.return",
+  "trackingId" : "59781609-9658-40AF-92A2-7AAA21D3A447"
+}

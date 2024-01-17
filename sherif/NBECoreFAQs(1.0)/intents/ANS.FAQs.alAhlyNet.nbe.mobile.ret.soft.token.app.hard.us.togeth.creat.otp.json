@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - Can I use the Security Tokens application and the Security Tokens device together to generate the variable PIN?",
+    "trackingId" : "4B922734-42F7-4DC9-8516-3817E14797C1",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - Can the soft token App and hard token be used together in creating an OTP?",
+    "trackingId" : "4AE53C09-DCFD-46F7-BA7F-D8E8BF12B146",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.soft.token.app.hard.us.togeth.creat.otp",
+  "trackingId" : "9346D6AA-F955-4F52-B322-4D3ACD41F904"
+}

@@ -1,0 +1,29 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Loans",
+    "extensionType" : null,
+    "synonyms" : [ "قروض", "قرض", "loan", "loans", "القروض" ],
+    "trackingId" : "DE6386CC-AF57-487F-89EE-FDE4C8BBD92A"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Accounts",
+    "extensionType" : null,
+    "synonyms" : [ "account", "accounts", "حسابات", "حساب بنكي", "الحسابات" ],
+    "trackingId" : "E3E12668-35B7-4E1B-8941-480F916D38A2"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Escrow Services",
+    "extensionType" : null,
+    "synonyms" : [ "خدمات الوساطة", "الوساطة المالية", "escrow", "وساطة" ],
+    "trackingId" : "4E1DBE83-A3ED-4AC8-811E-6A144A3D6647"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.AHLY_PLATINUM.ACCOUNTS_LOANS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "8CED153F-A540-4C1D-A987-4A15F230763C",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

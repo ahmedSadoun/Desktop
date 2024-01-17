@@ -1,0 +1,33 @@
+--CREATE TABLE CONVERSATION_LOGS
+--( conv_pk number(30) NOT NULL,
+--  user_uuid varchar2(200) NOT NULL,
+--  conv_date varchar2(100),
+--  bot_type varchar2(100),
+--  message_type varchar2(100),
+--  channel_type varchar2(100),
+--  conv_uuid varchar2(100)
+--);
+
+--
+--ALTER TABLE conversation_logs
+--ADD CONSTRAINT conversation_pk PRIMARY KEY (conv_pk);
+--
+--CREATE SEQUENCE conversation_logs_seq
+-- START WITH     1
+-- INCREMENT BY   1
+-- NOCACHE
+-- NOCYCLE;
+--
+--CREATE OR REPLACE TRIGGER conversation_logs_seq_trigger 
+--BEFORE INSERT ON conversation_logs 
+--FOR EACH ROW
+--
+--BEGIN
+--  SELECT conversation_logs_seq.NEXTVAL
+--  INTO   :new.conv_pk
+--  FROM   dual;
+--END;
+--/
+
+--insert into conversation_logs(user_uuid) values('alskdjfhasfdlkjasfklsdfjl');
+--select * from conversation_logs;

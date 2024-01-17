@@ -1,0 +1,209 @@
+name: "AnswerIntentFLow"
+trackingId: "F85EDA13-F283-48F7-9EA7-2F2F9361EDD6"
+type: "task"
+version: "2.0"
+interface:
+  returnActions:
+  - "done"
+configuration:
+  requiresAuthorization: false
+variables:
+- name: "cbeAnswerCarouselNER"
+  type: "entity"
+  entityName: "cbe.AnswerCarouselNER"
+  description: "CBE that handles the prompt and the user response"
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "answerIntent"
+  type: "string"
+  description: "Name of the selected answer intent"
+  metadata:
+    isFreeMarker: true
+  system: false
+defaultTransitions:
+  actions:
+    system.startTaskFlow: "answerCarousel2"
+states:
+  output:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "ahln"
+          type: "text"
+      keepTurn: true
+    transitions: {}
+    metadata:
+      virtualComponent: "Virtual.Output"
+      propertySheetIsFreeMarkerMap:
+        requiresAuthorization: false
+  askNextQuestion1:
+    description: "Ends the flow and returns control to the Main Flow"
+    component: "System.EndFlow"
+    properties:
+      action: "done"
+      actionValues: []
+      outputParameters: {}
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        action: true
+        actionValues: false
+        keepTurn: false
+  output1:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "No opted, the flow proceeds"
+          type: "text"
+      keepTurn: true
+    transitions: {}
+    metadata:
+      virtualComponent: "Virtual.Output"
+      propertySheetIsFreeMarkerMap:
+        requiresAuthorization: false
+  answerCarousel1:
+    description: "Displays answers in a carousel of cards. The cards carousel is created and added by an entity event handler (see cbe.AnswerCarouselNER entity) and not defined by this component"
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${system.entityToResolve.value.prompt}"
+          type: "text"
+      cancelPolicy: "immediate"
+      variable: "cbeAnswerCarouselNER"
+      processUserMessage: true
+    transitions:
+      actions:
+        showAnswer: "ShowAnswer1"
+      next: "askNextQuestion1"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  answerCarousel2:
+    description: "Displays answers in a carousel of cards. The cards carousel is created and added by an entity event handler (see cbe.AnswerCarouselNER entity) and not defined by this component"
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${system.entityToResolve.value.prompt}"
+          type: "text"
+      cancelPolicy: "immediate"
+      variable: "cbeAnswerCarouselNER"
+      processUserMessage: true
+    transitions:
+      actions:
+        showAnswer: "ShowAnswer2"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  buttonsMenu1:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "would you like to display the answers cards again?"
+          type: "text"
+          actions:
+          - payload:
+              variables:
+                menuAction: "Yes"
+              action: "Yes"
+            label: "Yes"
+            type: "postback"
+            keyword: "1"
+          - payload:
+              variables:
+                menuAction: "No"
+              action: "No"
+            label: "No"
+            type: "postback"
+            keyword: "2"
+      processUserMessage: true
+    transitions:
+      actions:
+        "No": "output1"
+        "Yes": "resetVariables1"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  ShowAnswer1:
+    description: "Displays the selected answer"
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${rb('systemFlowName_'+answerIntent.value,'channelType',skill.channelType.value)}"
+          type: "text"
+        - text: "${rb('systemAnswer_'+answerIntent.value,'channelType',skill.channelType.value)}"
+          type: "text"
+      processUserMessage: false
+      keepTurn: true
+    transitions:
+      next: "buttonsMenu1"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resetVariables1:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "cbeAnswerCarouselNER"
+    transitions:
+      next: "answerCarousel1"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  ShowAnswer2:
+    description: "Displays the selected answer"
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${rb('systemFlowName_'+answerIntent.value)} \n\n\n${rb('systemAnswer_'+answerIntent.value)}"
+          type: "text"
+      processUserMessage: true
+    transitions:
+      next: "output"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false

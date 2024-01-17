@@ -1,0 +1,29 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Personal cash loan",
+    "extensionType" : null,
+    "synonyms" : [ "personal cash", "personal loan", "cash loan" ],
+    "trackingId" : "506756D9-9E3B-41CB-8237-DD7F545FA51F"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Auto loan",
+    "extensionType" : null,
+    "synonyms" : [ "auto", "auto loan", "car", "car loan", "vehicle", "vehicle loan", "سيارة", "قرض سيارة", "قرض السياراة", "قرض سيارات", "عربية", "قرض عربية", "قرض العربية", "قروض عربيات", "قروض العربيات" ],
+    "trackingId" : "8E407377-4375-4BD1-BA3A-C68BDDDA9D48"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "CBE's initiatives",
+    "extensionType" : null,
+    "synonyms" : [ "CBE initiatives", "cbes initatives", "initiatives", "cbe", "cbes", "cbe's", "مبادرة المركزي", "مبادرات المركزي", "البنك المركزي" ],
+    "trackingId" : "576B5E7D-BDC9-40DE-8676-798910CB06D4"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.LOANS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "16F6CFBF-9A79-46D1-913C-5C1C1A22492D",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

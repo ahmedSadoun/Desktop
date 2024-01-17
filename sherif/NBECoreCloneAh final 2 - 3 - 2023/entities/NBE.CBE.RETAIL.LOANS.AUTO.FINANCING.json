@@ -1,0 +1,33 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "CurrentPersonalLoanFinancingList",
+    "fullName" : "CurrentPersonalLoanFinancingList",
+    "type" : "ENTITY",
+    "entityName" : "NBE.ENT.RETAIL.LOANS.AUTO.FINANCING",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "NBE.ENT.RETAIL.LOANS.AUTO.FINANCING",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "8BD50B5F-8EB0-410F-9174-01B2F7B41543",
+    "children" : null
+  } ],
+  "eventHandler" : "EventHandlers:RetailLoansAutoFinancing",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.RETAIL.LOANS.AUTO.FINANCING",
+  "promptForDisambiguation" : true,
+  "trackingId" : "7B61EF96-A56F-45BA-9E3A-19EFE3C6B4E5",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

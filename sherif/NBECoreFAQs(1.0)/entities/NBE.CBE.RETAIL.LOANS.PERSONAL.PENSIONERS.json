@@ -1,0 +1,33 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "CurrentPersonalLoanPensionersList",
+    "fullName" : "CurrentPersonalLoanPensionersList",
+    "type" : "ENTITY",
+    "entityName" : "NBE.ENT.RETAIL.LOANS.PERSONAL.PENSIONERS",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "NBE.ENT.RETAIL.LOANS.PERSONAL.PENSIONERS",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "B2D77FB6-B809-41E2-B7F1-0546A3F10F7C",
+    "children" : null
+  } ],
+  "eventHandler" : "EventHandlers:RetailLoansPersonalPensioners",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.RETAIL.LOANS.PERSONAL.PENSIONERS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "6308DE3B-D264-43FE-8511-4D670E15836E",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

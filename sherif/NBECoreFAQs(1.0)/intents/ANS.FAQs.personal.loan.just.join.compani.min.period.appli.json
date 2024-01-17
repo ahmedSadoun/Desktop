@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "I have just joined my company, is there a minimum period of service to apply for a Personal Loan?",
+    "trackingId" : "72B18804-6ADE-483D-9A01-2067E02900EF",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "You just joined my company. Is there a minimum service limit for obtaining personal financing?",
+    "trackingId" : "5C3A5BD5-5F23-4384-B97F-C98FECCEF59E",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.personal.loan.just.join.compani.min.period.appli",
+  "trackingId" : "42CFE7A7-C193-4643-A73A-9535F30096FF"
+}

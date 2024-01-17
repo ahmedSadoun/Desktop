@@ -1,0 +1,33 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "DebitCardsList",
+    "fullName" : "DebitCardsList",
+    "type" : "ENTITY",
+    "entityName" : "NBE.ENT.RETAIL.CARDS.DEBIT_CARD",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "NBE.ENT.RETAIL.CARDS.DEBIT_CARD",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "07BADB41-1ABF-458E-A7ED-F996466EDFCA",
+    "children" : null
+  } ],
+  "eventHandler" : "EventHandlers:RetailDebitCards",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.RETAIL.CARDS.DEBIT_CARD",
+  "promptForDisambiguation" : true,
+  "trackingId" : "DD0D557D-C296-42F1-B97B-A6A8E98A0A3C",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

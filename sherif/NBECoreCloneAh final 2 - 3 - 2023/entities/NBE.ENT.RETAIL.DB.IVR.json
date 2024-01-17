@@ -1,0 +1,35 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Services",
+    "extensionType" : null,
+    "synonyms" : [ "service" ],
+    "trackingId" : "D573B9C6-C5F7-4FD6-8EAA-300CB797E303"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "How to subscribe",
+    "extensionType" : null,
+    "synonyms" : [ "subscribe" ],
+    "trackingId" : "FE307035-28A0-45B0-AADD-FFB92461E484"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Service activation",
+    "extensionType" : null,
+    "synonyms" : [ "activation" ],
+    "trackingId" : "211CC9C9-DC4A-4808-9B21-3840950D55CD"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Login Password/ User ID",
+    "extensionType" : null,
+    "synonyms" : [ "login password", "login pass", "login user id" ],
+    "trackingId" : "3C87B5AC-DC8F-4C6E-89C1-F11C795B056C"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.DB.IVR",
+  "promptForDisambiguation" : true,
+  "trackingId" : "D8B21C0A-B8ED-453D-AC41-66BF97E1277A",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

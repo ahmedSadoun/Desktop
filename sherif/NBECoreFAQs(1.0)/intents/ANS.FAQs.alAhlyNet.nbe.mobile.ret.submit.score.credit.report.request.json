@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - Can I submit an I-Score credit report request via Al Ahly Net/NBE Mobile?",
+    "trackingId" : "E910CE1A-D59E-4817-8B6D-61A28EF7F2F6",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - Is it possible to submit a credit inquiry request?I-Score through Al-Ahly Net / Al-Ahly Mobile?",
+    "trackingId" : "92C241A1-CA07-40FD-8A00-16F9C5D57B43",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.submit.score.credit.report.request",
+  "trackingId" : "209383A3-BE08-46A0-A3EF-4ACE5119A0FA"
+}

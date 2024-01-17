@@ -1,0 +1,47 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "How to Subscribe",
+    "extensionType" : null,
+    "synonyms" : [ "subscribe" ],
+    "trackingId" : "4EFAB69A-19D6-476B-A0EC-052A22ED75F9"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Activation/re-setting password",
+    "extensionType" : null,
+    "synonyms" : [ "Activation / re-setting password", "Activation/re setting password", "Activation/resetting password", "Activation / resetting password", "Activation / re setting password", "password activation", "re-setting password", "resetting password", "re setting password", "activation password" ],
+    "trackingId" : "A36397CC-D79E-4D61-86E2-D493D46E9A2D"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Wallet loading",
+    "extensionType" : null,
+    "synonyms" : [ "loading wallet" ],
+    "trackingId" : "DF32895B-7672-4EBF-93EC-1DEF27B9259C"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Scan and pay using \"QR code\"",
+    "extensionType" : null,
+    "synonyms" : [ "Scan and pay using QR code", "scan using qr code", "scan qr code", "pay using qr code", "pay qr code" ],
+    "trackingId" : "03EDF38F-A3E8-418F-A69D-1468A5BF8EF7"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Purchase using an online card \"a virtual card\"",
+    "extensionType" : null,
+    "synonyms" : [ "Purchase using an online card a virtual card", "purchase using online card", "purchase using an online card", "purchase using virtual card", "purchase using a virtual card" ],
+    "trackingId" : "CCB23193-B110-41A4-97CB-499D498556FD"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "New services",
+    "extensionType" : null,
+    "synonyms" : [ "new service" ],
+    "trackingId" : "E068E029-7D91-495D-85FA-1CD51CC8BCB1"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.DB.PHONE_CASH",
+  "promptForDisambiguation" : true,
+  "trackingId" : "8EDCF959-B3EA-4847-BFA1-C7B0C3646227",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

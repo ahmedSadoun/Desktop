@@ -1,0 +1,600 @@
+name: "RetailAccountsFlow"
+trackingId: "0A7E96B5-4FC6-4ED6-81E6-F4FC72A2383E"
+type: "task"
+version: "2.0"
+interface: {}
+configuration:
+  requiresAuthorization: false
+variables:
+- name: "retailAccountsEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.RETAIL.ACCOUNTS"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "outputMsg"
+  type: "string"
+  description: ""
+  metadata:
+    isFreeMarker: true
+  system: false
+- name: "retailCurrentAccountsCBE"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.ACCOUNTS.CURRENT_ACC"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "offset"
+  type: "int"
+  defaultValue: 1
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "cardsMenuChoice"
+  type: "string"
+  description: ""
+  metadata:
+    isFreeMarker: true
+  system: false
+- name: "retailSavingsAccountEntityChoices"
+  type: "entity"
+  entityName: "NBE.ENT.RETAIL.ACCOUNTS.SAVINGS_ACCOUNT"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retailSavingsLocalCurrencyCBE"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.ACCOUNTS.SA.LOCAL_CURR"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "retailSavingsForeignCurrencyCBE"
+  type: "entity"
+  entityName: "NBE.CBE.RETAIL.ACCOUNTS.SA.FOREIGN_CURR"
+  description: ""
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "toBeResolved"
+  type: "string"
+  description: ""
+  metadata:
+    isFreeMarker: true
+  system: false
+defaultTransitions:
+  actions:
+    system.startTaskFlow: "resolveAccountsEntity"
+states:
+  invokeSurveyFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "SurveyFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  displayCurrentAccountsOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetCurrentAccountsChoicesVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resetLocalCurrencyChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retailSavingsLocalCurrencyCBE,cardsMenuChoice"
+    transitions:
+      next: "resolveLocalCurrencyBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resetCurrentAccountsChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retailCurrentAccountsCBE,cardsMenuChoice"
+    transitions:
+      next: "resolveCurrentAccountBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  invokeRetailFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "RetailFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  switchBotTypeForBack:
+    component: "System.Switch"
+    properties:
+      variable: "user.botType"
+    transitions:
+      actions:
+        Retail: "invokeRetailFlow"
+        Corporate: "invokeCorporateFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  resetForeignCurrencyChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retailSavingsForeignCurrencyCBE,cardsMenuChoice"
+    transitions:
+      next: "resolveForeignCurrencyBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  invokeStartFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "StartFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  displayLocalCBEOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetLocalCurrencyChoicesVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  invokeMainMenuFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "MainMenuFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  invokeExitFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "ExitFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  resolveLocalCurrencyBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retailSavingsLocalCurrencyCBE"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        previousPage: "resolveLocalCurrencyBag"
+        nextPage: "resolveLocalCurrencyBag"
+        resolveAgain: "resolveLocalCurrencyBag"
+        back: "resetSavingsChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "displayLocalCBEOutputMsg"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false
+  resetAccountsChoiceVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retailAccountsEntityChoices"
+    transitions:
+      next: "resolveAccountsEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  resolveSavingsEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('RETAIL.ACCOUNTS.SAVINGS_ACCOUNT.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "retailSavingsAccountEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        textReceived: "invokeStartFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "resetAccountsChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "switchSavingsAccountChoice"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resolveCurrentAccountBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retailCurrentAccountsCBE"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        previousPage: "resolveCurrentAccountBag"
+        nextPage: "resolveCurrentAccountBag"
+        resolveAgain: "resolveCurrentAccountBag"
+        back: "resetAccountsChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "displayCurrentAccountsOutputMsg"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false
+  resetSavingsChoiceVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retailSavingsAccountEntityChoices"
+    transitions:
+      next: "resolveSavingsEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  displayForeginCBEOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${cardsMenuChoice.value}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetForeignCurrencyChoicesVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  resetAccountsChoicesVariable:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "retailAccountsEntityChoices,outputMsg"
+    transitions:
+      next: "resolveAccountsEntity"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  switchAccountChoice:
+    component: "System.Switch"
+    properties:
+      variable: "retailAccountsEntityChoices"
+    transitions:
+      actions:
+        Savings account: "resolveSavingsEntity"
+        Current account: "resolveCurrentAccountBag"
+      next: "setOutputMsgVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  outputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${rb(outputMsg.value)}"
+          type: "text"
+      keepTurn: true
+    transitions: {}
+    metadata:
+      virtualComponent: "Virtual.Output"
+      propertySheetIsFreeMarkerMap:
+        requiresAuthorization: false
+  resolveAccountsEntity:
+    component: "System.CommonResponse"
+    properties:
+      useFullEntityMatches: true
+      metadata:
+        responseItems:
+        - text: "${rb('Please Choose')}"
+          type: "text"
+          actions:
+          - iteratorVariable: "action"
+            iteratorExpression: "${system.entityToResolve.value.userChoiceActions}"
+            payload:
+              variables:
+                ${action.variable}: "${action.stringValue}"
+              action: "${action.action}"
+            label: "${rb('RETAIL.ACCOUNTS.' + action.label)}"
+            type: "postback"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      variable: "retailAccountsEntityChoices"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "switchBotTypeForBack"
+        menu: "invokeMainMenuFlow"
+      next: "switchAccountChoice"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  invokeCorporateFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "CorporateFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  setOutputMsgVariable:
+    component: "System.SetVariable"
+    properties:
+      variable: "outputMsg"
+      value: "${'RETAIL.ACCOUNTS.' + retailAccountsEntityChoices.value.value + '.MSG'}"
+    transitions:
+      next: "accountsOutputMsg"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false
+  accountsOutputMsg:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - text: "${rb(outputMsg.value)}"
+          type: "text"
+        globalActions:
+        - payload:
+            action: "survey"
+          label: "${rb('Survey')}"
+          type: "postback"
+          keyword: "${rb('Survey Keywords')}"
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "menu"
+          label: "${rb('Menu')}"
+          type: "postback"
+          keyword: "${rb('Menu Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        survey: "invokeSurveyFlow"
+        back: "resetAccountsChoicesVariable"
+        menu: "invokeMainMenuFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  switchSavingsAccountChoice:
+    component: "System.Switch"
+    properties:
+      variable: "retailSavingsAccountEntityChoices"
+    transitions:
+      actions:
+        Local currency: "resolveLocalCurrencyBag"
+        Foreign currency: "resolveForeignCurrencyBag"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  resolveForeignCurrencyBag:
+    component: "System.ResolveEntities"
+    properties:
+      variable: "retailSavingsForeignCurrencyCBE"
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        previousPage: "resolveForeignCurrencyBag"
+        nextPage: "resolveForeignCurrencyBag"
+        resolveAgain: "resolveForeignCurrencyBag"
+        back: "resetSavingsChoiceVariable"
+        menu: "invokeMainMenuFlow"
+      next: "displayForeginCBEOutputMsg"
+    metadata:
+      virtualComponent: "Virtual.ResolveBag"
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        requiresAuthorization: false

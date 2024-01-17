@@ -1,0 +1,35 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "E-Statment service for accounts",
+    "extensionType" : null,
+    "synonyms" : [ "e-statment service for accounts", "e statment service for accounts", "estatment service for accounts", "e-statment service", "e statment service", "estatment service", "e-statment", "estatment", "خدمة كشف الحساب الالكتروني", "كشف حساب" ],
+    "trackingId" : "42790AB5-5616-4217-9D8B-90F1909E04E6"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Open your account, whenever, wherever",
+    "extensionType" : null,
+    "synonyms" : [ "open your account", "open account", "افتح حسابك وانت في مكانك", "افتح حساب", "فتح حساب" ],
+    "trackingId" : "9D363EE2-9AA8-4508-B73F-BEED90224E71"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Current account",
+    "extensionType" : null,
+    "synonyms" : [ "current account", "حساب جاري" ],
+    "trackingId" : "EFF4E1D3-A4DC-4A5C-8D6C-2761610D7EB6"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Savings account",
+    "extensionType" : null,
+    "synonyms" : [ "savings account", "savings", "حساب توفير", "توفير" ],
+    "trackingId" : "DEF7598E-5A2E-4236-B978-450D035E8547"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.ACCOUNTS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "CFE5F40C-2C32-42B8-9667-1AF8F8691458",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

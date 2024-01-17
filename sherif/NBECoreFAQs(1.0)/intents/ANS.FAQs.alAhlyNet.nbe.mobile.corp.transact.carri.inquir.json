@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Can transactions carried out via Al Ahly Net/NBE Mobile be inquired about?",
+    "trackingId" : "1D73FDE3-AED8-45AD-A7CB-D049E94E290F",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Is it possible to inquire about the financial transactions that took place through Al-Ahly Net / Al-Ahly Mobile?",
+    "trackingId" : "0308304F-E26A-47C4-8DE1-40E1BC72D307",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.transact.carri.inquir",
+  "trackingId" : "9DE2E757-98AB-480E-9A01-49F904A82F0F"
+}

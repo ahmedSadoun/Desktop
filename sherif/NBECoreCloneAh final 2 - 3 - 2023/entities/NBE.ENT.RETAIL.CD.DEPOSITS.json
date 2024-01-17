@@ -1,0 +1,23 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Time deposits interest rate paid at maturity",
+    "extensionType" : null,
+    "synonyms" : [ "time deposit", "الودائع ذات العائد يصرف نهاية المدة", "paid at maturity" ],
+    "trackingId" : "A62FB864-738A-4336-AE4E-88A08ADF5906"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Multi frequency time deposits",
+    "extensionType" : null,
+    "synonyms" : [ "Multi frequency deposits", "الودائع ذات دوريات متنوعة", "ودائع بفترات زمنية متنوعه" ],
+    "trackingId" : "CFCB52D1-AD36-40D9-9846-189D5290A627"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.CD.DEPOSITS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "CE1C683F-DA1D-4BE2-9992-60B3056ABDE7",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

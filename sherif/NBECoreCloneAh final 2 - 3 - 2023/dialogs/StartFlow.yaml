@@ -1,0 +1,176 @@
+name: "StartFlow"
+trackingId: "F702A523-1588-4BF2-A4E1-C13B1BE13FC6"
+type: "task"
+version: "2.0"
+description: "To detect language and set the utterance before detecting the intent"
+interface:
+  returnActions:
+  - "done"
+configuration:
+  requiresAuthorization: false
+variables:
+- name: "originalInputMessage"
+  type: "string"
+  description: ""
+  metadata:
+    isFreeMarker: true
+  system: false
+- name: "translatedInput"
+  type: "string"
+  description: ""
+  metadata:
+    isFreeMarker: true
+  system: false
+- name: "inputQuery"
+  type: "string"
+  description: ""
+  metadata:
+    isFreeMarker: true
+  system: false
+defaultTransitions:
+  actions:
+    system.startTaskFlow: "resetFlowVariables"
+states:
+  invokeBotTypeFlow:
+    description: "Flow where the user will choose the user.botType"
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "BotTypeFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  endFlow:
+    component: "System.EndFlow"
+    properties:
+      action: "done"
+    transitions: {}
+    metadata: {}
+  toLowerCase:
+    component: "CC:toLowerCase"
+    properties:
+      locale: "${profile.languageTag}"
+    transitions:
+      next: "checkIsFirstMessageByUserId"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        query: true
+        requiresAuthorization: false
+  checkIsFirstMessageByUserId:
+    component: "CC:checkIsFirstMessageByUserId"
+    properties:
+      locale: "${profile.languageTag}"
+    transitions:
+      next: "setUtteranceVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        query: true
+        requiresAuthorization: false
+  translate:
+    component: "System.TranslateInput"
+    properties:
+      variable: "translatedInput"
+    transitions:
+      next: "toLowerCase"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: false
+        requiresAuthorization: false
+  setUtteranceVariable:
+    component: "System.SetVariable"
+    properties:
+      variable: "skill.system.intent.utterance"
+      value: "${translatedInput.value}"
+    transitions:
+      next: "setFromStartSkillFlowVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false
+  arCorr:
+    component: "CC:arCorr"
+    transitions:
+      actions:
+        translateCT: "translateCT"
+        dontTranslate: "toLowerCase"
+        translate: "translate"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        query: true
+        requiresAuthorization: false
+  enCorr:
+    component: "CC:enCorr"
+    transitions:
+      actions:
+        translateCT: "translateCT"
+        dontTranslate: "toLowerCase"
+        translate: "translate"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        query: true
+        requiresAuthorization: false
+  resetFlowVariables:
+    description: "Reset originalInputMessage , translatedInput and inputQuery"
+    component: "System.ResetVariables"
+    properties:
+      variableList: "inputQuery,originalInputMessage,translatedInput"
+    transitions:
+      next: "detectLanguage"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false
+  translateCT:
+    component: "System.TranslateInput"
+    properties:
+      variable: "translatedInput"
+      source: "${inputQuery.value}"
+    transitions:
+      next: "toLowerCase"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: false
+        requiresAuthorization: false
+  switchUserBotType:
+    description: "Check if user.botType is empty then make the user choose between Retail or Corporate otherwise navigate to the detected intent"
+    component: "System.Switch"
+    properties:
+      variable: "user.botType"
+    transitions:
+      actions:
+        Retail: "endFlow"
+        Corporate: "endFlow"
+      next: "invokeBotTypeFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        source: true
+        requiresAuthorization: false
+  detectLanguage:
+    component: "CC:detectLanguage"
+    transitions:
+      actions:
+        arCorr: "arCorr"
+        enCorr: "enCorr"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        query: true
+        requiresAuthorization: false
+  setFromStartSkillFlowVariable:
+    description: "Set it with \"yes\" to show that we passed through the detect language process"
+    component: "System.SetVariable"
+    properties:
+      variable: "skill.fromStartSkillFlow"
+      value: "yes"
+    transitions:
+      next: "switchUserBotType"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: false
+        requiresAuthorization: false

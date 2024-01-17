@@ -1,0 +1,29 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "New Golden Certificate",
+    "extensionType" : null,
+    "synonyms" : [ "golden", "gold cert", "الشهادة الذهبية الجديدة", "الشهادة الذهبية", "الذهبية" ],
+    "trackingId" : "743EB71A-E3C3-4668-AB62-0B4E3A36D385"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Ahl Masr 5 years (USD)",
+    "extensionType" : null,
+    "synonyms" : [ "5 years", "شهادة اهل مصر الدولارية 5 سنوات", "٥ سنوات", "٥ سنين" ],
+    "trackingId" : "F67C99F8-6C36-477A-A1B1-BDDE3F0034A2"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Ahl Masr 7 years (USD)",
+    "extensionType" : null,
+    "synonyms" : [ "7 years", "٧ سنين", "شهادة اهل مصر الدولارية 7 سنوات", "٧ سنوات" ],
+    "trackingId" : "0E3EA3FB-8607-4B39-932C-347BA781C0DD"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.CD.SAVINGS.FOREIGN_CURRENCY",
+  "promptForDisambiguation" : true,
+  "trackingId" : "908C4557-C40B-4963-AA0A-2C2F5A33CB16",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

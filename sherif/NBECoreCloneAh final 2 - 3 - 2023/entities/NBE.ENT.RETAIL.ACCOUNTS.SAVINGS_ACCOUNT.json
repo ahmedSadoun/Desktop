@@ -1,0 +1,23 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Local currency",
+    "extensionType" : null,
+    "synonyms" : [ "local currency", "local curr", "حسابات بالعملة المحلية", "بالجنيه", "بالجنية", "بالعملة المحلية" ],
+    "trackingId" : "2B11EC6A-8725-44C1-B2E1-A2AC202A4C3E"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Foreign currency",
+    "extensionType" : null,
+    "synonyms" : [ "foreign currency", "foreign curr", "حسابات بالعملة الاجنبية", "بالعملة الاجنبية", "بالدولار" ],
+    "trackingId" : "23E9D3E7-53A2-4782-877E-E2AAB262B4A9"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.ACCOUNTS.SAVINGS_ACCOUNT",
+  "promptForDisambiguation" : true,
+  "trackingId" : "83201480-8865-44E9-A6D5-0C882E973889",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

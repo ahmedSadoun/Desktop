@@ -1,0 +1,44 @@
+name: "ResetBotTypeFlow"
+trackingId: "B0536395-4F61-4F3D-AF6B-54FF1E7AD451"
+type: "task"
+version: "2.0"
+interface: {}
+configuration:
+  requiresAuthorization: false
+defaultTransitions:
+  actions:
+    system.startTaskFlow: "resetVariables"
+states:
+  invokeStartFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "StartFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  setUserBotTypeVariable:
+    description: "Set it to null"
+    component: "System.SetVariable"
+    properties:
+      variable: "user.botType"
+      value: "null"
+    transitions:
+      next: "invokeStartFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false
+  resetVariables:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "skill.fromStartSkillFlow"
+    transitions:
+      next: "setUserBotTypeVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variableList: false
+        requiresAuthorization: false

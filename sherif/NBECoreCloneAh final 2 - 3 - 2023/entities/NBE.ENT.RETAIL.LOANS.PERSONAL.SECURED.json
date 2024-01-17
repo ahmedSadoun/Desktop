@@ -1,0 +1,17 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Secured personal loan",
+    "extensionType" : null,
+    "synonyms" : null,
+    "trackingId" : "84A593ED-6436-48B7-924D-BA3F13CC67C6"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.LOANS.PERSONAL.SECURED",
+  "promptForDisambiguation" : true,
+  "trackingId" : "634027EF-ACF0-4280-BB1D-53E741B10D89",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

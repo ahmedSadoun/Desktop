@@ -1,0 +1,41 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Certificate \"A\"",
+    "extensionType" : null,
+    "synonyms" : [ "A", "شهادة استثمار \"أ\"", "أ" ],
+    "trackingId" : "5EAC3CC8-D840-473B-9AD9-9C37B48393BB"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Certificate \"B\" 1 year",
+    "extensionType" : null,
+    "synonyms" : [ "B 1 year", "شهادة استثمار \"ب\"سنة", "ب سنة" ],
+    "trackingId" : "BDA9FC82-4832-45FC-A5BC-DAE54F3F3CE3"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Certificate \"B\" 2 years",
+    "extensionType" : null,
+    "synonyms" : [ "B 2 years", "شهادة استثمار \"ب\" سنتين", "ب ستنين", "ب سنتان" ],
+    "trackingId" : "CCFD9F2A-D2A2-450F-AC49-D95046427F0C"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Certificate \"B\" 3 years",
+    "extensionType" : null,
+    "synonyms" : [ "B 3 years", "شهادة استثمار \"ب\" 3 سنوات", "ب 3 سنوات", "ب ٣ سنين" ],
+    "trackingId" : "76E54BF8-A5E4-4296-B1AD-345FDF08802F"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Group \"C\" Lottery Certificate",
+    "extensionType" : null,
+    "synonyms" : [ "Certificate C", "lottery certificate", "C", "شهادة استثمار \"ج\" ذات الجوائز", "ج", "جوائر" ],
+    "trackingId" : "EEDF5AA1-02AC-47DD-99D1-D78EB4FB00CE"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.CD.INVESTMENT_CERTIFICATES",
+  "promptForDisambiguation" : true,
+  "trackingId" : "F29F5F67-8446-4F7A-8306-12AFCCB9BA78",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

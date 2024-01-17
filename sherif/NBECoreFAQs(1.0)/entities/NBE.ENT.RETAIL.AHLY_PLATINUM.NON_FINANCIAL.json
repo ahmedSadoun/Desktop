@@ -1,0 +1,23 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Roadside Assistance Services",
+    "extensionType" : null,
+    "synonyms" : [ "Roadside Assistance", "خدمات المساعدة على الطريق", "roadside assistance", "مساعدات الطريق" ],
+    "trackingId" : "81DF6122-4A3C-4A12-817B-A1A591B683CA"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Concierge Services",
+    "extensionType" : null,
+    "synonyms" : [ "Concierge", "concierge", "خدمات الكونسيرج", "كونسيرج" ],
+    "trackingId" : "052F9F9B-8292-4D1D-B231-B9604BCEBFEB"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.AHLY_PLATINUM.NON_FINANCIAL",
+  "promptForDisambiguation" : true,
+  "trackingId" : "2998FDE5-C992-4068-98ED-8FDD913536B9",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

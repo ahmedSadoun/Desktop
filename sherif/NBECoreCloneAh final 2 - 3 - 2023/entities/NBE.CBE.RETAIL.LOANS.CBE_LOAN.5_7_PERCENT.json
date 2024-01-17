@@ -1,0 +1,33 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "CurrentCBE5_7PercentList",
+    "fullName" : "CurrentCBE5_7PercentList",
+    "type" : "ENTITY",
+    "entityName" : "NBE.ENT.RETAIL.LOANS.CBE_LOAN.5_7_PERCENT",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "NBE.ENT.RETAIL.LOANS.CBE_LOAN.5_7_PERCENT",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "05180307-0137-4E0E-9464-FD5F2914BCF4",
+    "children" : null
+  } ],
+  "eventHandler" : "EventHandlers:RetailLoansCBE5_7Percentage",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.RETAIL.LOANS.CBE_LOAN.5_7_PERCENT",
+  "promptForDisambiguation" : true,
+  "trackingId" : "DC0282FB-09A8-4BCE-9310-AA78A8381AB8",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

@@ -1,0 +1,29 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Ahl Masr 7 years",
+    "extensionType" : null,
+    "synonyms" : [ "7 years", "٧ سنوات", "٧ سنين" ],
+    "trackingId" : "EECF57FC-E084-4ADB-BF54-A953F78C1190"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Ahl Masr 5 years",
+    "extensionType" : null,
+    "synonyms" : [ "5 years", "5 سنوات", "٥ سنين", "٥ سنوات", "5 سنين" ],
+    "trackingId" : "0868FE20-3697-4ABF-9F5D-9C565C26CB48"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "New Golden",
+    "extensionType" : null,
+    "synonyms" : [ "golden", "الذهبية", "الشهادة الذهبية", "gold certificate" ],
+    "trackingId" : "12E6B97F-1DD3-4EDA-A798-AE92593C2EA6"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.CORP.CD.SAVINGS.FOREIGN_CURRENCY",
+  "promptForDisambiguation" : true,
+  "trackingId" : "6EFA6072-DD29-4152-9DCD-006B01E1A4CC",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

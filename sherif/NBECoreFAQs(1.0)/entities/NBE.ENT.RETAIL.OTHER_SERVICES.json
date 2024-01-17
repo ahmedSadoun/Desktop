@@ -1,0 +1,23 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Mutual Funds",
+    "extensionType" : null,
+    "synonyms" : [ "Funds", "Mutual" ],
+    "trackingId" : "E5C02C4F-F08B-406D-BC12-2430111DC551"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Calculators",
+    "extensionType" : null,
+    "synonyms" : [ "Calculator", "calc" ],
+    "trackingId" : "AAD22501-3971-4D8C-93B0-2B44E3C5D89E"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.OTHER_SERVICES",
+  "promptForDisambiguation" : true,
+  "trackingId" : "FB2D0656-7E29-4427-8DE9-334353948464",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

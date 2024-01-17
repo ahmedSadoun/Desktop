@@ -1,0 +1,35 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "E-vouchers",
+    "extensionType" : null,
+    "synonyms" : [ "e-vouchers", "evouchers", "e vouchers", "القسائم الالكترونية", "قسيمة الكترونية" ],
+    "trackingId" : "EBFEAD57-57EB-4CA4-AB07-6DBD8DDC06CC"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Cash back",
+    "extensionType" : null,
+    "synonyms" : [ "cash", "back", "الكاش باك" ],
+    "trackingId" : "0BC3F6F6-AF37-4D5D-9D1F-E93106AA4785"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Mobile Top up",
+    "extensionType" : null,
+    "synonyms" : [ "mobile top", "top up", "شحن الهاتف المحمول", "شحن الموبايل", "recharge mobile blanace", "شحن رصيد موبايل", "شحن رصيد" ],
+    "trackingId" : "D0033689-4434-4307-9C3D-4171EAF76088"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Travelling all over the world",
+    "extensionType" : null,
+    "synonyms" : [ "travelling", "travelling the world", "all over the world", "السفر حول العالم", "سفر", "حول العالم" ],
+    "trackingId" : "1DEE0745-C39A-4F68-A6A0-F0532FE8242E"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.AHLY_POINTS_REDEMPTION",
+  "promptForDisambiguation" : true,
+  "trackingId" : "98AE55F2-3A40-47CF-AF0F-81C559E93CBD",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

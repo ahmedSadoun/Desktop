@@ -1,0 +1,41 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "With salary/ installment transfer",
+    "extensionType" : null,
+    "synonyms" : [ "With salary / installment transfer", "with salary", "with salary installment transfer", "witl salary installment", "with salary transfer" ],
+    "trackingId" : "7CFD0468-02E2-424C-92F4-2999FC7BD5ED"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Without salary/ installment transfer",
+    "extensionType" : null,
+    "synonyms" : [ "Without salary / installment transfer", "without salary", "without salary installment transfer", "without salary installment", "without salary transfer" ],
+    "trackingId" : "96C63793-DFB1-40FF-862E-5CB23DBEF75E"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Business owners and self-employed",
+    "extensionType" : null,
+    "synonyms" : [ "business owners", "business owners and self employed" ],
+    "trackingId" : "ECBFC318-B6AA-4787-A0F6-B9C6303FB9A9"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Pensioners",
+    "extensionType" : null,
+    "synonyms" : [ "pensioner" ],
+    "trackingId" : "3FD4DE05-2C20-4BD3-AD72-7D897C345745"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Secured personal loan",
+    "extensionType" : null,
+    "synonyms" : [ "secured personal" ],
+    "trackingId" : "429C471E-9ACF-486D-83E8-AB9481F551DB"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.LOANS.PERSONAL_LOAN",
+  "promptForDisambiguation" : true,
+  "trackingId" : "6FD2A998-BEC2-4037-8179-0C9923B00BEF",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

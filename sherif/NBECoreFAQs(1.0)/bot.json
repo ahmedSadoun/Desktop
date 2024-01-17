@@ -1,0 +1,15 @@
+{
+  "type" : "USER",
+  "autoCompleteTrainingStatus" : "NO_DATA",
+  "category" : "null",
+  "dialogVersion" : "2.0",
+  "displayName" : "NBE.Core.FAQs_Ahs",
+  "intentTrainer" : "Tamao",
+  "multilingualMode" : "TRANSLATION",
+  "name" : "NBECoreFAQs_Ahs",
+  "platformVersion" : "23.02",
+  "primaryLanguageTag" : "en",
+  "requiresAutoCompleteTraining" : false,
+  "trackingId" : "5689F3AE-C0BF-4F93-A75D-32C9E3947EDD",
+  "version" : "1.0"
+}

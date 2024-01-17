@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Can I use the face print/fingerprint together to access the Mobile Banking service?",
+    "trackingId" : "A9CCF4E1-A652-4983-9AC4-2C57C294345C",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Can facial recognition & fingerprint be used together to log in to Al Ahly Mobile?",
+    "trackingId" : "9B64C7CF-80DB-4AC4-B3F9-467D2CC18415",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.facial.recognit.fingerprint.us.togeth.log",
+  "trackingId" : "E3FC9EFB-297D-42E2-BB74-6607F7ECDF7E"
+}

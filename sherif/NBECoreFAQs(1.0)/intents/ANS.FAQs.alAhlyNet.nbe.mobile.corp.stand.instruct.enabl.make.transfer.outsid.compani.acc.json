@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Do standing instructions enable making transfers outside the company's accounts?",
+    "trackingId" : "BCAF8701-4921-485C-AF1D-3327C030CFD8",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Does the standing instruction service allow transfers outside the company's accounts?",
+    "trackingId" : "1918CC4A-FBFB-49C8-ABE9-D1F4D4F527A6",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.stand.instruct.enabl.make.transfer.outsid.compani.acc",
+  "trackingId" : "46A36F6B-4A7D-42F1-A807-8BE6FA947205"
+}

@@ -1,0 +1,41 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "User manual/ FAQs",
+    "extensionType" : null,
+    "synonyms" : [ "User manual / FAQs", "user manual", "faqs", "دليل المستخدم/ الأسئلة الشائعة", "user guide", "frequently asked questions", "الاسئلة الشائعة", "الاسئلة المتكررة", "دليل المستخدم" ],
+    "trackingId" : "FD7F40E0-748C-4E6B-8FB7-4A7D109E7621"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Hard token",
+    "extensionType" : null,
+    "synonyms" : [ "جهاز رموز الأمان", "جهاز رمز الامان", "token", "جهاز الامان" ],
+    "trackingId" : "CF5AACFA-4F43-44A8-90A3-6FFDA8BF418A"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Downloading NBE Mobile application",
+    "extensionType" : null,
+    "synonyms" : [ "download nbe mobile application", "download nbe mobile app", "download mobile app", "download nbe app", "تحميل تطبيق الأهلي موبايل", "تنزيل الاهلي موبايل", "الأهلي موبايل" ],
+    "trackingId" : "8D4341B7-D941-4A37-B4B6-CC5ED86106F7"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Forgetting user ID/ password",
+    "extensionType" : null,
+    "synonyms" : [ "Forgetting user ID / password", "forgetting user id", "Forget user id", "forgetting password", "forget password", "فقدان كود المستخدم/كلمة المرور", "نسيت كلمة المرور", "نسيت الرقم السري", "نسيت رقم المستخدم", "نسيت اسم المستخدم" ],
+    "trackingId" : "1F287DA5-1452-466C-BF83-57D847C464B3"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Service subscription",
+    "extensionType" : null,
+    "synonyms" : [ "service sub", "service subscribe", "الاشتراك بالخدمة", "التسجيل بالخدمة", "register", "service registrations" ],
+    "trackingId" : "D38D92BF-E8C6-4B17-B3CA-A40AA93F0FF4"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.CORP.DB.AHLY_NET",
+  "promptForDisambiguation" : true,
+  "trackingId" : "BC984239-92D4-48F1-B653-A914EBF6A3D5",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

@@ -1,0 +1,17 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Financing 100% of car price against 50% collateral of car price",
+    "extensionType" : null,
+    "synonyms" : null,
+    "trackingId" : "26AAC0E4-DE08-4B11-874A-A45E382EB2FF"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.LOANS.AUTO.FINANCING",
+  "promptForDisambiguation" : true,
+  "trackingId" : "3EC639AD-FB12-48DF-B8B7-5BD7959349F8",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

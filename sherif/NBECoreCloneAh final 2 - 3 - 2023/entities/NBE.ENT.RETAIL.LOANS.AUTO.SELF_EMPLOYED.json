@@ -1,0 +1,23 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "40% down payment program",
+    "extensionType" : null,
+    "synonyms" : null,
+    "trackingId" : "66808DDC-EA4A-424D-886B-197B3F3331D5"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Self-employed & professionals",
+    "extensionType" : null,
+    "synonyms" : null,
+    "trackingId" : "9A4FAA84-1A6F-4D55-8A2D-0DAF5C6DEEE3"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.LOANS.AUTO.SELF_EMPLOYED",
+  "promptForDisambiguation" : true,
+  "trackingId" : "FEB81FB0-8913-486F-B86C-AAD269833EA0",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

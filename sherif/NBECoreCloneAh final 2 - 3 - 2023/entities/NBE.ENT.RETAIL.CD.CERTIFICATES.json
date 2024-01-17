@@ -1,0 +1,35 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Saving Certificates (Local Currency)",
+    "extensionType" : null,
+    "synonyms" : [ "saving local currency", "local", "بالعملة المحلية", "شهادات ادخار بالجنية" ],
+    "trackingId" : "D1AF289E-9EA7-41DF-A6B7-1F986308B525"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Saving Certificates (Foreign currency)",
+    "extensionType" : null,
+    "synonyms" : [ "saving foreign currency", "بالعملة الاجنبية", "بالدولار", "شهادات ادخار بالعملة الاجنبية" ],
+    "trackingId" : "53052F0C-66CE-4A4D-93EE-05B07288548D"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Investment Certificates",
+    "extensionType" : null,
+    "synonyms" : [ "investment", "invest certificate", "شهادات الاستثمار", "الاستثمار" ],
+    "trackingId" : "2710B2FD-0806-415D-8421-B380EF0930BA"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Belady Certificates (for Egyptian expatriates)",
+    "extensionType" : null,
+    "synonyms" : [ "Belady", "شهادة بلادي", "شهادات بلادي" ],
+    "trackingId" : "B14C7050-B23D-48AB-9BDC-C197898192F3"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.CD.CERTIFICATES",
+  "promptForDisambiguation" : true,
+  "trackingId" : "9952B152-3790-4E72-A84E-0884C5F17725",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

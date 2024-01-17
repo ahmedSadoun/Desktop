@@ -1,0 +1,33 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "PrepaidCardsList",
+    "fullName" : "PrepaidCardsList",
+    "type" : "ENTITY",
+    "entityName" : "NBE.ENT.RETAIL.CARDS.PREPAID_CARD",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "NBE.ENT.RETAIL.CARDS.PREPAID_CARD",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "71BB437E-1070-4446-97F1-37AFC2D59433",
+    "children" : null
+  } ],
+  "eventHandler" : "EventHandlers:RetailPrepaidCards",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.RETAIL.CARDS.PREPAID_CARD",
+  "promptForDisambiguation" : true,
+  "trackingId" : "4F3C143C-FEBD-43E1-927A-92E847EAE8BE",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

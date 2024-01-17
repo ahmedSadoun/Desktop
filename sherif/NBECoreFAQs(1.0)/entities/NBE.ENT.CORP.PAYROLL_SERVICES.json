@@ -1,0 +1,29 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Salary Advance",
+    "extensionType" : null,
+    "synonyms" : [ "خدمة الراتب المقدم", "راتب مقدم" ],
+    "trackingId" : "9FDE2327-F27D-4CD7-87C7-C85CA294FB80"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al Ahly Payroll Card Program",
+    "extensionType" : null,
+    "synonyms" : [ "payroll card program", "ahly payroll program", "ahly payroll card program", "al ahly payroll program", "الأهلي للمرتبات على البطاقات", "بطاقات المرتبات" ],
+    "trackingId" : "20078BB5-6B8F-4F4C-A9AE-E9DA60429BAC"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al Ahly Payroll Current Account Program",
+    "extensionType" : null,
+    "synonyms" : [ "payroll current account", "payroll current account program", "ahly payroll current account program", "ahly payroll current account", "الأهلي للمرتبات على الحسابات", "حسابات جارية للمرتبات", "حسابات المرتبات" ],
+    "trackingId" : "241F773E-13CB-455B-8C86-82A6831D17A8"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.CORP.PAYROLL_SERVICES",
+  "promptForDisambiguation" : true,
+  "trackingId" : "749FA094-89D2-4950-B10F-0FBA05E9ECF0",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

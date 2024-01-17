@@ -1,0 +1,29 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "NBE Prepaid Card",
+    "extensionType" : null,
+    "synonyms" : [ "nbe prepaid card", "بطاقة الدفع مقدماً من البنك الأهلى المصري" ],
+    "trackingId" : "54C478F8-B17E-472B-8913-BA67BDBE16CD"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Manchester United Platinum Prepaid Card",
+    "extensionType" : null,
+    "synonyms" : [ "manchester united platinum prepaid card", "بطاقة مانشستر يونايتد البلاتينية المدفوعة مقدما" ],
+    "trackingId" : "D8EFFB6F-3DE6-4F3D-BC8E-99E6FFAE877D"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "NBE \"Meeza\" Prepaid Card",
+    "extensionType" : null,
+    "synonyms" : [ "nbe meeza prepaid card", "بطاقة ميزة المدفوعة مقدماً" ],
+    "trackingId" : "5DB39CC9-01DB-4D0A-82C8-BBD1D809A3A1"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.CARDS.PREPAID_CARD",
+  "promptForDisambiguation" : true,
+  "trackingId" : "42689FAF-0BCF-4F80-ABD0-BCA9A4D107A9",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

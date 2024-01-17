@@ -1,0 +1,29 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Credit Cards",
+    "extensionType" : null,
+    "synonyms" : [ "credit cards", "credit card", "credit", "بطاقات الائتمان", "بطاقة ائتمان", "ائتمان" ],
+    "trackingId" : "7B542D1B-ED48-41C8-A7B4-278198A3FCF2"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Debit Cards",
+    "extensionType" : null,
+    "synonyms" : [ "debit cards", "debit card", "debit", "بطاقة الخصم المباشر", "الخصم المباشر", "بطاقات الخصم المباشر" ],
+    "trackingId" : "406F6D70-0171-46AF-8FB1-EC64167E83E7"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Prepaid Cards",
+    "extensionType" : null,
+    "synonyms" : [ "prepaid cards", "prepaid card", "prepaid", "البطاقات المدفوعة المقدمة", "مدفوعة مسبقا", "البطاقة المدفوعه مسبقا" ],
+    "trackingId" : "A95F17E9-A403-494B-B145-A91A04F51459"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.CARDS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "0E5C60D2-CEE8-4F63-80FB-C2D557475E58",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

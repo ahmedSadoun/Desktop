@@ -1,0 +1,180 @@
+name: "CorporateFlow"
+trackingId: "91E03007-AF5C-4974-8BAB-CF572BA640EC"
+type: "task"
+version: "2.0"
+interface:
+  returnActions:
+  - "done"
+configuration:
+  requiresAuthorization: false
+variables:
+- name: "corporateMenu"
+  type: "list"
+  defaultValue:
+  - website: ""
+    nameAr: "الفروع وماكينات الصراف الآلي"
+    keywords: "locate,locate us,locateus,الفروع وماكينات الصراف الآلى,الفروع وماكينات الصراف الالى,الفروع وماكينات الصراف الالي,الفروع وماكينات الصراف الألى,الفروع وماكينات الصراف الألي,الفروع,فروع,الفروع وماكينات,فروع وماكينات,ماكينات,الفروع والماكينات,الفروع و الماكينات,ماكينات,ماكينات الصراف,الصراف الآلى,الصراف الالى,الصراف الالي,الصراف الألى,الصراف الألي,الفروع و ماكينات الصراف الآلى,الفروع و ماكينات الصراف الالى,الفروع و ماكينات الصراف الالي,الفروع و ماكينات الصراف الألى,الفروع و ماكينات الصراف الألي,الفروع و ماكينات,فروع و ماكينات"
+    imageUrl: ""
+    description: ""
+    nameEn: "Locate Us"
+  - website: ""
+    nameAr: "الحسابات"
+    keywords: "accounts,account,الحسابات,حسابات"
+    imageUrl: ""
+    description: ""
+    nameEn: "Accounts"
+  - website: ""
+    nameAr: "الشهادات والودائع"
+    keywords: "certificates & deposits,Certificates and Deposits,certificates and deposits,certificates,deposits,Certificates,Deposits,الشهادات و الودائع,الشهادات,الودائع,شهادات,ودائع,شهادات و ودائع,شهادات وودائع"
+    imageUrl: ""
+    description: ""
+    nameEn: "Certificates & Deposits"
+  - website: ""
+    nameAr: "البطاقات"
+    keywords: "cards,بطاقات"
+    imageUrl: ""
+    description: ""
+    nameEn: "Cards"
+  - website: ""
+    nameAr: "تمويل الشركات"
+    keywords: "Corporate Banking and Syndicated Loans,corporate banking,syndicated loans,corporate banking and syndicated loans,تمويل شركات,تمويل"
+    imageUrl: ""
+    description: ""
+    nameEn: "Banking & Syndicated Loans"
+  - website: ""
+    nameAr: "الخدمات الرقمية"
+    keywords: "digital bankig,الخدمات الرقميه,خدمات رقمية,خدمات رقميه"
+    imageUrl: ""
+    description: ""
+    nameEn: "Digital Banking"
+  - website: ""
+    nameAr: "خدمات المرتبات"
+    keywords: "payroll services,payroll,خدمات مرتبات"
+    imageUrl: ""
+    description: ""
+    nameEn: "Payroll Services"
+  - website: ""
+    nameAr: "المشروعات الصغيرة"
+    keywords: "smes,sme,المشروعات الصغيره,مشروعات صغيره,مشروعات صغيرة,مشروعات الصغيرة"
+    imageUrl: ""
+    description: ""
+    nameEn: "SMEs"
+  - website: ""
+    nameAr: "خدمات أخرى"
+    keywords: "other services,other,خدمات اخرى,أخرى,اخرى"
+    imageUrl: ""
+    description: ""
+    nameEn: "Other Services"
+  description: "Corporate tree menu"
+  metadata:
+    isFreeMarker: false
+  system: false
+- name: "corporateMenuChoice"
+  type: "string"
+  description: "The selected corporate value"
+  metadata:
+    isFreeMarker: true
+  system: false
+defaultTransitions:
+  actions:
+    system.startTaskFlow: "corporateTypesMenu"
+states:
+  invokeStartFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "StartFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  corporateTypesMenu:
+    component: "System.CommonResponse"
+    properties:
+      metadata:
+        responseItems:
+        - cardLayout: "horizontal"
+          cards:
+          - iteratorVariable: "menuItem"
+            iteratorExpression: "${corporateMenu.value}"
+            imageUrl: "${menuItem.imageUrl}"
+            description: "${menuItem.description}"
+            cardUrl: "${menuItem.website}"
+            title: "<#if profile.languageTag == 'en'>${menuItem.nameEn}<#else>${menuItem.nameAr}</#if>"
+            actions:
+            - payload:
+                variables:
+                  corporateMenuChoice: "${menuItem.nameEn}"
+                action: "${menuItem.nameEn}"
+              label: "<#if profile.languageTag == 'en'>${menuItem.nameEn}<#else>${menuItem.nameAr}</#if>"
+              type: "postback"
+              keyword: "${menuItem.keywords}"
+          headerText: "${rb('CorporateMenuMsg')}"
+          type: "cards"
+        globalActions:
+        - payload:
+            action: "back"
+          label: "${rb('Back')}"
+          type: "postback"
+          keyword: "${rb('Back Keywords')}"
+        - payload:
+            action: "exit"
+          label: "${rb('Exit')}"
+          type: "postback"
+          keyword: "${rb('Exit Keywords')}"
+      processUserMessage: true
+    transitions:
+      actions:
+        exit: "invokeExitFlow"
+        system.textReceived: "invokeStartFlow"
+        back: "invokeBotTypeFlow"
+      next: "setUtteranceVariable"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        maxPrompts: false
+        useFullEntityMatches: false
+        cancelPolicy: true
+        variable: false
+        processUserMessage: false
+        keepTurn: false
+        multiValue: false
+        requiresAuthorization: false
+  invokeBotTypeFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "BotTypeFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  invokeExitFlow:
+    component: "System.InvokeFlow"
+    properties:
+      inputParameters: []
+      flow: "ExitFlow"
+      outputParameters: []
+    transitions: {}
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        flow: false
+  endFlow:
+    component: "System.EndFlow"
+    properties:
+      action: "done"
+    transitions: {}
+    metadata: {}
+  setUtteranceVariable:
+    component: "System.SetVariable"
+    properties:
+      variable: "skill.system.intent.utterance"
+      value: "${corporateMenuChoice.value}"
+    transitions:
+      next: "endFlow"
+    metadata:
+      propertySheetIsFreeMarkerMap:
+        variable: false
+        value: true
+        requiresAuthorization: false

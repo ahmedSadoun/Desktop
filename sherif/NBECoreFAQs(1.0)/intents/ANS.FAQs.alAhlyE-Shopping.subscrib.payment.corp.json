@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How can I subscribe to the corporate electronic payment service?",
+    "trackingId" : "B7C67EE0-B617-49B0-A7BD-0B8E7D7A60E9",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How can I subscribe to the e-payment service for corporates?",
+    "trackingId" : "E714381B-C9AD-4F95-B620-47BDCC5DD6A7",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyE-Shopping.subscrib.payment.corp",
+  "trackingId" : "16D9E4CF-2AFF-4CB4-9375-92D9FA2EC249"
+}

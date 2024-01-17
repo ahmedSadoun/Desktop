@@ -1,0 +1,33 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "CurrentPersonalLoanSecuredList",
+    "fullName" : "CurrentPersonalLoanSecuredList",
+    "type" : "ENTITY",
+    "entityName" : "NBE.ENT.RETAIL.LOANS.PERSONAL.SECURED",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "NBE.ENT.RETAIL.LOANS.PERSONAL.SECURED",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "7CA0AFB5-305D-477E-A652-D2BE40A603CD",
+    "children" : null
+  } ],
+  "eventHandler" : "EventHandlers:RetailLoansPersonalSecured",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.RETAIL.LOANS.PERSONAL.SECURED",
+  "promptForDisambiguation" : true,
+  "trackingId" : "AE104E8D-E013-412C-A736-EEBD7A8B841C",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

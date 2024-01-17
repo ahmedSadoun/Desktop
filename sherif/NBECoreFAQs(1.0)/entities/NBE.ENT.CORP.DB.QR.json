@@ -1,0 +1,35 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Available services",
+    "extensionType" : null,
+    "synonyms" : [ "الخدمات المتاحة" ],
+    "trackingId" : "B33A4657-872C-46E9-B52D-10C6D061F719"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "DCC service",
+    "extensionType" : null,
+    "synonyms" : [ "dcc", "خدمة ال DCC" ],
+    "trackingId" : "7F9222C6-91FC-46A3-ABA8-8B92CDA55F20"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "QR code payments",
+    "extensionType" : null,
+    "synonyms" : [ "qr payments", "qr code", "QR", "مدفوعات ال QR Code", "الدفع ب QR Code" ],
+    "trackingId" : "56411D5A-E4F3-4C4B-9D7F-9ADCB2BE80E6"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "For application/ required documents",
+    "extensionType" : null,
+    "synonyms" : [ "For application / required documents", "application documents", "required documents", "للتقديم / المستندات المطلوبة", "الاوراق المطلوبة", "كيفية التسجيل", "الاوراق المطلوبة للتقديم" ],
+    "trackingId" : "3D426156-1828-48A6-8730-7441FA57C478"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.CORP.DB.QR",
+  "promptForDisambiguation" : true,
+  "trackingId" : "B7B30549-E9F6-455A-9DC8-13A8FC56E092",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

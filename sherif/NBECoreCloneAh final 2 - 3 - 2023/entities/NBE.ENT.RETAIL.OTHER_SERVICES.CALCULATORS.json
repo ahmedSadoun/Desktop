@@ -1,0 +1,29 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Currency converter",
+    "extensionType" : null,
+    "synonyms" : [ "converter", "cur converter" ],
+    "trackingId" : "A0BC193C-533A-4E71-B3F4-FEB1F8F9C8E1"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Loan calculator",
+    "extensionType" : null,
+    "synonyms" : [ "loan" ],
+    "trackingId" : "59BDB315-2E12-4D0E-8174-2E7C49D93E16"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Deposit calculator",
+    "extensionType" : null,
+    "synonyms" : [ "deposit" ],
+    "trackingId" : "51E290F7-54B9-4E9D-A20D-3D24410BAC35"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.OTHER_SERVICES.CALCULATORS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "8CD2C6B5-36BB-4D58-953B-6C6EBEBD6F4B",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

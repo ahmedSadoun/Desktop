@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Benefits obtained by the merchant when subscribing to Al Ahly e-Shopping",
+    "trackingId" : "4C4EFE7C-E844-4FFC-989D-ED09B89039A0",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What are the advantages that the merchant gets from subscribing to Al-Ahly Shopping service?",
+    "trackingId" : "722EB8E0-3D37-4AE3-BC57-B5D57967BF5F",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyE-Shopping.benefit.obtain.merchant.when.subscrib",
+  "trackingId" : "EA2A6C2F-3014-4E12-BEAA-67D7DC8080CF"
+}

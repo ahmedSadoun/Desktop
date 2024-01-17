@@ -1,0 +1,17 @@
+{
+  "description" : null,
+  "displayName" : "Default Test Suite",
+  "name" : "DefaultTestSuite",
+  "testCases" : [ {
+    "channelType" : "webhook",
+    "conversation" : [ ],
+    "description" : null,
+    "displayName" : "Test Case 1",
+    "enabled" : true,
+    "name" : "TestCase1",
+    "platformVersion" : "1.0",
+    "trackingId" : "902C49DE-5A70-414B-8F22-7D3A5E3F2C20",
+    "variables" : [ ]
+  } ],
+  "trackingId" : "EB2B68B4-11E4-37F4-9275-A2A2BD9F885A"
+}

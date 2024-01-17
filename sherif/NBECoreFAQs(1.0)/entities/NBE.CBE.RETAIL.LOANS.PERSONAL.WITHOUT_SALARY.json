@@ -1,0 +1,33 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "CurrentPersonalLoanWithoutSalaryList",
+    "fullName" : "CurrentPersonalLoanWithoutSalaryList",
+    "type" : "ENTITY",
+    "entityName" : "NBE.ENT.RETAIL.LOANS.PERSONAL.WITHOUT_SALARY",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "NBE.ENT.RETAIL.LOANS.PERSONAL.WITHOUT_SALARY",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "8B9C7FEE-DB9E-480A-A5C9-122EED1AC4E5",
+    "children" : null
+  } ],
+  "eventHandler" : "EventHandlers:RetailLoansPersonalWithoutSalary",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.CBE.RETAIL.LOANS.PERSONAL.WITHOUT_SALARY",
+  "promptForDisambiguation" : true,
+  "trackingId" : "DFCBB589-CBEC-47C0-A2AA-D7DA7693F094",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

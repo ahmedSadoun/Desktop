@@ -1,0 +1,29 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Middle income 8%",
+    "extensionType" : null,
+    "synonyms" : [ "middle income", "8%" ],
+    "trackingId" : "F72CF51D-64FE-4971-9508-E21C28134143"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "CBE's 3% initiative",
+    "extensionType" : null,
+    "synonyms" : [ "CBE 3% initiative", "CBEs 3% initiative", "CBE's 3% initiative", "3% initiative", "cbe 3%" ],
+    "trackingId" : "AB179D4E-9DFE-4ECB-806E-957576CF106B"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Low income 5% & 7%",
+    "extensionType" : null,
+    "synonyms" : [ "low income", "5% and 7%", "5 and 7", "5 & 7" ],
+    "trackingId" : "6F241287-9FF5-46B0-B68D-E692C8296BFF"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.LOANS.CBE_LOAN",
+  "promptForDisambiguation" : true,
+  "trackingId" : "4F573B30-C5D6-406B-B6C7-CEC38F1A3A16",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

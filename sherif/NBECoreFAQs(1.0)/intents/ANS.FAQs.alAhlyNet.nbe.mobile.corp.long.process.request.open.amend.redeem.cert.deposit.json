@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - How long does it take to implement a request to purchase / amend / retrieve a certificate or link / break a deposit through Al-Ahly Net service?",
+    "trackingId" : "E02C81E1-D004-499B-9B60-90AD11D25B35",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - How long does it take to process any request to open/amend/redeem certificates/deposits via Al Ahly Net?",
+    "trackingId" : "87F4322A-8E5F-491C-A663-12D8F0405D1E",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.long.process.request.open.amend.redeem.cert.deposit",
+  "trackingId" : "763FE6AB-5C92-4E0E-893E-EC00C50E232C"
+}

@@ -1,0 +1,41 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Self-employed & professionals",
+    "extensionType" : null,
+    "synonyms" : [ "Self-employed and professionals", "Self employed & professionals", "Self employed and professionals", "employed and professionals" ],
+    "trackingId" : "7EACF9E6-22ED-40FE-81F3-0331923BCB09"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Financing 100% of car price against 50% collateral of car price",
+    "extensionType" : null,
+    "synonyms" : [ "financing car", "financing car price", "collateral car price", "financing 100%", "financing 100" ],
+    "trackingId" : "F96491EC-83AD-44F0-98CC-B5801C60CD44"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Secured auto loan",
+    "extensionType" : null,
+    "synonyms" : [ "secured auto" ],
+    "trackingId" : "2554DA56-4973-4ED3-933A-B7EDACB2F909"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Employees",
+    "extensionType" : null,
+    "synonyms" : [ "Employees Program" ],
+    "trackingId" : "6062E4B8-5AE1-4F60-9C16-17750AA4CBD2"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "NBE's VIP customers",
+    "extensionType" : null,
+    "synonyms" : [ "nbes vip", "nbe's vip", "nbe vip", "vip customers", "NBE VIP Customers" ],
+    "trackingId" : "E2D2BAF2-D2D5-4A33-B006-ABDA7D414A25"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.LOANS.AUTO_LOAN",
+  "promptForDisambiguation" : true,
+  "trackingId" : "226E02CC-D16C-4D39-9ED7-808141B864F6",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

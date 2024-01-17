@@ -1,0 +1,14 @@
+{
+  "type" : "HOSTED",
+  "name" : "EventHandlers",
+  "packageFileName" : "custom-component-service-1.0.0.tgz",
+  "packageChecksum" : "be722923556c006f52177a7a8506427e",
+  "runtime" : "node",
+  "status" : {
+    "code" : "created",
+    "message" : "The service is created but not ready."
+  },
+  "loggingEnabled" : true,
+  "enabled" : true,
+  "trackingId" : "EFBDEA53-3112-46D1-A660-A50AA7DBDEF7"
+}

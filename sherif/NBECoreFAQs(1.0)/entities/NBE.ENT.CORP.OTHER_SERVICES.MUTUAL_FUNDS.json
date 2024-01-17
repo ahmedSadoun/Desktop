@@ -1,0 +1,35 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Prices of mutual fund certificates",
+    "extensionType" : null,
+    "synonyms" : [ "mutual fund certficates", "price of mutual fund certficates", "price of mutual fund certficate", "mutual fund certifcates prices", "mutual fund certifcates price", "mutual fund certifcate prices", "mutual fund certifcate price", "اسعار وثائق صناديق الاستثمار", "اسعار صناديق الاستثمار" ],
+    "trackingId" : "B3794175-1D3A-4E2D-87AC-2B0B4F1D72E6"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "How to redeem",
+    "extensionType" : null,
+    "synonyms" : [ "redeem", "طريقة الاسترداد", "استرداد", "استرجاع" ],
+    "trackingId" : "A87AEFF1-0565-438A-ADED-B02B98F7C034"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "How to purchase",
+    "extensionType" : null,
+    "synonyms" : [ "purchase", "طريقة الشراء", "كيفية الشراء" ],
+    "trackingId" : "9E0EC24C-84C7-4E57-90EA-F7AF56394267"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Advantages",
+    "extensionType" : null,
+    "synonyms" : [ "adv", "advantage", "مميزات", "خصائص" ],
+    "trackingId" : "EB9CBAC1-218B-41BB-BA8D-570479914169"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.CORP.OTHER_SERVICES.MUTUAL_FUNDS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "41479064-2047-4E4D-8082-25AD3EBDABBE",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

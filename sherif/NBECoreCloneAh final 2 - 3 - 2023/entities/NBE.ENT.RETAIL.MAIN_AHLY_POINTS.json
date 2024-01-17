@@ -1,0 +1,23 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al Ahly Points",
+    "extensionType" : null,
+    "synonyms" : [ "ahly points", "points" ],
+    "trackingId" : "0A6CD1A6-411D-48D8-845A-34F5A615751E"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Offers",
+    "extensionType" : null,
+    "synonyms" : [ "offers", "offer" ],
+    "trackingId" : "12A9EDE4-68F3-401C-A741-64D19615546D"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.MAIN_AHLY_POINTS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "C9C499C2-1C72-4A21-AD2C-4291C804B459",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

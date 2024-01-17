@@ -1,0 +1,29 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al-Ahly Net/ NBE Mobile",
+    "extensionType" : null,
+    "synonyms" : [ "Al-Ahly Net / NBE Mobile", "Al Ahly Net/ NBE Mobile", "Al Ahly Net / NBE Mobile", "ahly net/ nbe mobile", "ahly net / nbe mobile", "ahly net/nbe mobile", "ahly net  nbe mobile", "al ahly net nbe mobile", "الأهلي نت / الأهلي موبايل", "الاهلي نت", "الاهلي موبايل", "ahly Net", "ahly mobile" ],
+    "trackingId" : "CAFBBD06-D46C-4801-9816-45DF908B03A6"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al-Ahly E-Shopping",
+    "extensionType" : null,
+    "synonyms" : [ "Al-Ahly E Shopping", "Al-Ahly EShopping", "Al Ahly E-Shopping", "Al Ahly EShopping", "ahly e-shopping", "ahly e shopping", "ahly eshopping", "خدمة الاهلي شوبينج ( خدمات الأهلي للتسويق عبر الانترنت)", "الاهلي شوبينج", "الاهلي للتسويق الالكتروني" ],
+    "trackingId" : "64CE25F9-8CA3-4474-B1E5-8851BC1F734B"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "QR Code service",
+    "extensionType" : null,
+    "synonyms" : [ "qr code", "qr service", "نقاط البيع الالكترونية / مدفوعات QR code", "نقاط البيع", "مدفوعات QR", "خدمة QR" ],
+    "trackingId" : "72C1CC35-BC60-4416-92DC-BCE1EDE2F1E7"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.CORP.DIGITAL_BANKING",
+  "promptForDisambiguation" : true,
+  "trackingId" : "3C8D73D3-4875-4505-A35E-05A5FC29BEB8",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

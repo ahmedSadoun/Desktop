@@ -1,0 +1,29 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Meeza Corporate Prepaid Cards",
+    "extensionType" : null,
+    "synonyms" : [ "ميزة", "ميزه", "meeza", "Meeza", "pre-paid", "paid", "prepaid card", "مسبق الدفع", "بطاقات ميزة مسبقة الدفع  للشركات" ],
+    "trackingId" : "C647A08E-C7A7-4D4E-89F3-A87630E2627C"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "MasterCard Corporate Card",
+    "extensionType" : null,
+    "synonyms" : [ "credit", "visa", "mastercard", "master card", "ائتمان", "بطاقة ائتمان ماستركارد للشركات", "ماستركارد" ],
+    "trackingId" : "BAE446B2-AD60-4F8B-8270-FE1F49E17B05"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Corporate Debit Cards",
+    "extensionType" : null,
+    "synonyms" : [ "debit", "بطاقات الخصم", "بطاقة خصم مباشر", "cash cards", "بطاقات الخصم المباشر للشركات" ],
+    "trackingId" : "66C88B17-F008-4CE1-A3B5-5A9BEADA1920"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.CORP.CARDS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "FA9B5FF5-8EE8-4261-ADA0-83E13334C978",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

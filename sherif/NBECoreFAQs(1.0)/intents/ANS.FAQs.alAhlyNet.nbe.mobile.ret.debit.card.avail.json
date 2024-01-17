@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - What are the debit card services available through Al Ahly Net/ NBE Mobile?",
+    "trackingId" : "7B3CB7AA-276D-4AB5-966A-41AEB094DFCC",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Retail - What are the services available for the direct debit card through Al-Ahly Net / Al-Ahly Mobile services?",
+    "trackingId" : "8E58DFC4-516B-40C9-BFA2-5D0899C6D517",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.ret.debit.card.avail",
+  "trackingId" : "B6F46331-00AD-4094-8B40-228E19DD7A2A"
+}

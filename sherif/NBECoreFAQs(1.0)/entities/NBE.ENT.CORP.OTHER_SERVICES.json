@@ -1,0 +1,23 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Calculators",
+    "extensionType" : null,
+    "synonyms" : [ "calc", "calculator", "calculate", "الحاسبات", "الحاسبة" ],
+    "trackingId" : "1EACF928-BFB2-48B0-B148-6C4C0B20C0D3"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Mutual Funds",
+    "extensionType" : null,
+    "synonyms" : [ "mutual fund", "صناديق الاستثمار", "bond fund", "investment fund", "investment funds" ],
+    "trackingId" : "5B27E927-E597-4885-8BA6-A131B1C2BADA"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.CORP.OTHER_SERVICES",
+  "promptForDisambiguation" : true,
+  "trackingId" : "13EBEAC8-3AAA-436B-8231-AF96B0788498",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

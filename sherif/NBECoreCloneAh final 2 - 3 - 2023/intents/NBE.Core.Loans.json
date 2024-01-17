@@ -1,0 +1,675 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can I apply for a personal loan online?",
+    "trackingId" : "E9101C67-1A36-482C-A4BD-7E74CEF3F37E",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can I get a car loan with bad credit?",
+    "trackingId" : "53E4E8FA-8D7A-4C2B-AFBC-3CF1FD67170C",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can I get a personal loan without collateral?",
+    "trackingId" : "EF905E92-AF5B-4278-8CA7-18E91DCF15AA",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can I get an auto loan with bad credit?",
+    "trackingId" : "66241E83-A3C5-4D65-A98C-2E08B394104B",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can I get pre-approved for an auto loan?",
+    "trackingId" : "B6481A51-2E7E-4126-B8B7-811C3D105E1E",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can I make extra payments on my auto loan?",
+    "trackingId" : "AD06EC46-609F-44F4-863A-2C1D372BF657",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can I prepay my personal loan?",
+    "trackingId" : "4B0E4EB0-C714-4EBD-A79B-74BE02B1E9E9",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can I refinance my car loan?",
+    "trackingId" : "04283571-B976-4B4F-89F9-E573CC5E713D",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can I use the auto loan to buy a used car?",
+    "trackingId" : "83BDFD47-831F-43BF-8AF9-E88CD8EE52EC",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can you give me more information about CBE's initiatives to support SMEs?",
+    "trackingId" : "6193C97B-06F5-4BCE-A657-5E7DC23E4CFA",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can you tell me about the initiatives taken by CBE?",
+    "trackingId" : "9A4C2E83-CB6F-4518-ADE9-171B50DBBEF1",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Can you tell me more about CBE's efforts to promote green financing in the country?",
+    "trackingId" : "E6998BF1-E537-4660-926D-6C830D7E23A6",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Do I need a down payment for a car loan?",
+    "trackingId" : "ED05A822-2FD8-413A-9384-FE15468427FD",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How can I apply for a car loan?",
+    "trackingId" : "04E1519F-2820-40DE-97DD-93520A8EE596",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How can I apply for a personal loan?",
+    "trackingId" : "F5068995-00E6-4465-B5BE-F8CE0849D0E8",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : "en",
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How can I apply for an auto loan?",
+    "trackingId" : "7570DF0B-0EB9-453E-A100-6595C7F282EB",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How has CBE contributed to promoting digital financial services in Egypt?",
+    "trackingId" : "E7BA0F5E-4774-4827-899F-85994A593359",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How long does it take to get a personal loan approved?",
+    "trackingId" : "6B55C722-B0A3-4E46-88E9-260CB3F7FCE1",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How long does it take to get approved for an auto loan?",
+    "trackingId" : "4CE2EFB2-EC76-4AD5-BA98-7DDFC9346DC9",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How long is the term for a car loan?",
+    "trackingId" : "29A955EE-BDFA-45C6-B20A-CD89A7F5CB31",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How much can I borrow for a car loan?",
+    "trackingId" : "180588B2-AE0E-49C4-87BC-7D20F8D41116",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How much can I borrow with a personal loan?",
+    "trackingId" : "82112999-8EA1-4631-A496-9C3AE394A06D",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "I need a loan",
+    "trackingId" : "5D9DC989-05C9-400F-A982-45EC14C16760",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : "en",
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "I want a loan",
+    "trackingId" : "C1BA3DA7-9D85-48FA-8AC4-43E59BDE3D6C",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What are the eligibility criteria for a personal loan?",
+    "trackingId" : "6BB60231-3BC2-43A5-8C79-BDB96FA4CC42",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What are the initiatives of CBE for improving financial inclusion?",
+    "trackingId" : "50EF2526-7418-4335-A083-45400862BF11",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What are the initiatives of CBE to improve financial education in Egypt?",
+    "trackingId" : "308BD4D0-3891-4A17-8F57-5F3BCD589A92",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : "en",
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What are the interest rates for auto loans?",
+    "trackingId" : "F7942BB6-2C1E-4FDD-BEB9-DF263707685A",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What are the interest rates for personal loans?",
+    "trackingId" : "2771D25E-33E4-405F-8779-4F5FB0D2EF54",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What are the requirements for a car loan?",
+    "trackingId" : "708F9426-E5F9-4C46-B695-CE5E1F9B25AB",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What documents are required for a personal loan?",
+    "trackingId" : "EB77ABFF-B224-4541-9EAA-379655D33F22",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What documents do I need to apply for a car loan?",
+    "trackingId" : "DE89B6D3-E6C3-4A3F-85C1-A6A1AB70E9E9",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What documents do I need to apply for an auto loan?",
+    "trackingId" : "395FEEEF-7BCF-4397-8962-AAA25B99118F",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What happens if I can't make my car loan payments on time?",
+    "trackingId" : "D6F3CB58-4E06-45A0-82D0-E44EA8CD6D4E",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What happens if I miss a payment on my auto loan?",
+    "trackingId" : "DE7F6A25-CD0A-43EE-9502-87A5B5B1331F",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What is the interest rate for a car loan?",
+    "trackingId" : "AD38A638-153F-4B0A-8B6D-04208C6C6779",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What is the maximum amount I can borrow for an auto loan?",
+    "trackingId" : "C2BE3507-7FA1-46DB-9119-5C4711B7027B",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What is the repayment period for a personal loan?",
+    "trackingId" : "78286A95-AB18-43D7-827B-5FC23E66AA04",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "What is the repayment period for auto loans?",
+    "trackingId" : "2936696C-5E8B-4DA1-BB17-5337975515FA",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "how to get loan",
+    "trackingId" : "81A5AAF6-D731-41B3-8278-C5FDDDED777F",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "loans",
+    "trackingId" : "D1DE9581-5979-415A-9D5C-0E573EFAE893",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "retail loans",
+    "trackingId" : "DFB21484-DCED-4DE8-8C2D-556B4D541807",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ {
+    "entity" : "NBE.CBE.RETAIL.LOANS.PERSONAL.SELF_EMPLOYED",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "4BD17D9A-9F76-4816-B530-F9D56FC615A8"
+  }, {
+    "entity" : "NBE.ENT.RETAIL.LOANS.CBE_LOAN",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "64AE0EB1-C850-4444-8478-A89134308DC9"
+  }, {
+    "entity" : "NBE.CBE.RETAIL.LOANS.AUTO.SELF_EMPLOYED",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "7D1AFE0B-E8A4-4F2F-ABDE-B2484F95AD55"
+  }, {
+    "entity" : "NBE.CBE.RETAIL.LOANS.AUTO.SECURED",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "58123BB6-FDFF-4EA7-9E60-1D1C7BDC41DF"
+  }, {
+    "entity" : "NBE.CBE.RETAIL.LOANS.AUTO.FINANCING",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "914F2F23-82FD-4BE4-9E83-2C683047406E"
+  }, {
+    "entity" : "NBE.CBE.RETAIL.LOANS.AUTO.EMPLOYEES",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "E6486056-3710-4B85-9630-CDD4C2A81807"
+  }, {
+    "entity" : "NBE.CBE.RETAIL.LOANS.PERSONAL.WITH_SALARY",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "2FA58E6E-CBCC-4389-B7A7-3EC4A2959630"
+  }, {
+    "entity" : "NBE.ENT.RETAIL.LOANS.AUTO_LOAN",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "B5D07353-D185-4827-882C-4E4090DD7D32"
+  }, {
+    "entity" : "NBE.CBE.RETAIL.LOANS.AUTO.VIP",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "D0B9640D-A341-4E24-8653-F0BB9228DE1B"
+  }, {
+    "entity" : "NBE.CBE.RETAIL.LOANS.PERSONAL.PENSIONERS",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "800A99C3-5BD8-4100-8762-9392838AA6C0"
+  }, {
+    "entity" : "NBE.CBE.RETAIL.LOANS.PERSONAL.SECURED",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "323FB97F-9448-4A3B-AB92-9C85D14D9E59"
+  }, {
+    "entity" : "NBE.CBE.RETAIL.LOANS.PERSONAL.WITHOUT_SALARY",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "33A84A75-EE93-48C4-BE1D-6AD013FEBABF"
+  }, {
+    "entity" : "NBE.CBE.RETAIL.LOANS.CBE_LOAN.8_PERCENT",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "F43ACEC8-FC8E-4513-84FD-E99D2BC9255F"
+  }, {
+    "entity" : "NBE.ENT.RETAIL.LOANS",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "3B83313D-B755-42B3-9C81-559C807A2643"
+  }, {
+    "entity" : "NBE.ENT.RETAIL.LOANS.PERSONAL_LOAN",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "049D3E9B-0CEA-462E-8C9C-549E51F37DBA"
+  }, {
+    "entity" : "NBE.CBE.RETAIL.LOANS.CBE_LOAN.5_7_PERCENT",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "3D30408E-E531-4400-B38C-C9312271355C"
+  }, {
+    "entity" : "NBE.CBE.RETAIL.LOANS.CBE_LOAN.3_PERCENT",
+    "entityAwareSetting" : {
+      "enabled" : false
+    },
+    "required" : true,
+    "trackingId" : "F259D856-5F73-4457-A187-26ADA63335F0"
+  } ],
+  "name" : "NBE.Core.Loans",
+  "trackingId" : "5E308BB3-BE2A-4D8A-8213-1531C6E07634",
+  "type" : "NLPIntent"
+}

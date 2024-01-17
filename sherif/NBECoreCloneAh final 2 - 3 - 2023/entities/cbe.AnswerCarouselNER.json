@@ -1,0 +1,63 @@
+{
+  "botPrompts" : [ ],
+  "compositeBagItems" : [ {
+    "sequenceNr" : 1,
+    "name" : "CarouselPrompt",
+    "fullName" : "CarouselPrompt",
+    "description" : "bag item of type string to display a prompt and handle user entry",
+    "type" : "STRING",
+    "errorMessage" : "${rb('cbe.AnswerCarouselNER.CarouselPrompt.ErrorMessage')}",
+    "multiValue" : false,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "promptForDisambiguation" : true,
+    "prompts" : [ {
+      "sequenceNr" : 1,
+      "text" : "${rb('cbe.AnswerCarouselNER.CarouselPrompt.Prompt1')}\t",
+      "type" : "DEFAULT"
+    } ],
+    "defaultEndDateToStartDate" : false,
+    "trackingId" : "CDBA9B4D-D19C-4DF6-9F4E-C5AD19E2B962",
+    "children" : null
+  }, {
+    "sequenceNr" : 2,
+    "name" : "PositionalSelect",
+    "fullName" : "PositionalSelect",
+    "description" : "metadata: bag item captures user provided index",
+    "type" : "ENTITY",
+    "entityName" : "NUMBER",
+    "entityUsage" : {
+      "type" : "NamedEntity",
+      "name" : "NUMBER",
+      "multiValue" : false,
+      "fuzzyMatch" : false,
+      "promptForDisambiguation" : true
+    },
+    "multiValue" : true,
+    "multiLingual" : false,
+    "fuzzyMatch" : false,
+    "outOfOrderExtraction" : "ALWAYS",
+    "extractWith" : "CarouselPrompt",
+    "promptForDisambiguation" : true,
+    "promptForValue" : "false",
+    "defaultEndDateToStartDate" : false,
+    "customSettings" : {
+      "number" : {
+        "version" : "1.0",
+        "userLocaleEnabled" : true
+      }
+    },
+    "trackingId" : "544F7037-ED4D-479D-9BDF-DEE3A2660C40",
+    "children" : null
+  } ],
+  "description" : "Display a configurable number of follow-up answers in cards; allows select by position for buttons",
+  "eventHandler" : "AnswerCarouselNER_EEH:AnswerCarouselNER_EEH",
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "cbe.AnswerCarouselNER",
+  "promptForDisambiguation" : true,
+  "trackingId" : "677F5C25-ADBA-4C8E-AF0B-D09EE1444827",
+  "type" : "COMPOSITEBAG",
+  "validationRules" : [ ]
+}

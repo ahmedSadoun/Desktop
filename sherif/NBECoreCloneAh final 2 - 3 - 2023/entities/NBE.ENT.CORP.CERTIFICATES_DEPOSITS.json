@@ -1,0 +1,23 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Savings Certificates",
+    "extensionType" : null,
+    "synonyms" : [ "savings", "savings certificates", "saving certificate", "شهادات الادخار", "شهادة إدخار" ],
+    "trackingId" : "DC32782E-9085-4359-9D0D-406D40B3DD9C"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Corporate deposits",
+    "extensionType" : null,
+    "synonyms" : [ "corporate deposit", "corp deposits", "corp deposit", "ودائع الشركات", "ودائع مؤسسات" ],
+    "trackingId" : "E315720E-F761-47CE-BE27-5B05C209B122"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.CORP.CERTIFICATES_DEPOSITS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "604570BB-7AF7-4F9A-A5AA-266E4A6F93C4",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

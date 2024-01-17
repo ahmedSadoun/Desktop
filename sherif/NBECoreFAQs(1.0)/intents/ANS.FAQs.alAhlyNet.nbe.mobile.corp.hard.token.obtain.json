@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - How can a hard token be obtained for Al Ahly Net/NBE Mobile?",
+    "trackingId" : "FBBCAB59-92AA-44C7-BC0B-A7F94CA6B2C4",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - How can the security code device be obtained on Al-Ahly Net / Al-Ahly Mobile service?",
+    "trackingId" : "B6324614-185B-4CB9-A00D-A02E727DF5A1",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyNet.nbe.mobile.corp.hard.token.obtain",
+  "trackingId" : "F707BE74-BDCD-46F1-890B-A7017BAF45C3"
+}

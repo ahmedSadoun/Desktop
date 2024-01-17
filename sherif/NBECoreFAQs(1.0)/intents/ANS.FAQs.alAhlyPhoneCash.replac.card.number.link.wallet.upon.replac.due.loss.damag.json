@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How can I replace my NBE card number that is linked to the wallet upon the replacement of the card due to loss or damage?",
+    "trackingId" : "60939E7A-F825-4B1B-B6AD-6B061653B462",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "How can I replace my card linked to AlAhli PhoneCash wallet due to loss or damage?",
+    "trackingId" : "364A95AF-ADAD-4568-896B-6100D5DC49D6",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.alAhlyPhoneCash.replac.card.number.link.wallet.upon.replac.due.loss.damag",
+  "trackingId" : "AB67E8CF-AD8D-4276-9991-F533F0EE2BE4"
+}

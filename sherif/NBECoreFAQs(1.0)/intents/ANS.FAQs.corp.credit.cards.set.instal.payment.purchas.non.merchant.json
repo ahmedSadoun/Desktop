@@ -1,0 +1,35 @@
+{
+  "annotations" : [ ],
+  "autoCompleteData" : [ ],
+  "enabled" : true,
+  "exampleData" : [ {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Can I set up installment payments for purchases from a non-NBE merchant?",
+    "trackingId" : "AC29B61B-4049-48B7-BF20-20A4F4D85844",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  }, {
+    "annotations" : [ ],
+    "contributor" : null,
+    "crowdJobId" : null,
+    "detectedLanguage" : null,
+    "developerId" : null,
+    "developerTag" : null,
+    "exampleEntities" : [ ],
+    "sentence" : "Corp - Is it possible to install a transaction that was completed by a merchant who is not contracted with the National Bank?",
+    "trackingId" : "FE350D64-AEF4-4C9E-A19F-7B236FBF26DB",
+    "translated" : null,
+    "translatedBy" : null,
+    "translatedLanguage" : null
+  } ],
+  "intentParameters" : [ ],
+  "name" : "ANS.FAQs.corp.credit.cards.set.instal.payment.purchas.non.merchant",
+  "trackingId" : "B69788C5-1E39-4EF2-86F5-6977B3205978"
+}

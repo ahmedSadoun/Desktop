@@ -1,0 +1,23 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Local currency",
+    "extensionType" : null,
+    "synonyms" : [ "local", "local curr", "بالجنيه المصري", "بالعملة المحلية", "بالجنية" ],
+    "trackingId" : "EEA6317E-F56E-49EA-B87D-980D7821D900"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Foreign currency",
+    "extensionType" : null,
+    "synonyms" : [ "foreign curr", "foreign", "عملة اجنبية", "أجنبية", "دولار", "دولارية", "بالدولار", "بالعملة الأجنبيه" ],
+    "trackingId" : "C659FCAE-FA80-41D5-B1E9-3061C8797BAE"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.CORP.CD.SAVINGS_CERTIFICATES",
+  "promptForDisambiguation" : true,
+  "trackingId" : "73A734FB-90DC-4E21-949D-9162EE01EB7B",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

@@ -1,0 +1,35 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Platinum Monthly Certificate",
+    "extensionType" : null,
+    "synonyms" : [ "Monthly Certificate", "الشهادة البلاتينية الشهرية", "شهرية" ],
+    "trackingId" : "E151C7B7-F834-449E-8DE6-0194C5BFEB20"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Platinum Variable Interest Certificate",
+    "extensionType" : null,
+    "synonyms" : [ "Variable Interest Certificate", "الشهادة البلاتينية ذات العائد المتغير", "عائد متغير", "variable interest" ],
+    "trackingId" : "39843AC5-B305-4B77-8270-5E28B9B0F9A5"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Five-year CD",
+    "extensionType" : null,
+    "synonyms" : [ "5 year certificate", "الشهادة الخماسية ذات العائد الشهري", "خماسية", "خمس سنوات", "5 سنين", "٥ سنين" ],
+    "trackingId" : "F4EC038D-584B-4B36-85C4-C352D504C80F"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Egyptian Certificate Aman",
+    "extensionType" : null,
+    "synonyms" : [ "egyptian", "شهادة امان المصريين", "امان", "أمان" ],
+    "trackingId" : "BCAD815B-ADD7-477A-A7F5-5E9B7DAC55BC"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.CD.SAVINGS.LOCAL_CURRENCY",
+  "promptForDisambiguation" : true,
+  "trackingId" : "B8CADB31-FD34-4B2D-9315-9D1A08179023",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

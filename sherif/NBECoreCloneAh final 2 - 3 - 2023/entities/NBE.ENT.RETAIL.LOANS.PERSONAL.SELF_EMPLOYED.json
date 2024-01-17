@@ -1,0 +1,17 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Self-employed & professionals",
+    "extensionType" : null,
+    "synonyms" : [ "self employed", "professional" ],
+    "trackingId" : "F8B3FC44-CEFD-4EF8-A978-463560C7863A"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.LOANS.PERSONAL.SELF_EMPLOYED",
+  "promptForDisambiguation" : true,
+  "trackingId" : "677FDE5F-E3F8-4C0A-B738-9BBFE9BAB44C",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}

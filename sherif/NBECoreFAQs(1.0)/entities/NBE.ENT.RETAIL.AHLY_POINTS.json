@@ -1,0 +1,35 @@
+{
+  "botPrompts" : [ ],
+  "enumValues" : [ {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Registration in Al Ahly Points",
+    "extensionType" : null,
+    "synonyms" : [ "ahly points registration", "registration ahly points", "registration in ahly points", "registration", "reg", "reg ahly points", "reg al ahly points", "registration al ahly points", "التسجيل علي برنامج الاهلي بوينتس", "التسجيل في الاهلي بوينتس", "التقديم على الاهلي بوينتس" ],
+    "trackingId" : "DF25A85A-653F-4C08-A23C-FE1449A18C27"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Point Redemption",
+    "extensionType" : null,
+    "synonyms" : [ "redemption", "exchange", "استبدال النقاط", "تبديل النقاط" ],
+    "trackingId" : "3464F261-3467-4D23-8821-B44A92B98168"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "How to use e-vouchers",
+    "extensionType" : null,
+    "synonyms" : [ "e-vouchers", "e vouchers", "how to use e vouchers", "evouchers", "how to use evouchers", "use e-vouchers", "use e vouchers", "use evouchers", "كيفية استخدام القسائم الالكترونية", "القسيمة الالكترونية" ],
+    "trackingId" : "6FF3B7D8-FFC1-4DFE-B7FA-62B2C5EB7A4B"
+  }, {
+    "type" : "StaticEntityValue",
+    "canonicalName" : "Al Ahly Points Merchant Network",
+    "extensionType" : null,
+    "synonyms" : [ "merchant network", "ahly points merchant network", "ahly merchant network", "al ahly merchant network", "قائمة تجار الاهلي بوينتس", "محلات الاهلي بوينتس", "شبكة المحلات التجارية" ],
+    "trackingId" : "15A1087C-11A3-4636-8C7C-644754FA2EAF"
+  } ],
+  "fuzzyMatch" : false,
+  "multiValue" : false,
+  "name" : "NBE.ENT.RETAIL.AHLY_POINTS",
+  "promptForDisambiguation" : true,
+  "trackingId" : "0DAB0A8F-8C08-425D-A0A6-BC110969BB99",
+  "type" : "ENUMVALUES",
+  "validationRules" : [ ]
+}
